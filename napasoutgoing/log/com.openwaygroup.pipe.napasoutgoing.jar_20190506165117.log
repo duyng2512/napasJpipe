@@ -1,0 +1,122 @@
+launch
+Startup time: 2019-05-06 16:51:17.054
+Host: 10.101.144.182 (10.101.144.182)
+Java: 1.6.0_45 (Java HotSpot(TM) Client VM) in C:\Program Files (x86)\Java\jdk1.6.0_45\jre
+OS: Windows 8(x86) 6.2
+User: Openway
+Current Dir: C:\OPW\workspace\napasoutgoing
+User Home Dir: C:\Users\Openway
+Max Heap Size: 259522560 bytes
+Processors: 8
+Telnet Console Port: 23789
+Java System Properties: java.endorsed.dirs=C:/OPW/03.35.30.26_HOME/client/shared/javalib/endorsed; java.io.tmpdir=C:\Users\Openway\AppData\Local\Temp\; user.country=US; user.language=en; user.timezone=Asia/Bangkok; 
+----------------------------------------------------------
+2019-05-06 16:51:17.624	[uncon]	Startup		Starting up launch
+2019-05-06 16:51:17.692	[dbg  ]	Startup		Entering open: [0]/JdbcConnectionPool
+2019-05-06 16:51:17.696	[info ]	Startup		Connecting to [jdbc:oracle:thin:@10.56.244.47:1521:acbway4 (owsacs)]...
+2019-05-06 16:51:19.899	[error]	Startup		Startup operation exception: Component [0]/JdbcConnectionPool caused exception during "open" operation
+		Could not connect to database [jdbc:oracle:thin:@10.56.244.47:1521:acbway4]
+		ORA-01017: invalid username/password; logon denied
+		 (1017)
+	Stack trace:
+		com.openwaygroup.application.internal.StartupOperationException: Component [0]/JdbcConnectionPool caused exception during "open" operation
+			at com.openwaygroup.application.impl.StartupOperationsManager$StartupStep.finish(StartupOperationsManager.java:41)
+			at com.openwaygroup.application.impl.Container.doStartupOperation(Container.java:475)
+			at com.openwaygroup.application.impl.Container.doStartupOperation(Container.java:429)
+			at com.openwaygroup.application.impl.Container.open(Container.java:127)
+			at com.openwaygroup.application.impl.Container$1.doNestedOperation(Container.java:132)
+			at com.openwaygroup.application.impl.Container.doStartupOperation(Container.java:439)
+			at com.openwaygroup.application.impl.Container.open(Container.java:127)
+			at com.openwaygroup.application.impl.Application.startup0(Application.java:256)
+			at com.openwaygroup.application.impl.Application.startUp(Application.java:73)
+			at com.openwaygroup.application.ApplicationStarter.startApplication(ApplicationStarter.java:163)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:98)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:145)
+		Caused by: java.lang.Exception: Could not connect to database [jdbc:oracle:thin:@10.56.244.47:1521:acbway4]
+			at com.openwaygroup.context.sql.JdbcConnectionConfig.createConnection(JdbcConnectionConfig.java:205)
+			at com.openwaygroup.context.sql.JdbcConnectionPool.createConnectionWithLog(JdbcConnectionPool.java:361)
+			at com.openwaygroup.context.sql.JdbcConnectionPool.connect(JdbcConnectionPool.java:331)
+			at com.openwaygroup.context.sql.JdbcConnectionPool.openV(JdbcConnectionPool.java:154)
+			at com.openwaygroup.application.xml.AbstractComponentFactory.open(AbstractComponentFactory.java:47)
+			at com.openwaygroup.application.impl.Container$1.doOperation(Container.java:129)
+			at com.openwaygroup.application.impl.Container$5.run(Container.java:431)
+			at com.openwaygroup.application.impl.Container.doStartupOperation(Container.java:468)
+			... 10 more
+		Caused by: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+			at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+			at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:389)
+			at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:382)
+			at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:600)
+			at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:445)
+			at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+			at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+			at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:380)
+			at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:760)
+			at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:401)
+			at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:546)
+			at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:236)
+			at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+			at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+			at java.sql.DriverManager.getConnection(DriverManager.java:582)
+			at java.sql.DriverManager.getConnection(DriverManager.java:154)
+			at com.openwaygroup.context.sql.JdbcConnectionConfig.createConnection(JdbcConnectionConfig.java:175)
+			... 17 more
+
+2019-05-06 16:51:19.902	[error]	Startup		Could not start application
+		launch
+		Startup operation exception: Component [0]/JdbcConnectionPool caused exception during "open" operation
+		Could not connect to database [jdbc:oracle:thin:@10.56.244.47:1521:acbway4]
+		ORA-01017: invalid username/password; logon denied
+		 (1017)
+	Stack trace:
+		com.openwaygroup.application.internal.StartupOperationException: Component [0]/JdbcConnectionPool caused exception during "open" operation
+			at com.openwaygroup.application.impl.StartupOperationsManager$StartupStep.finish(StartupOperationsManager.java:41)
+			at com.openwaygroup.application.impl.Container.doStartupOperation(Container.java:475)
+			at com.openwaygroup.application.impl.Container.doStartupOperation(Container.java:429)
+			at com.openwaygroup.application.impl.Container.open(Container.java:127)
+			at com.openwaygroup.application.impl.Container$1.doNestedOperation(Container.java:132)
+			at com.openwaygroup.application.impl.Container.doStartupOperation(Container.java:439)
+			at com.openwaygroup.application.impl.Container.open(Container.java:127)
+			at com.openwaygroup.application.impl.Application.startup0(Application.java:256)
+			at com.openwaygroup.application.impl.Application.startUp(Application.java:73)
+			at com.openwaygroup.application.ApplicationStarter.startApplication(ApplicationStarter.java:163)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:98)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:145)
+		Caused by: java.lang.Exception: Could not connect to database [jdbc:oracle:thin:@10.56.244.47:1521:acbway4]
+			at com.openwaygroup.context.sql.JdbcConnectionConfig.createConnection(JdbcConnectionConfig.java:205)
+			at com.openwaygroup.context.sql.JdbcConnectionPool.createConnectionWithLog(JdbcConnectionPool.java:361)
+			at com.openwaygroup.context.sql.JdbcConnectionPool.connect(JdbcConnectionPool.java:331)
+			at com.openwaygroup.context.sql.JdbcConnectionPool.openV(JdbcConnectionPool.java:154)
+			at com.openwaygroup.application.xml.AbstractComponentFactory.open(AbstractComponentFactory.java:47)
+			at com.openwaygroup.application.impl.Container$1.doOperation(Container.java:129)
+			at com.openwaygroup.application.impl.Container$5.run(Container.java:431)
+			at com.openwaygroup.application.impl.Container.doStartupOperation(Container.java:468)
+			... 10 more
+		Caused by: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+			at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+			at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:389)
+			at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:382)
+			at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:600)
+			at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:445)
+			at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+			at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+			at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:380)
+			at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:760)
+			at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:401)
+			at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:546)
+			at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:236)
+			at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+			at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+			at java.sql.DriverManager.getConnection(DriverManager.java:582)
+			at java.sql.DriverManager.getConnection(DriverManager.java:154)
+			at com.openwaygroup.context.sql.JdbcConnectionConfig.createConnection(JdbcConnectionConfig.java:175)
+			... 17 more
+
+2019-05-06 16:51:19.902	[uncon]	Startup		Shutting down launch
+2019-05-06 16:51:19.904	[dbg  ]	Components_Shutdowner		Entering close: [0]/JdbcConnectionPool
+2019-05-06 16:51:19.904	[dbg  ]	Components_Shutdowner		Exited close: [0]/JdbcConnectionPool
+2019-05-06 16:51:19.905	[dbg  ]	Components_Shutdowner		Entering close: [0]/JdbcConnectionPool
+2019-05-06 16:51:19.905	[dbg  ]	Components_Shutdowner		Exited close: [0]/JdbcConnectionPool
+2019-05-06 16:51:19.905	[uncon]	Components_Shutdowner		launch Shutdown complete

@@ -1,0 +1,22 @@
+Balance Inquiry;0200;6011;30xx00;Balance Inquiry;01000B;BQ;Y;Q
+Balance Inquiry;0210;6011;30xx00;Balance Inquiry;01000B;BQ;Y;Q
+Cash Withdrawal;0200;6011;01xx00;ATM;02200A;A1;N;P
+Cash Withdrawal;0210;6011;01xx00;ATM;02200A;A1;N;P
+Mini Statement;0200;6011;35xx00;Mini Statement;93000S;BS;P;Q
+Mini Statement;0210;6011;35xx00;Mini Statement;93000S;BS;P;Q
+Reversal Advice Balance Inquiry;0420;6011;30xx00;Balance Inquiry Reversal;04200A;BQ;P;R
+Reversal Advice Balance Inquiry;0430;6011;30xx00;Balance Inquiry Reversal;04200A;BQ;P;R
+Reversal Advice Cash Withdrawal;0420;6011;01xx00;ATM Reversal;0422;A1;N;R
+Reversal Advice Cash Withdrawal;0430;6011;01xx00;ATM Reversal;0422;A1;N;R
+Reversal Advice Mini Statement;0420;6011;35xx00;Mini Statement Reversal;94200S;BS;P;R
+Reversal Advice Mini Statement;0430;6011;35xx00;Mini Statement Reversal;94200S;BS;P;R
+Beneficiary Account Inquiry;0200;6011;390000;CH Payment Account Status Inquiry;01000Q;T0;P;Q
+Beneficiary Account Inquiry;0210;6011;390000;CH Payment Account Status Inquiry;01000Q;T0;P;Q
+Balance Inquiry;0200;Other than 6011;30xx00;Balance Inquiry;01000B;BQ;P;Q
+Balance Inquiry;0210;Other than 6011;30xx00;Balance Inquiry;01000B;BQ;P;Q
+Purchase;0200;Other than 6011;00xx00;Retail;0200;R1;N;P
+Purchase;0210;Other than 6011;00xx00;Retail;0200;R1;N;P
+Purchase Cancelation;0200;Other than 6011;02xx00;Retail Reversal;04200R;R1;N;R
+Purchase Cancelation;0210;Other than 6011;02xx00;Retail Reversal;04200R;R1;N;R
+Purchase Reversal Advice;0420;Other than 6011;00xx00;Retail Reversal?;04200R;R1;N;R
+Purchase Reversal Advice;0430;Other than 6011;00xx00;Retail Reversal?;04200R;R1;N;R

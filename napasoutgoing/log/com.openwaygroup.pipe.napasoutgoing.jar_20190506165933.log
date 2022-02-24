@@ -1,0 +1,766 @@
+launch
+Startup time: 2019-05-06 16:59:33.135
+Host: 10.101.144.182 (10.101.144.182)
+Java: 1.6.0_45 (Java HotSpot(TM) Client VM) in C:\Program Files (x86)\Java\jdk1.6.0_45\jre
+OS: Windows 8(x86) 6.2
+User: Openway
+Current Dir: C:\OPW\workspace\napasoutgoing
+User Home Dir: C:\Users\Openway
+Max Heap Size: 259522560 bytes
+Processors: 8
+Telnet Console Port: 23789
+Java System Properties: java.endorsed.dirs=C:/OPW/03.35.30.26_HOME/client/shared/javalib/endorsed; java.io.tmpdir=C:\Users\Openway\AppData\Local\Temp\; user.country=US; user.language=en; user.timezone=Asia/Bangkok; 
+----------------------------------------------------------
+2019-05-06 16:59:33.690	[uncon]	Startup		Starting up launch
+2019-05-06 16:59:33.757	[dbg  ]	Startup		Entering open: [0]/JdbcConnectionPool
+2019-05-06 16:59:33.760	[info ]	Startup		Connecting to [jdbc:oracle:thin:@10.56.244.42:1521:acbway4 (owsacs)]...
+2019-05-06 16:59:34.113	[dbg  ]	Startup		Executing sql statement [alter session set current_schema=OWSACS]
+2019-05-06 16:59:34.117	[dbg  ]	Startup		Executing sql statement [{call soft.start_simple('','Console Pipe',null)}]
+2019-05-06 16:59:34.240	[log  ]	Startup		Successfully connected to [jdbc:oracle:thin:@10.56.244.42:1521:acbway4 (owsacs)]
+2019-05-06 16:59:34.240	[dbg  ]	Startup		Exited open: [0]/JdbcConnectionPool
+2019-05-06 16:59:34.240	[dbg  ]	Startup		Entering open container: [0]/JdbcConnectionPool
+2019-05-06 16:59:34.240	[dbg  ]	Startup		Exited open container: [0]/JdbcConnectionPool
+2019-05-06 16:59:34.240	[dbg  ]	Startup		Entering open: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:59:34.240	[dbg  ]	Startup		Exited open: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:59:34.240	[dbg  ]	Startup		Entering open container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:59:34.240	[dbg  ]	Startup		Exited open container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:59:34.240	[dbg  ]	Startup		Entering start: [0]/JdbcConnectionPool
+2019-05-06 16:59:34.241	[dbg  ]	Startup		Exited start: [0]/JdbcConnectionPool
+2019-05-06 16:59:34.241	[dbg  ]	Startup		Entering start container: [0]/JdbcConnectionPool
+2019-05-06 16:59:34.241	[dbg  ]	Startup		Exited start container: [0]/JdbcConnectionPool
+2019-05-06 16:59:34.241	[dbg  ]	Startup		Entering start: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:59:34.241	[dbg_m]	Startup		Waiting for connection context
+2019-05-06 16:59:34.243	[dbg  ]	Startup		Executing stnd.GET_DB_VERSION
+2019-05-06 16:59:34.289	[dbg  ]	Startup		Executed stnd.GET_DB_VERSION
+		versname=[03_47_30]
+2019-05-06 16:59:34.289	[dbg  ]	Startup		Exited start: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:59:34.290	[dbg  ]	Startup		Entering start container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:59:34.290	[dbg  ]	Startup		Exited start container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:59:34.290	[uncon]	Startup		launch Startup complete
+2019-05-06 16:59:34.309	[uncon]	Startup		Starting up com.openwaygroup.pipe.napasoutgoing
+2019-05-06 16:59:34.346	[dbg  ]	Startup		Entering open: [0]/source
+2019-05-06 16:59:34.346	[dbg  ]	Startup		Service: source. SQL statement: [select * from dual]
+2019-05-06 16:59:34.346	[dbg  ]	Startup		SQL Select Count statement: [null]
+2019-05-06 16:59:34.346	[dbg  ]	Startup		Exited open: [0]/source
+2019-05-06 16:59:34.346	[dbg  ]	Startup		Entering open container: [0]/source
+2019-05-06 16:59:34.346	[dbg  ]	Startup		Exited open container: [0]/source
+2019-05-06 16:59:34.346	[dbg  ]	Startup		Entering open: [0]/outWardFile
+2019-05-06 16:59:34.347	[dbg  ]	Startup		Exited open: [0]/outWardFile
+2019-05-06 16:59:34.347	[dbg  ]	Startup		Entering open: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:59:34.347	[dbg  ]	Startup		Exited open: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:59:34.347	[dbg  ]	Startup		Entering open container: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:59:34.347	[dbg  ]	Startup		Exited open container: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:59:34.347	[dbg  ]	Startup		Entering open container: [0]/outWardFile
+2019-05-06 16:59:34.347	[dbg  ]	Startup		Exited open container: [0]/outWardFile
+2019-05-06 16:59:34.347	[dbg  ]	Startup		Entering open: [0]/fileSequence
+2019-05-06 16:59:34.347	[dbg  ]	Startup		Service: fileSequence. SQL statement: [SELECT (count(*)+1) as next_seq
+		  FROM   file_info f
+		 WHERE  PARMS LIKE 
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         ?
+		 and F.FILE_TYPE like 'ACB Outward File'
+		]
+2019-05-06 16:59:34.347	[dbg  ]	Startup		Exited open: [0]/fileSequence
+2019-05-06 16:59:34.347	[dbg  ]	Startup		Entering open container: [0]/fileSequence
+2019-05-06 16:59:34.347	[dbg  ]	Startup		Exited open container: [0]/fileSequence
+2019-05-06 16:59:34.347	[dbg  ]	Startup		Entering open: [0]/disputeRecord
+2019-05-06 16:59:34.347	[dbg  ]	Startup		Service: disputeRecord. SQL statement: [select distinct
+		            dc.id,
+		            dc.Card_Number,
+		            dc.Processing_Code as ProcessingCode,
+		            dc.Trans_Amount as TransAmount,
+		            dc.System_Trace_Number as SystemTraceNumber,
+		            dc.Trans_Time as LocalTransactionTime,
+		            dc.Trans_Date as LocalTransactionDate,
+		            dc.Settl_Date as SettlementDate,
+		            dc.Terminal_Type as SicCode,
+		            dc.Acquiring_member_id as AcquiringInstitutionCode,
+		            substr(dc.Card_Number,1,6) as IssuerBankCode,
+		            dc.Auth_Code as AuthorizationNumber,   
+		            dc.Terminal_Id as TerminalIdentification,
+		            dc.Trans_Curr as TransactionCurrencyCode,
+		            NVL(dc.From_Account,'00000000000000000000') as FromAccount,
+		            NVL(dc.To_Account,'00000000000000000000') as ToAccount,
+		            dc.message_code as MessageTypeIdentifierCode,
+		            dc.return_code as TransactionStatus,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'SVC'),'') as NapasSvcCode,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'TCC'),'') as TransactionChannelCode,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'RTA'),'0')) as RealTransactionAmount,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F5'),'0')) as SettlementAmount,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F50'),'0') as SettlementCurrencyCode,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F9'),'0')) as FxRate,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F6'),'0')) as CardholderAmount,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'RCA'),'0')) as RealCardholderAmount,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F51'),'704') as CardholerCurrencyCode,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F10'),'0')) as CardholderFxRate,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F22'),'') as ServiceCode,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F25'),'') as ServiceConditionCode,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'MID'),'0') as MerchantIdentificationCode,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'BNB'),'0') as BeneficiaryIdentify,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'TRN'),'') as TransactionReferenceNumber,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'RRN'),'') as RetrievalReferenceNumber
+		from opt_smldis dc
+		where dc.Amnd_State = 'A'
+		    and trim(dc.direction) = 'ISS'
+		    and trim(dc.status) = 'TO BE SENT'
+		    and trim(dc.process_date)=SUBSTR(TO_CHAR('2019-02-22'),0,10)
+		    and trim(dc.napas_service) = 'ECOM'
+		]
+2019-05-06 16:59:34.347	[dbg  ]	Startup		SQL Select Count statement: [null]
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Exited open: [0]/disputeRecord
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Entering open container: [0]/disputeRecord
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Exited open container: [0]/disputeRecord
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Entering open: [0]/getTransLastDate
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Service: getTransLastDate. SQL statement: [SELECT NVL(TO_CHAR(MAX(TRANS_DATE_2),'MMddyyyyy'),'01012000') "MAX_DATE"
+		FROM OPT_SMLDIS
+		WHERE  TRIM(PROCESS_DATE) =  '2019-02-22'
+		      AND DIRECTION = 'ISS' 
+		      AND TRIM(NAPAS_SERVICE) = 'ECOM'
+		]
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Exited open: [0]/getTransLastDate
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Entering open container: [0]/getTransLastDate
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Exited open container: [0]/getTransLastDate
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Entering start: [0]/source
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Exited start: [0]/source
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Entering start container: [0]/source
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Exited start container: [0]/source
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Entering start: [0]/outWardFile
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Exited start: [0]/outWardFile
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Entering start: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Exited start: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Entering start container: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:59:34.348	[dbg  ]	Startup		Exited start container: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:59:34.349	[dbg  ]	Startup		Entering start container: [0]/outWardFile
+2019-05-06 16:59:34.349	[dbg  ]	Startup		Exited start container: [0]/outWardFile
+2019-05-06 16:59:34.349	[dbg  ]	Startup		Entering start: [0]/fileSequence
+2019-05-06 16:59:34.349	[dbg  ]	Startup		Exited start: [0]/fileSequence
+2019-05-06 16:59:34.349	[dbg  ]	Startup		Entering start container: [0]/fileSequence
+2019-05-06 16:59:34.349	[dbg  ]	Startup		Exited start container: [0]/fileSequence
+2019-05-06 16:59:34.349	[dbg  ]	Startup		Entering start: [0]/disputeRecord
+2019-05-06 16:59:34.349	[dbg  ]	Startup		Exited start: [0]/disputeRecord
+2019-05-06 16:59:34.349	[dbg  ]	Startup		Entering start container: [0]/disputeRecord
+2019-05-06 16:59:34.349	[dbg  ]	Startup		Exited start container: [0]/disputeRecord
+2019-05-06 16:59:34.349	[dbg  ]	Startup		Entering start: [0]/getTransLastDate
+2019-05-06 16:59:34.349	[dbg  ]	Startup		Exited start: [0]/getTransLastDate
+2019-05-06 16:59:34.349	[dbg  ]	Startup		Entering start container: [0]/getTransLastDate
+2019-05-06 16:59:34.349	[dbg  ]	Startup		Exited start container: [0]/getTransLastDate
+2019-05-06 16:59:34.349	[uncon]	Startup		com.openwaygroup.pipe.napasoutgoing Startup complete
+2019-05-06 16:59:34.368	[dbg_m]	Startup		Waiting for connection context
+2019-05-06 16:59:34.369	[dbg  ]	Startup		Executing stnd.SET_GL_CONSTANTS
+2019-05-06 16:59:34.374	[dbg  ]	Startup		Executed stnd.SET_GL_CONSTANTS
+2019-05-06 16:59:34.374	[dbg  ]	Startup		Executing sy_process.START_CURRENT_V3
+		processname=[napasoutgoing]
+		processparms=[null]
+		isunique=[N]
+		tostartsub=[Y]
+		objecttype=[null]
+		objectid=[null]
+2019-05-06 16:59:34.391	[dbg  ]	Startup		Executed sy_process.START_CURRENT_V3
+		isactive=[Y]
+2019-05-06 16:59:34.391	[dbg  ]	Startup		Executing sy_process.GET_CURRENT_PROCESS
+2019-05-06 16:59:34.395	[dbg  ]	Startup		Executed sy_process.GET_CURRENT_PROCESS
+		return value=[16377336]
+2019-05-06 16:59:34.396	[dbg  ]	Startup		Executing stnd.GET_PARMS
+2019-05-06 16:59:34.401	[dbg  ]	Startup		Executed stnd.GET_PARMS
+		newconnectionid=[1997144]
+		newofficerid=[null]
+2019-05-06 16:59:34.404	[dbg  ]	Startup		Executing soft.Get_Officer_Id
+2019-05-06 16:59:34.407	[dbg  ]	Startup		Executed soft.Get_Officer_Id
+		return value=[null]
+2019-05-06 16:59:34.407	[dbg  ]	Startup		Executing soft.Get_Officer_Name
+2019-05-06 16:59:34.409	[dbg  ]	Startup		Executed soft.Get_Officer_Name
+		return value=[null]
+2019-05-06 16:59:34.409	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[DB Version: 03_47_30]
+2019-05-06 16:59:34.412	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.413	[uncon]	Startup		Information: Pipe Version: 00.00.01
+2019-05-06 16:59:34.413	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Pipe Version: 00.00.01]
+2019-05-06 16:59:34.416	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.416	[info ]	Startup		DB version: 03_47_30
+2019-05-06 16:59:34.416	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Pipe:com.openwaygroup.pipe.napasoutgoing.jar]
+2019-05-06 16:59:34.419	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.419	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: OUTPUT_DIR=C:/OPW/workspace/napasoutgoing/out]
+2019-05-06 16:59:34.421	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.422	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: NAPAS_CHANNEL_CODE=b]
+2019-05-06 16:59:34.424	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.424	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: CURRENT_USER=1]
+2019-05-06 16:59:34.427	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.427	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: BANK_PASSWORD=970416]
+2019-05-06 16:59:34.430	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.430	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: ABBREVIATION_BANK_NAME=ACB]
+2019-05-06 16:59:34.433	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.433	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: MEMBER_BANK_CODE=970416]
+2019-05-06 16:59:34.436	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.436	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: NAPAS_PROCESS_DATE=2019-02-22]
+2019-05-06 16:59:34.438	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.438	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: SERVICE=ECOM]
+2019-05-06 16:59:34.441	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.441	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: DIRECTION=ISS]
+2019-05-06 16:59:34.444	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.457	[dbg_m]	Startup		Opening source
+2019-05-06 16:59:34.460	[dbg_m]	Startup		Opening outWardFile
+2019-05-06 16:59:34.470	[info ]	Startup		Opening outWardFile
+2019-05-06 16:59:34.470	[dbg_m]	Startup		Opening fileSequence
+2019-05-06 16:59:34.470	[dbg_m]	Startup		Opening disputeRecord
+2019-05-06 16:59:34.470	[dbg_m]	Startup		Opening getTransLastDate
+2019-05-06 16:59:34.470	[dbg_m]	Startup		Opening mapper
+2019-05-06 16:59:34.471	[uncon]	Startup		Trace: [NapasOutward]:sProcessDates 2 = 2019-02-22
+2019-05-06 16:59:34.471	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[O]
+		messagetext=[[NapasOutward]:sProcessDates 2 = 2019-02-22]
+2019-05-06 16:59:34.473	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.474	[dbg  ]	Startup		executing  (fileSequence)
+		  PARMS=[050619_ISS_ACB_970416]
+2019-05-06 16:59:34.482	[dbg  ]	Startup		executed  (fileSequence)
+		  nextSeq=[4]
+2019-05-06 16:59:34.482	[dbg  ]	Startup		TargetFileParameters (com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent$FileInfoExtendedFileParameters@858bf1). File name was changed.
+2019-05-06 16:59:34.482	[uncon]	Startup		Trace: [NapasOutward]:FileSequence:4
+2019-05-06 16:59:34.482	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[O]
+		messagetext=[[NapasOutward]:FileSequence:4]
+2019-05-06 16:59:34.485	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.485	[uncon]	Startup		Trace: [NapasOutward]:FileName: 050619_ISS_ACB_970416_4_SL_ECOM.dat
+2019-05-06 16:59:34.485	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[O]
+		messagetext=[[NapasOutward]:FileName: 050619_ISS_ACB_970416_4_SL_ECOM.dat]
+2019-05-06 16:59:34.487	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.488	[dbg  ]	Startup		executing  (getTransLastDate)
+2019-05-06 16:59:34.710	[dbg  ]	Startup		executed  (getTransLastDate)
+		  maxDate=[022120199]
+2019-05-06 16:59:34.711	[dbg  ]	Startup		executing  (outWardFile)
+		  Record Type=fileHeaderRecord
+		  headerRecord=[HR]
+		  binDef=[[REV]]
+		  bin=[  970416]
+		  dateDef=[[DATE]]
+		  transactionDate=[022120199]
+2019-05-06 16:59:34.711	[dbg  ]	Startup		executing   Record Type=fileHeaderRecord
+		  headerRecord=[HR]
+		  binDef=[[REV]]
+		  bin=[  970416]
+		  dateDef=[[DATE]]
+		  transactionDate=[022120199]
+2019-05-06 16:59:34.711	[dbg  ]	Startup		TargetFileParameters (com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent$FileInfoExtendedFileParameters@858bf1). Flag 'changed' was set directly to TRUE.
+2019-05-06 16:59:34.712	[dbg  ]	Startup		Executing sy_file.COMPUTE_FILE_NUMBER
+		filetype=[ACB Outward File]
+		numeratetype=[C]
+		filequalifier=[null]
+2019-05-06 16:59:34.715	[dbg  ]	Startup		Executed sy_file.COMPUTE_FILE_NUMBER
+		filenumber=[1]
+		errmsg=[I OK]
+2019-05-06 16:59:34.716	[log  ]	Startup		Creating temporary file [C:\OPW\workspace\napasoutgoing\out\050619_ISS_ACB_970416_4_SL_ECOM.tmp] for file [050619_ISS_ACB_970416_4_SL_ECOM.dat]
+2019-05-06 16:59:34.716	[uncon]	Startup		Information: Start file C:\OPW\workspace\napasoutgoing\out\050619_ISS_ACB_970416_4_SL_ECOM.dat
+2019-05-06 16:59:34.716	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Start file C:\OPW\workspace\napasoutgoing\out\050619_ISS_ACB_970416_4_SL_ECOM.dat]
+2019-05-06 16:59:34.720	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.721	[dbg  ]	Startup		Executing glob.LDATE
+2019-05-06 16:59:34.723	[dbg  ]	Startup		Executed glob.LDATE
+		return value=[2019-05-06 00:00:00.0]
+2019-05-06 16:59:34.724	[dbg  ]	Startup		Executing sy_file.REGISTER_FILE_V2
+		parentid=[null]
+		filetype=[ACB Outward File]
+		filename=[050619_ISS_ACB_970416_4_SL_ECOM.dat]
+		filestatus=[P]
+		officerid=[null]
+		curdate=[2019-05-06 00:00:00.0]
+		fillauxrec=[Y]
+2019-05-06 16:59:34.736	[dbg  ]	Startup		Executed sy_file.REGISTER_FILE_V2
+		retcode=[0]
+		errmsg=[null]
+		recid=[252634]
+2019-05-06 16:59:34.737	[dbg  ]	Startup		Executing sy_file.PERSONALIZE_FILE
+		recid=[252634]
+		fileid=[0000000001]
+		filename=[050619_ISS_ACB_970416_4_SL_ECOM.dat]
+		newparms=[050619_ISS_ACB_970416]
+		checkuniq=[N]
+		inheritold=[N]
+		actualrectypes=[null]
+2019-05-06 16:59:34.740	[dbg  ]	Startup		Executed sy_file.PERSONALIZE_FILE
+		retcode=[0]
+		errmsg=[null]
+		previd=[null]
+		prevstaus=[null]
+		prevcount=[null]
+2019-05-06 16:59:34.740	[dbg  ]	Startup		TargetFileParameters (com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent$FileInfoExtendedFileParameters@858bf1). New Output Stream was created.
+2019-05-06 16:59:34.743	[log  ]	Startup		Data truncated. Record=fileHeaderRecord. Field=transactionDate. Value=022120199
+2019-05-06 16:59:34.743	[dbg  ]	Startup		executed  (outWardFile)
+		  Record Type=fileHeaderRecord
+2019-05-06 16:59:34.744	[dbg  ]	Startup		selecting (disputeRecord)
+2019-05-06 16:59:34.847	[dbg  ]	Startup		retrieved [0]  (disputeRecord)
+		  id=[685991]
+		  cardNumber=[9704163100389325]
+		  processingcode=[000000]
+		  transamount=[170000]
+		  systemtracenumber=[565965]
+		  localtransactiontime=[100016]
+		  localtransactiondate=[0221]
+		  settlementdate=[0222]
+		  siccode=[7399]
+		  acquiringinstitutioncode=[970471]
+		  issuerbankcode=[970416]
+		  authorizationnumber=[731726]
+		  terminalidentification=[00000376]
+		  transactioncurrencycode=[704]
+		  fromaccount=[00000000000863736353]
+		  toaccount=[00000000000000000000]
+		  messagetypeidentifiercode=[0210]
+		  transactionstatus=[0117]
+		  napassvccode=null
+		  transactionchannelcode=null
+		  realtransactionamount=[0]
+		  settlementamount=[0]
+		  settlementcurrencycode=[0]
+		  fxrate=[0]
+		  cardholderamount=[0]
+		  realcardholderamount=[0]
+		  cardholercurrencycode=[704]
+		  cardholderfxrate=[0]
+		  servicecode=null
+		  serviceconditioncode=null
+		  merchantidentificationcode=[0]
+		  beneficiaryidentify=[0]
+		  transactionreferencenumber=null
+		  retrievalreferencenumber=null
+2019-05-06 16:59:34.852	[dbg  ]	Startup		executing  (outWardFile)
+		  Record Type=fileDataRecord
+		  DataRecord=[DR]
+		  MtiDef=[[MTI]]
+		  MessageTypeIdentifierCode=[0210]
+		  F2=[[F2]]
+		  CardNumber=[   9704163100389325]
+		  F3=[[F3]]
+		  ProcessingCode=[000000]
+		  SvcDef=[[SVC]]
+		  NapasSvcCode=[          ]
+		  TccDef=[[TCC]]
+		  TransactionChannelCode=[  ]
+		  F4=[[F4]]
+		  TransactionAmount=[000017000000]
+		  Rta=[[RTA]]
+		  RealTransactionAmount=[000000000000]
+		  F49=[[F49]]
+		  TransactionCurrencyCode=[704]
+		  F5=[[F5]]
+		  SettlementAmount=[000000000000]
+		  F50=[[F50]]
+		  SettlementCurrencyCode=[000]
+		  F9=[[F9]]
+		  FxRate=[00000000]
+		  F6=[[F6]]
+		  CardholderAmount=[000000000000]
+		  Rca=[[RCA]]
+		  RealCardholerAmount=[000000000000]
+		  F51=[[F51]]
+		  CardholerCurrencyCode=[704]
+		  F10=[[F10]]
+		  CardholderFxRate=[00000000]
+		  F11=[[F11]]
+		  SystemTraceNumber=[565965]
+		  F12=[[F12]]
+		  LocalTransactionTime=[100016]
+		  F13=[[F13]]
+		  LocalTransactionDate=[0221]
+		  F15=[[F15]]
+		  SettlementDate=[0222]
+		  F18=[[F18]]
+		  TerminalType=[7399]
+		  F22=[[F22]]
+		  ServiceCode=[   ]
+		  F25=[[F25]]
+		  ServiceConditionCode=[  ]
+		  F41=[[F41]]
+		  CardAcceptorTerminalIdentification=[00000376]
+		  Acq=[[ACQ]]
+		  AcquiringInstitutionCode=[  970471]
+		  Iss=[[ISS]]
+		  IssuerMemberId=[  970416]
+		  Mid=[[MID]]
+		  MerchantIdentificationCode=[              0]
+		  Bnb=[[BNB]]
+		  BeneficiaryIdentify=[       0]
+		  F102=[[F102]]
+		  FromAccount=[        00000000000863736353]
+		  F103=[[F103]]
+		  ToAccount=[        00000000000000000000]
+		  F37=[[F37]]
+		  Rrn=[            ]
+		  F38=[[F38]]
+		  AuthorizationNumber=[731726]
+		  Trn=[[TRN]]
+		  TransactionReferenceNumber=[                ]
+		  Rrc=[[RRC]]
+		  ResponseCode=[0117]
+		  Rsv1Def=[[RSV1]]
+		  Rsv1=[                                                                                                    ]
+		  Rsv2Def=[[RSV2]]
+		  Rsv2=[                                                                                                    ]
+		  Rsv3Def=[[RSV3]]
+		  Rsv3=[                                                                                                    ]
+		  Csr=[[CSR]]
+		  ChecksumRecordValue=[fa04d6c30b3fffb9640f68d124417f86]
+2019-05-06 16:59:34.852	[dbg  ]	Startup		executing   Record Type=fileDataRecord
+		  DataRecord=[DR]
+		  MtiDef=[[MTI]]
+		  MessageTypeIdentifierCode=[0210]
+		  F2=[[F2]]
+		  CardNumber=[   9704163100389325]
+		  F3=[[F3]]
+		  ProcessingCode=[000000]
+		  SvcDef=[[SVC]]
+		  NapasSvcCode=[          ]
+		  TccDef=[[TCC]]
+		  TransactionChannelCode=[  ]
+		  F4=[[F4]]
+		  TransactionAmount=[000017000000]
+		  Rta=[[RTA]]
+		  RealTransactionAmount=[000000000000]
+		  F49=[[F49]]
+		  TransactionCurrencyCode=[704]
+		  F5=[[F5]]
+		  SettlementAmount=[000000000000]
+		  F50=[[F50]]
+		  SettlementCurrencyCode=[000]
+		  F9=[[F9]]
+		  FxRate=[00000000]
+		  F6=[[F6]]
+		  CardholderAmount=[000000000000]
+		  Rca=[[RCA]]
+		  RealCardholerAmount=[000000000000]
+		  F51=[[F51]]
+		  CardholerCurrencyCode=[704]
+		  F10=[[F10]]
+		  CardholderFxRate=[00000000]
+		  F11=[[F11]]
+		  SystemTraceNumber=[565965]
+		  F12=[[F12]]
+		  LocalTransactionTime=[100016]
+		  F13=[[F13]]
+		  LocalTransactionDate=[0221]
+		  F15=[[F15]]
+		  SettlementDate=[0222]
+		  F18=[[F18]]
+		  TerminalType=[7399]
+		  F22=[[F22]]
+		  ServiceCode=[   ]
+		  F25=[[F25]]
+		  ServiceConditionCode=[  ]
+		  F41=[[F41]]
+		  CardAcceptorTerminalIdentification=[00000376]
+		  Acq=[[ACQ]]
+		  AcquiringInstitutionCode=[  970471]
+		  Iss=[[ISS]]
+		  IssuerMemberId=[  970416]
+		  Mid=[[MID]]
+		  MerchantIdentificationCode=[              0]
+		  Bnb=[[BNB]]
+		  BeneficiaryIdentify=[       0]
+		  F102=[[F102]]
+		  FromAccount=[        00000000000863736353]
+		  F103=[[F103]]
+		  ToAccount=[        00000000000000000000]
+		  F37=[[F37]]
+		  Rrn=[            ]
+		  F38=[[F38]]
+		  AuthorizationNumber=[731726]
+		  Trn=[[TRN]]
+		  TransactionReferenceNumber=[                ]
+		  Rrc=[[RRC]]
+		  ResponseCode=[0117]
+		  Rsv1Def=[[RSV1]]
+		  Rsv1=[                                                                                                    ]
+		  Rsv2Def=[[RSV2]]
+		  Rsv2=[                                                                                                    ]
+		  Rsv3Def=[[RSV3]]
+		  Rsv3=[                                                                                                    ]
+		  Csr=[[CSR]]
+		  ChecksumRecordValue=[fa04d6c30b3fffb9640f68d124417f86]
+2019-05-06 16:59:34.852	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=MtiDef. Value=[MTI]
+2019-05-06 16:59:34.852	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F2. Value=[F2]
+2019-05-06 16:59:34.852	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F3. Value=[F3]
+2019-05-06 16:59:34.852	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=SvcDef. Value=[SVC]
+2019-05-06 16:59:34.852	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=TccDef. Value=[TCC]
+2019-05-06 16:59:34.852	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F4. Value=[F4]
+2019-05-06 16:59:34.852	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=Rta. Value=[RTA]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F49. Value=[F49]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F5. Value=[F5]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F50. Value=[F50]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F9. Value=[F9]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F6. Value=[F6]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=Rca. Value=[RCA]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F51. Value=[F51]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F10. Value=[F10]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F11. Value=[F11]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F12. Value=[F12]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F13. Value=[F13]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F15. Value=[F15]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F18. Value=[F18]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F22. Value=[F22]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F25. Value=[F25]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F41. Value=[F41]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=Acq. Value=[ACQ]
+2019-05-06 16:59:34.853	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=Iss. Value=[ISS]
+2019-05-06 16:59:34.854	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=Mid. Value=[MID]
+2019-05-06 16:59:34.854	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=Bnb. Value=[BNB]
+2019-05-06 16:59:34.854	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F102. Value=[F102]
+2019-05-06 16:59:34.854	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F103. Value=[F103]
+2019-05-06 16:59:34.854	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F37. Value=[F37]
+2019-05-06 16:59:34.854	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=F38. Value=[F38]
+2019-05-06 16:59:34.854	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=Trn. Value=[TRN]
+2019-05-06 16:59:34.854	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=Rrc. Value=[RRC]
+2019-05-06 16:59:34.854	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=Rsv1Def. Value=[RSV1]
+2019-05-06 16:59:34.854	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=Rsv2Def. Value=[RSV2]
+2019-05-06 16:59:34.854	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=Rsv3Def. Value=[RSV3]
+2019-05-06 16:59:34.854	[log  ]	Startup		Data isn't valid. Record=fileDataRecord. Field=Csr. Value=[CSR]
+2019-05-06 16:59:34.863	[dbg  ]	Startup		executed  (outWardFile)
+		  Record Type=fileDataRecord
+2019-05-06 16:59:34.863	[dbg  ]	Startup		Source SELECT: No data found
+2019-05-06 16:59:34.863	[info ]	Startup		Committing after 0 rows
+2019-05-06 16:59:34.880	[dbg  ]	Startup		Executing sy_process.SET_TOTAL_NUMBER1
+		processid=[16377336]
+		n=[0]
+2019-05-06 16:59:34.884	[dbg  ]	Startup		Executed sy_process.SET_TOTAL_NUMBER1
+2019-05-06 16:59:34.884	[dbg  ]	Startup		Executing sy_process.LOCK_PROCESS_STATUS1
+		processid=[16377336]
+2019-05-06 16:59:34.886	[dbg  ]	Startup		Executed sy_process.LOCK_PROCESS_STATUS1
+		return value=[A]
+2019-05-06 16:59:34.886	[dbg  ]	Startup		Committed
+2019-05-06 16:59:34.888	[dbg  ]	Startup		retrieved [0]  (source)
+		  dummy=[X]
+2019-05-06 16:59:34.888	[dbg  ]	Startup		Source SELECT: No data found
+2019-05-06 16:59:34.889	[info ]	Startup		Committing after 1 rows
+2019-05-06 16:59:34.892	[dbg  ]	Startup		Executing sy_process.ADD_CURRENT_NUMBER1
+		processid=[16377336]
+		n=[1]
+2019-05-06 16:59:34.899	[dbg  ]	Startup		Executed sy_process.ADD_CURRENT_NUMBER1
+		return value=[0]
+2019-05-06 16:59:34.899	[dbg  ]	Startup		Executing sy_process.LOCK_PROCESS_STATUS1
+		processid=[16377336]
+2019-05-06 16:59:34.900	[dbg  ]	Startup		Executed sy_process.LOCK_PROCESS_STATUS1
+		return value=[A]
+2019-05-06 16:59:34.900	[dbg  ]	Startup		Committed
+2019-05-06 16:59:34.900	[dbg_m]	Startup		Closing mapper
+2019-05-06 16:59:34.901	[dbg  ]	Startup		executing  (outWardFile)
+		  Record Type=fileTrailerRecord
+		  trailerRecord=[TR]
+		  notDef=[[NOT]]
+		  numberOfRecordsInTheFile=[000000001]
+		  generatorDef=[[CRE]]
+		  generator=[                   1]
+		  generateTimeDef=[[TIME]]
+		  fileGenerationTime=[165934]
+		  generateDateDef=[[DATE]]
+		  fileGenerationDate=[06052019]
+		  csfDef=[[CSF]]
+		  checksumFileValue=[e9aeb4d275636eddd6115393dd101d5f]
+2019-05-06 16:59:34.901	[dbg  ]	Startup		executing   Record Type=fileTrailerRecord
+		  trailerRecord=[TR]
+		  notDef=[[NOT]]
+		  numberOfRecordsInTheFile=[000000001]
+		  generatorDef=[[CRE]]
+		  generator=[                   1]
+		  generateTimeDef=[[TIME]]
+		  fileGenerationTime=[165934]
+		  generateDateDef=[[DATE]]
+		  fileGenerationDate=[06052019]
+		  csfDef=[[CSF]]
+		  checksumFileValue=[e9aeb4d275636eddd6115393dd101d5f]
+2019-05-06 16:59:34.901	[dbg  ]	Startup		executed  (outWardFile)
+		  Record Type=fileTrailerRecord
+2019-05-06 16:59:34.901	[uncon]	Startup		Trace: [NapasOutward]:Outward file for Smartlink generated:C:/OPW/workspace/napasoutgoing/out/050619_ISS_ACB_970416_4_SL_ECOM.dat
+2019-05-06 16:59:34.901	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[O]
+		messagetext=[[NapasOutward]:Outward file for Smartlink generated:C:/OPW/workspace/napasoutgoing/out/050619_ISS_ACB_970416_4_SL_ECOM.dat]
+2019-05-06 16:59:34.903	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.904	[log  ]	Startup		Closing file [C:\OPW\workspace\napasoutgoing\out\050619_ISS_ACB_970416_4_SL_ECOM.tmp]
+2019-05-06 16:59:34.904	[log  ]	Startup		Renaming file [C:\OPW\workspace\napasoutgoing\out\050619_ISS_ACB_970416_4_SL_ECOM.tmp] to file [C:\OPW\workspace\napasoutgoing\out\050619_ISS_ACB_970416_4_SL_ECOM.dat]
+2019-05-06 16:59:34.905	[uncon]	Startup		Information: File export (C:\OPW\workspace\napasoutgoing\out\050619_ISS_ACB_970416_4_SL_ECOM.dat) finished.
+2019-05-06 16:59:34.905	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377336]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[File export (C:\OPW\workspace\napasoutgoing\out\050619_ISS_ACB_970416_4_SL_ECOM.dat) finished.]
+2019-05-06 16:59:34.908	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:59:34.909	[dbg  ]	Startup		Executing sy_file.UPDATE_FILE_COUNTER
+		recid=[252634]
+		newcount=[0]
+		newstatus=[S]
+		newchainstatus=[null]
+2019-05-06 16:59:34.912	[dbg  ]	Startup		Executed sy_file.UPDATE_FILE_COUNTER
+		retcode=[0]
+		errmsg=[null]
+2019-05-06 16:59:34.912	[info ]	Startup		Committing after 1 rows
+2019-05-06 16:59:34.945	[dbg  ]	Startup		Executing sy_process.LOCK_PROCESS_STATUS1
+		processid=[16377336]
+2019-05-06 16:59:34.947	[dbg  ]	Startup		Executed sy_process.LOCK_PROCESS_STATUS1
+		return value=[A]
+2019-05-06 16:59:34.947	[dbg  ]	Startup		Committed
+2019-05-06 16:59:34.947	[dbg_m]	Startup		Closing getTransLastDate
+2019-05-06 16:59:34.947	[dbg_m]	Startup		Closing disputeRecord
+2019-05-06 16:59:34.947	[dbg_m]	Startup		Closing fileSequence
+2019-05-06 16:59:34.947	[dbg_m]	Startup		Closing outWardFile
+2019-05-06 16:59:34.947	[dbg_m]	Startup		Closing source
+2019-05-06 16:59:34.948	[dbg  ]	Startup		Executing stnd.GET_DB_VERSION
+2019-05-06 16:59:34.950	[dbg  ]	Startup		Executed stnd.GET_DB_VERSION
+		versname=[03_47_30]
+2019-05-06 16:59:34.950	[dbg  ]	Startup		Executing sy_process.GET_PROCESS_ERROR_LEVEL
+2019-05-06 16:59:34.953	[dbg  ]	Startup		Executed sy_process.GET_PROCESS_ERROR_LEVEL
+		return value=[null]
+2019-05-06 16:59:34.953	[dbg  ]	Startup		Executing sy_process.FINISH_CURRENT
+		isok=[Y]
+2019-05-06 16:59:34.958	[dbg  ]	Startup		Executed sy_process.FINISH_CURRENT
+2019-05-06 16:59:34.963	[uncon]	Startup		Shutting down com.openwaygroup.pipe.napasoutgoing
+2019-05-06 16:59:34.965	[dbg  ]	Components_Shutdowner		Entering stop: [0]/getTransLastDate
+2019-05-06 16:59:34.965	[dbg  ]	Components_Shutdowner		Exited stop: [0]/getTransLastDate
+2019-05-06 16:59:34.965	[dbg  ]	Components_Shutdowner		Entering stop: [0]/getTransLastDate
+2019-05-06 16:59:34.965	[dbg  ]	Components_Shutdowner		Exited stop: [0]/getTransLastDate
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Entering stop: [0]/disputeRecord
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Exited stop: [0]/disputeRecord
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Entering stop: [0]/disputeRecord
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Exited stop: [0]/disputeRecord
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Entering stop: [0]/fileSequence
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Exited stop: [0]/fileSequence
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Entering stop: [0]/fileSequence
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Exited stop: [0]/fileSequence
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Entering stop: [0]/outWardFile
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Exited stop: [0]/outWardFile
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Entering stop: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Exited stop: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Entering stop: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Exited stop: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Entering stop: [0]/outWardFile
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Exited stop: [0]/outWardFile
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source
+2019-05-06 16:59:34.966	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Entering close: [0]/getTransLastDate
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Exited close: [0]/getTransLastDate
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Entering close: [0]/getTransLastDate
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Exited close: [0]/getTransLastDate
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Entering close: [0]/disputeRecord
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Exited close: [0]/disputeRecord
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Entering close: [0]/disputeRecord
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Exited close: [0]/disputeRecord
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Entering close: [0]/fileSequence
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Exited close: [0]/fileSequence
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Entering close: [0]/fileSequence
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Exited close: [0]/fileSequence
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Entering close: [0]/outWardFile
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Exited close: [0]/outWardFile
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Entering close: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Exited close: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Entering close: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Exited close: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:59:34.967	[dbg  ]	Components_Shutdowner		Entering close: [0]/outWardFile
+2019-05-06 16:59:34.968	[dbg  ]	Components_Shutdowner		Exited close: [0]/outWardFile
+2019-05-06 16:59:34.968	[dbg  ]	Components_Shutdowner		Entering close: [0]/source
+2019-05-06 16:59:34.968	[dbg  ]	Components_Shutdowner		Exited close: [0]/source
+2019-05-06 16:59:34.968	[dbg  ]	Components_Shutdowner		Entering close: [0]/source
+2019-05-06 16:59:34.968	[dbg  ]	Components_Shutdowner		Exited close: [0]/source
+2019-05-06 16:59:34.968	[uncon]	Components_Shutdowner		com.openwaygroup.pipe.napasoutgoing Shutdown complete
+2019-05-06 16:59:34.968	[uncon]	Startup		Shutting down launch
+2019-05-06 16:59:34.968	[dbg  ]	Components_Shutdowner		Entering stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:59:34.968	[dbg  ]	Components_Shutdowner		Exited stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:59:34.968	[dbg  ]	Components_Shutdowner		Entering stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:59:34.968	[dbg  ]	Components_Shutdowner		Exited stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:59:34.968	[dbg  ]	Components_Shutdowner		Entering stop: [0]/JdbcConnectionPool
+2019-05-06 16:59:34.968	[dbg  ]	Components_Shutdowner		Exited stop: [0]/JdbcConnectionPool
+2019-05-06 16:59:34.968	[dbg  ]	Components_Shutdowner		Entering stop: [0]/JdbcConnectionPool
+2019-05-06 16:59:34.968	[dbg  ]	Components_Shutdowner		Exited stop: [0]/JdbcConnectionPool
+2019-05-06 16:59:34.968	[dbg  ]	Components_Shutdowner		Entering close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:59:34.969	[dbg  ]	Components_Shutdowner		Exited close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:59:34.969	[dbg  ]	Components_Shutdowner		Entering close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:59:34.969	[dbg  ]	Components_Shutdowner		Exited close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:59:34.969	[dbg  ]	Components_Shutdowner		Entering close: [0]/JdbcConnectionPool
+2019-05-06 16:59:35.015	[dbg  ]	Components_Shutdowner		Exited close: [0]/JdbcConnectionPool
+2019-05-06 16:59:35.015	[dbg  ]	Components_Shutdowner		Entering close: [0]/JdbcConnectionPool
+2019-05-06 16:59:35.015	[dbg  ]	Components_Shutdowner		Exited close: [0]/JdbcConnectionPool
+2019-05-06 16:59:35.015	[uncon]	Components_Shutdowner		launch Shutdown complete

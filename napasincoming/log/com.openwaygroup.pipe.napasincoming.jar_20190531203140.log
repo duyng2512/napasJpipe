@@ -1,0 +1,2138 @@
+launch
+Startup time: 2019-05-31 20:31:39.491
+Host: 10.101.144.110 (10.101.144.110)
+Java: 1.6.0_45 (Java HotSpot(TM) Client VM) in C:\Program Files (x86)\Java\jdk1.6.0_45\jre
+OS: Windows 8(x86) 6.2
+User: Openway
+Current Dir: C:\OPW\workspace\napasincoming
+User Home Dir: C:\Users\Openway
+Max Heap Size: 259522560 bytes
+Processors: 8
+Telnet Console Port: 23788
+Java System Properties: java.endorsed.dirs=C:/OPW/03.35.30.26_HOME/client/shared/javalib/endorsed; java.io.tmpdir=C:\Users\Openway\AppData\Local\Temp\; user.country=US; user.language=en; user.timezone=Asia/Bangkok; 
+----------------------------------------------------------
+2019-05-31 20:31:40.006	[uncon]	Startup		Starting up launch
+2019-05-31 20:31:40.069	[dbg  ]	Startup		Entering open: [0]/JdbcConnectionPool
+2019-05-31 20:31:40.073	[info ]	Startup		Connecting to [jdbc:oracle:thin:@10.56.244.42:1521:acbway4 (owsacs)]...
+2019-05-31 20:31:40.223	[dbg  ]	Startup		Executing sql statement [alter session set current_schema=OWSACS]
+2019-05-31 20:31:40.226	[dbg  ]	Startup		Executing sql statement [{call soft.start_simple('','Console Pipe',null)}]
+2019-05-31 20:31:40.250	[log  ]	Startup		Successfully connected to [jdbc:oracle:thin:@10.56.244.42:1521:acbway4 (owsacs)]
+2019-05-31 20:31:40.250	[dbg  ]	Startup		Exited open: [0]/JdbcConnectionPool
+2019-05-31 20:31:40.250	[dbg  ]	Startup		Entering open container: [0]/JdbcConnectionPool
+2019-05-31 20:31:40.250	[dbg  ]	Startup		Exited open container: [0]/JdbcConnectionPool
+2019-05-31 20:31:40.250	[dbg  ]	Startup		Entering open: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 20:31:40.250	[dbg  ]	Startup		Exited open: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 20:31:40.250	[dbg  ]	Startup		Entering open container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 20:31:40.251	[dbg  ]	Startup		Exited open container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 20:31:40.251	[dbg  ]	Startup		Entering start: [0]/JdbcConnectionPool
+2019-05-31 20:31:40.251	[dbg  ]	Startup		Exited start: [0]/JdbcConnectionPool
+2019-05-31 20:31:40.251	[dbg  ]	Startup		Entering start container: [0]/JdbcConnectionPool
+2019-05-31 20:31:40.251	[dbg  ]	Startup		Exited start container: [0]/JdbcConnectionPool
+2019-05-31 20:31:40.251	[dbg  ]	Startup		Entering start: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 20:31:40.251	[dbg_m]	Startup		Waiting for connection context
+2019-05-31 20:31:40.252	[dbg  ]	Startup		Executing stnd.GET_DB_VERSION
+2019-05-31 20:31:40.292	[dbg  ]	Startup		Executed stnd.GET_DB_VERSION
+		versname=[03_47_30]
+2019-05-31 20:31:40.293	[dbg  ]	Startup		Exited start: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 20:31:40.293	[dbg  ]	Startup		Entering start container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 20:31:40.293	[dbg  ]	Startup		Exited start container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 20:31:40.293	[uncon]	Startup		launch Startup complete
+2019-05-31 20:31:40.310	[uncon]	Startup		Starting up com.openwaygroup.pipe.napasincoming
+2019-05-31 20:31:40.358	[dbg  ]	Startup		Entering open: [0]/source
+2019-05-31 20:31:40.358	[dbg  ]	Startup		Exited open: [0]/source
+2019-05-31 20:31:40.358	[dbg  ]	Startup		Entering open: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2019-05-31 20:31:40.358	[dbg  ]	Startup		Exited open: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2019-05-31 20:31:40.358	[dbg  ]	Startup		Entering open container: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2019-05-31 20:31:40.358	[dbg  ]	Startup		Exited open container: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2019-05-31 20:31:40.358	[dbg  ]	Startup		Entering open container: [0]/source
+2019-05-31 20:31:40.359	[dbg  ]	Startup		Exited open container: [0]/source
+2019-05-31 20:31:40.359	[dbg  ]	Startup		Entering open: [0]/checkOPTSMLDOC
+2019-05-31 20:31:40.359	[dbg  ]	Startup		Service: checkOPTSMLDOC. SQL statement: [SELECT NVL(MAX(ID),0) "ID" FROM OPT_SMLDOC WHERE PROCESS_DATE=  
+		         
+		         
+		         
+		         
+		         
+		         ? AND FILE_NAME=
+		         
+		         
+		         
+		         
+		         
+		         ? AND ROWNUM <=1
+			  ]
+2019-05-31 20:31:40.359	[dbg  ]	Startup		Exited open: [0]/checkOPTSMLDOC
+2019-05-31 20:31:40.359	[dbg  ]	Startup		Entering open container: [0]/checkOPTSMLDOC
+2019-05-31 20:31:40.359	[dbg  ]	Startup		Exited open container: [0]/checkOPTSMLDOC
+2019-05-31 20:31:40.359	[dbg  ]	Startup		Entering open: [0]/updateOPTSMLDOC
+2019-05-31 20:31:40.359	[dbg  ]	Startup		Exited open: [0]/updateOPTSMLDOC
+2019-05-31 20:31:40.359	[dbg  ]	Startup		Entering open container: [0]/updateOPTSMLDOC
+2019-05-31 20:31:40.359	[dbg  ]	Startup		Exited open container: [0]/updateOPTSMLDOC
+2019-05-31 20:31:40.359	[dbg  ]	Startup		Entering open: [0]/getTransID
+2019-05-31 20:31:40.359	[dbg  ]	Startup		Service: getTransID. SQL statement: [SELECT ID FROM TRANS_TYPE WHERE TRANS_CODE=
+		         
+		         
+		         
+		         
+		         
+		         ? AND AMND_STATE='A' 
+		         AND S_CAT = 'M' AND T_CAT = 'C'
+		         AND ROWNUM <=1
+			  
+		]
+2019-05-31 20:31:40.359	[dbg  ]	Startup		Exited open: [0]/getTransID
+2019-05-31 20:31:40.359	[dbg  ]	Startup		Entering open container: [0]/getTransID
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Exited open container: [0]/getTransID
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Entering open: [0]/getBankingDate
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Service: getBankingDate. SQL statement: [select to_char(local_date,'yyyy-MM-dd') banking_date from f_i where id = 745 and amnd_state = 'A']
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Exited open: [0]/getBankingDate
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Entering open container: [0]/getBankingDate
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Exited open container: [0]/getBankingDate
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Entering start: [0]/source
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Exited start: [0]/source
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Entering start: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Exited start: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Entering start container: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Exited start container: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Entering start container: [0]/source
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Exited start container: [0]/source
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Entering start: [0]/checkOPTSMLDOC
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Exited start: [0]/checkOPTSMLDOC
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Entering start container: [0]/checkOPTSMLDOC
+2019-05-31 20:31:40.360	[dbg  ]	Startup		Exited start container: [0]/checkOPTSMLDOC
+2019-05-31 20:31:40.361	[dbg  ]	Startup		Entering start: [0]/updateOPTSMLDOC
+2019-05-31 20:31:40.361	[dbg  ]	Startup		Exited start: [0]/updateOPTSMLDOC
+2019-05-31 20:31:40.361	[dbg  ]	Startup		Entering start container: [0]/updateOPTSMLDOC
+2019-05-31 20:31:40.361	[dbg  ]	Startup		Exited start container: [0]/updateOPTSMLDOC
+2019-05-31 20:31:40.361	[dbg  ]	Startup		Entering start: [0]/getTransID
+2019-05-31 20:31:40.361	[dbg  ]	Startup		Exited start: [0]/getTransID
+2019-05-31 20:31:40.361	[dbg  ]	Startup		Entering start container: [0]/getTransID
+2019-05-31 20:31:40.361	[dbg  ]	Startup		Exited start container: [0]/getTransID
+2019-05-31 20:31:40.361	[dbg  ]	Startup		Entering start: [0]/getBankingDate
+2019-05-31 20:31:40.361	[dbg  ]	Startup		Exited start: [0]/getBankingDate
+2019-05-31 20:31:40.361	[dbg  ]	Startup		Entering start container: [0]/getBankingDate
+2019-05-31 20:31:40.361	[dbg  ]	Startup		Exited start container: [0]/getBankingDate
+2019-05-31 20:31:40.361	[uncon]	Startup		com.openwaygroup.pipe.napasincoming Startup complete
+2019-05-31 20:31:40.390	[dbg_m]	Startup		Waiting for connection context
+2019-05-31 20:31:40.391	[dbg  ]	Startup		Executing stnd.SET_GL_CONSTANTS
+2019-05-31 20:31:40.396	[dbg  ]	Startup		Executed stnd.SET_GL_CONSTANTS
+2019-05-31 20:31:40.396	[dbg  ]	Startup		Executing sy_process.START_CURRENT_V3
+		processname=[napasincoming]
+		processparms=[null]
+		isunique=[N]
+		tostartsub=[Y]
+		objecttype=[null]
+		objectid=[null]
+2019-05-31 20:31:40.404	[dbg  ]	Startup		Executed sy_process.START_CURRENT_V3
+		isactive=[Y]
+2019-05-31 20:31:40.404	[dbg  ]	Startup		Executing sy_process.GET_CURRENT_PROCESS
+2019-05-31 20:31:40.407	[dbg  ]	Startup		Executed sy_process.GET_CURRENT_PROCESS
+		return value=[16380355]
+2019-05-31 20:31:40.407	[dbg  ]	Startup		Executing stnd.GET_PARMS
+2019-05-31 20:31:40.409	[dbg  ]	Startup		Executed stnd.GET_PARMS
+		newconnectionid=[2003137]
+		newofficerid=[null]
+2019-05-31 20:31:40.412	[dbg  ]	Startup		Executing soft.Get_Officer_Id
+2019-05-31 20:31:40.414	[dbg  ]	Startup		Executed soft.Get_Officer_Id
+		return value=[null]
+2019-05-31 20:31:40.414	[dbg  ]	Startup		Executing soft.Get_Officer_Name
+2019-05-31 20:31:40.416	[dbg  ]	Startup		Executed soft.Get_Officer_Name
+		return value=[null]
+2019-05-31 20:31:40.416	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[DB Version: 03_47_30]
+2019-05-31 20:31:40.418	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.419	[uncon]	Startup		Information: Pipe Version: 00.00.01
+2019-05-31 20:31:40.419	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Pipe Version: 00.00.01]
+2019-05-31 20:31:40.421	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.421	[info ]	Startup		DB version: 03_47_30
+2019-05-31 20:31:40.421	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Pipe:com.openwaygroup.pipe.napasincoming.jar]
+2019-05-31 20:31:40.423	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.423	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: SOURCE_DIR=C:/OPW/workspace/napasincoming/in]
+2019-05-31 20:31:40.425	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.425	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: PROCESSED_DIR=C:/OPW/workspace/napasincoming/arch]
+2019-05-31 20:31:40.427	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.427	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: ERROR_DIR=C:/OPW/workspace/napasincoming/err]
+2019-05-31 20:31:40.429	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.429	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: OUTPUT_DIR=C:/OPW/workspace/napasincoming/out]
+2019-05-31 20:31:40.431	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.431	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: OUR_MEMBER_ID=970416]
+2019-05-31 20:31:40.433	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.433	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: NAPAS_CHANNEL_CODE=b]
+2019-05-31 20:31:40.435	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.435	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: FILE_MASK=*ISS_ACB_*TC_ECOM.dat]
+2019-05-31 20:31:40.437	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.437	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: DIRECTION=ISS]
+2019-05-31 20:31:40.439	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.439	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: CHECK_CHECKSUM=N]
+2019-05-31 20:31:40.441	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.441	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: BANK_PASSWORD=970416]
+2019-05-31 20:31:40.443	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.448	[dbg_m]	Startup		Opening source
+2019-05-31 20:31:40.450	[log+ ]	Startup		The file number limiter is 0
+2019-05-31 20:31:40.452	[dbg_m]	Startup		Opening checkOPTSMLDOC
+2019-05-31 20:31:40.454	[dbg_m]	Startup		Opening updateOPTSMLDOC
+2019-05-31 20:31:40.455	[info ]	Startup		INSERT statement: [insert into OPT_SMLDOC(AMND_STATE,AMND_OFFICER,AMND_DATE,AMND_PREV,ID,DOC__ORIG__ID,DOC__PREV__ID,DOC__SUMM__ID,NUMBER_OF_SUB_S,NUMBER_IN_CHAIN,ACTION,MESSAGE_CATEGORY,SOURCE_REG_NUM,ACQ_REF_NUMBER,RET_REF_NUMBER,ISS_REF_NUMBER,PS_REF_NUMBER,NW_REF_DATE,AUTH_CODE,IS_AUTHORIZATION,REQUEST_CATEGORY,SERVICE_CLASS,SOURCE_CODE,SOURCE_FEE_CODE,TARGET_CODE,TARGET_FEE_CODE,TRANS_TYPE,SOURCE_CHANNEL,S_CAT,SOURCE_IDT_SCHEME,SOURCE_MEMBER_ID,REC_MEMBER_ID,SOURCE_NUMBER,SOURCE_SPC,SOURCE_ACC_TYPE,SOURCE_CONTRACT,SOURCE_SERVICE,TARGET_CHANNEL,T_CAT,TARGET_IDT_SCHEME,TARGET_MEMBER_ID,SEND_MEMBER_ID,SENDING_BIN,TARGET_BIN_ID,TARGET_NUMBER,TARGET_SPC,TARGET_ACC_TYPE,TARGET_CONTRACT,TARGET_SERVICE,CARD_EXPIRE,CARD_SEQV_NUMBER,MERCHANT_ID,SIC_CODE,TRANS_CONDITION,TRANS_COND_ATTR,SEC_TRANS_COND_ATT,RECONS_CURR,RECONS_AMOUNT,SETTL_CURR,SETTL_AMOUNT,SOURCE_FEE_CURR,SOURCE_FEE_AMOUNT,TARGET_FEE_CURR,TARGET_FEE_AMOUNT,TRANS_DATE,SEC_TRANS_DATE,TRANS_COUNTRY,TRANS_STATE,TRANS_CITY,TRANS_DETAILS,TRANS_AMOUNT,TRANS_CURR,BIN_RECORD,REASON_CODE,REASON_DETAILS,REQUIREMENT,POSTING_DATE,FX_SETTL_DATE,POSTING_STATUS,OUTWARD_STATUS,RETURN_CODE,ADD_INFO,PROCESSING_CODE,SYSTEM_TRACE_NUMBER,STATUS,RBS_STATUS,PROCESS_DATE,FILE_TYPE,FILE_NAME,PARTITION_KEY,SYNCH_TAG,FOR_DISPUTE_CODE) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)]
+2019-05-31 20:31:40.455	[dbg_m]	Startup		Opening getTransID
+2019-05-31 20:31:40.455	[dbg_m]	Startup		Opening getBankingDate
+2019-05-31 20:31:40.455	[dbg_m]	Startup		Opening mapper
+2019-05-31 20:31:40.456	[uncon]	Startup		Trace: [NapasImport]:ReadingMessageCodeConfig Success
+2019-05-31 20:31:40.456	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[O]
+		messagetext=[[NapasImport]:ReadingMessageCodeConfig Success]
+2019-05-31 20:31:40.540	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.540	[info ]	Startup		Committing after 0 rows
+2019-05-31 20:31:40.542	[dbg  ]	Startup		Executing sy_process.SET_TOTAL_NUMBER1
+		processid=[16380355]
+		n=[0]
+2019-05-31 20:31:40.549	[dbg  ]	Startup		Executed sy_process.SET_TOTAL_NUMBER1
+2019-05-31 20:31:40.549	[dbg  ]	Startup		Executing sy_process.LOCK_PROCESS_STATUS1
+		processid=[16380355]
+2019-05-31 20:31:40.552	[dbg  ]	Startup		Executed sy_process.LOCK_PROCESS_STATUS1
+		return value=[A]
+2019-05-31 20:31:40.552	[dbg  ]	Startup		Committed
+2019-05-31 20:31:40.553	[uncon]	Startup		Information: Start file C:\OPW\workspace\napasincoming\in\052719_ISS_ACB_970416_2_TC_ECOM.dat
+2019-05-31 20:31:40.554	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Start file C:\OPW\workspace\napasincoming\in\052719_ISS_ACB_970416_2_TC_ECOM.dat]
+2019-05-31 20:31:40.557	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.557	[dbg_m]	Startup		  ==> Computing (FILE_START) rowCounter
+2019-05-31 20:31:40.557	[dbg_m]	Startup		  ==> Computing (FILE_START) recordCounter
+2019-05-31 20:31:40.557	[dbg_m]	Startup		  ==> Computing (FILE_START) fileRegistryFlag
+2019-05-31 20:31:40.557	[dbg_m]	Startup		  ==> Computing (FILE_START) fileIdentifier
+2019-05-31 20:31:40.557	[dbg_m]	Startup		  ==> Computing (FILE_START) fileIdentifierQualifier
+2019-05-31 20:31:40.558	[dbg  ]	Startup		retrieved [0]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=0
+		    recordCounter=0
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileNameRecord
+		    FileGeneratingDate=2019-05-27 00:00:00.0
+		    FileTarget=ISS
+		    BankName=ACB
+		    MemberBankCode=970416
+		    OrderNumber=2
+		    FileType=TC
+		    FileService=ECOM.dat
+2019-05-31 20:31:40.558	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2019-05-31 20:31:40.558	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.558	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2019-05-31 20:31:40.558	[dbg  ]	Startup		[Record type detecting] FileHeaderRecord hasn't detected before
+2019-05-31 20:31:40.558	[dbg  ]	Startup		[Record type detecting] FileHeaderRecord selected
+2019-05-31 20:31:40.558	[dbg_m]	Startup		  ==> flushDetectingMode
+2019-05-31 20:31:40.558	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.558	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.559	[dbg_m]	Startup		Computing functions: PARSING_END,FileHeaderRecord ...
+2019-05-31 20:31:40.559	[dbg_m]	Startup		  ==> Computing recordCounter
+2019-05-31 20:31:40.559	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.559	[dbg  ]	Startup		retrieved [1]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=1
+		    recordCounter=0
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileHeaderRecord
+		    HeaderRecord=HR
+		    Receiver=[REV]
+		    BIN=970416
+		    Date=[DATE]
+		    TransactionDate=2019-05-27 00:00:00.0
+2019-05-31 20:31:40.559	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2019-05-31 20:31:40.559	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.559	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2019-05-31 20:31:40.559	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2019-05-31 20:31:40.559	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2019-05-31 20:31:40.559	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2019-05-31 20:31:40.559	[dbg_m]	Startup		  ==> flushDetectingMode
+2019-05-31 20:31:40.559	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.559	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.560	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2019-05-31 20:31:40.560	[dbg_m]	Startup		  ==> Computing recordCounter
+2019-05-31 20:31:40.560	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.560	[dbg  ]	Startup		retrieved [2]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=2
+		    recordCounter=1
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704163100002381
+		    F3=[F3]
+		    ProcessingCode=000000
+		    SvcDef=[SVC]
+		    NapasSvcCode=EC_PUR
+		    TccDef=[TCC]
+		    TransactionChannelCode=04
+		    F4=[F4]
+		    TransactionAmount=000017000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000017000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000017000000
+		    F50=[F50]
+		    SettlementCurrencyCode=704
+		    F9=[F9]
+		    FxRate=00000000
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000000
+		    F11=[F11]
+		    SystemTraceNumber=152578
+		    F12=[F12]
+		    LocalTransactionTime=182712
+		    F13=[F13]
+		    LocalTransactionDate=0524
+		    F15=[F15]
+		    SettlementDate=0527
+		    F18=[F18]
+		    TerminalType=7399
+		    F22=[F22]
+		    ServiceCode=000
+		    F25=[F25]
+		    ServiceConditionCode=08
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=00000313
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=725018
+		    Iss=[ISS]
+		    IssuerMemberId=970416
+		    Mid=[MID]
+		    MerchantIdentificationCode=NAPASTEST
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=null
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000000000
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000000000
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=835568183
+		    F38=[F38]
+		    AuthorizationNumber=791332
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAD2QDOWNo0pQAA
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=NAPASTEST              152578
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=8a38d57614bbe17470caefc24827745b
+2019-05-31 20:31:40.560	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2019-05-31 20:31:40.560	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.561	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2019-05-31 20:31:40.561	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2019-05-31 20:31:40.561	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2019-05-31 20:31:40.561	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2019-05-31 20:31:40.561	[dbg_m]	Startup		  ==> flushDetectingMode
+2019-05-31 20:31:40.561	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.561	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.561	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2019-05-31 20:31:40.561	[dbg_m]	Startup		  ==> Computing recordCounter
+2019-05-31 20:31:40.561	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.561	[dbg  ]	Startup		retrieved [3]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=3
+		    recordCounter=2
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704163100002381
+		    F3=[F3]
+		    ProcessingCode=000000
+		    SvcDef=[SVC]
+		    NapasSvcCode=EC_PUR
+		    TccDef=[TCC]
+		    TransactionChannelCode=04
+		    F4=[F4]
+		    TransactionAmount=000016000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000016000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000016000000
+		    F50=[F50]
+		    SettlementCurrencyCode=704
+		    F9=[F9]
+		    FxRate=00000000
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000000
+		    F11=[F11]
+		    SystemTraceNumber=152575
+		    F12=[F12]
+		    LocalTransactionTime=182601
+		    F13=[F13]
+		    LocalTransactionDate=0524
+		    F15=[F15]
+		    SettlementDate=0527
+		    F18=[F18]
+		    TerminalType=7399
+		    F22=[F22]
+		    ServiceCode=000
+		    F25=[F25]
+		    ServiceConditionCode=08
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=00000313
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=725018
+		    Iss=[ISS]
+		    IssuerMemberId=970416
+		    Mid=[MID]
+		    MerchantIdentificationCode=NAPASTEST
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=null
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000000000
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000000000
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=835568182
+		    F38=[F38]
+		    AuthorizationNumber=791331
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAD2QDOWNo0pQAA
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=NAPASTEST              152575
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=c43f854e27a9ee19b4e9ec5054be3a33
+2019-05-31 20:31:40.561	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2019-05-31 20:31:40.562	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.562	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2019-05-31 20:31:40.562	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2019-05-31 20:31:40.562	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2019-05-31 20:31:40.562	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2019-05-31 20:31:40.562	[dbg_m]	Startup		  ==> flushDetectingMode
+2019-05-31 20:31:40.562	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.562	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.562	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2019-05-31 20:31:40.562	[dbg_m]	Startup		  ==> Computing recordCounter
+2019-05-31 20:31:40.562	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.562	[dbg  ]	Startup		retrieved [4]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=4
+		    recordCounter=3
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704163100002381
+		    F3=[F3]
+		    ProcessingCode=000000
+		    SvcDef=[SVC]
+		    NapasSvcCode=EC_PUR
+		    TccDef=[TCC]
+		    TransactionChannelCode=04
+		    F4=[F4]
+		    TransactionAmount=000015000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000015000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000015000000
+		    F50=[F50]
+		    SettlementCurrencyCode=704
+		    F9=[F9]
+		    FxRate=00000000
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000000
+		    F11=[F11]
+		    SystemTraceNumber=152572
+		    F12=[F12]
+		    LocalTransactionTime=182453
+		    F13=[F13]
+		    LocalTransactionDate=0524
+		    F15=[F15]
+		    SettlementDate=0527
+		    F18=[F18]
+		    TerminalType=7399
+		    F22=[F22]
+		    ServiceCode=000
+		    F25=[F25]
+		    ServiceConditionCode=08
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=00000313
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=725018
+		    Iss=[ISS]
+		    IssuerMemberId=970416
+		    Mid=[MID]
+		    MerchantIdentificationCode=NAPASTEST
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=null
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000000000
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000000000
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=835568181
+		    F38=[F38]
+		    AuthorizationNumber=791330
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAD2QDOWNo0pQAA
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=NAPASTEST              152572
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=56f4dceed4357492876dbbf34c4f93b6
+2019-05-31 20:31:40.562	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2019-05-31 20:31:40.562	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.562	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2019-05-31 20:31:40.562	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2019-05-31 20:31:40.563	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2019-05-31 20:31:40.563	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2019-05-31 20:31:40.563	[dbg_m]	Startup		  ==> flushDetectingMode
+2019-05-31 20:31:40.563	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.563	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.563	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2019-05-31 20:31:40.563	[dbg_m]	Startup		  ==> Computing recordCounter
+2019-05-31 20:31:40.563	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.563	[dbg  ]	Startup		retrieved [5]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=5
+		    recordCounter=4
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704163100002381
+		    F3=[F3]
+		    ProcessingCode=000000
+		    SvcDef=[SVC]
+		    NapasSvcCode=EC_PUR
+		    TccDef=[TCC]
+		    TransactionChannelCode=04
+		    F4=[F4]
+		    TransactionAmount=000010000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000010000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000010000000
+		    F50=[F50]
+		    SettlementCurrencyCode=704
+		    F9=[F9]
+		    FxRate=00000000
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000000
+		    F11=[F11]
+		    SystemTraceNumber=152569
+		    F12=[F12]
+		    LocalTransactionTime=182331
+		    F13=[F13]
+		    LocalTransactionDate=0524
+		    F15=[F15]
+		    SettlementDate=0527
+		    F18=[F18]
+		    TerminalType=7399
+		    F22=[F22]
+		    ServiceCode=000
+		    F25=[F25]
+		    ServiceConditionCode=08
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=00000313
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=725018
+		    Iss=[ISS]
+		    IssuerMemberId=970416
+		    Mid=[MID]
+		    MerchantIdentificationCode=NAPASTEST
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=null
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000000000
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000000000
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=835568180
+		    F38=[F38]
+		    AuthorizationNumber=791329
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAD2QDOWNo0pQAA
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=NAPASTEST              152569
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=a2e012ef273413d78569dfe87c9156f0
+2019-05-31 20:31:40.563	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2019-05-31 20:31:40.563	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.563	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2019-05-31 20:31:40.563	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2019-05-31 20:31:40.563	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2019-05-31 20:31:40.563	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2019-05-31 20:31:40.563	[dbg_m]	Startup		  ==> flushDetectingMode
+2019-05-31 20:31:40.563	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.563	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.564	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2019-05-31 20:31:40.564	[dbg_m]	Startup		  ==> Computing recordCounter
+2019-05-31 20:31:40.564	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.564	[dbg  ]	Startup		retrieved [6]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=6
+		    recordCounter=5
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704163100002381
+		    F3=[F3]
+		    ProcessingCode=000000
+		    SvcDef=[SVC]
+		    NapasSvcCode=EC_PUR
+		    TccDef=[TCC]
+		    TransactionChannelCode=04
+		    F4=[F4]
+		    TransactionAmount=000010000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000010000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000010000000
+		    F50=[F50]
+		    SettlementCurrencyCode=704
+		    F9=[F9]
+		    FxRate=00000000
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000000
+		    F11=[F11]
+		    SystemTraceNumber=152566
+		    F12=[F12]
+		    LocalTransactionTime=182130
+		    F13=[F13]
+		    LocalTransactionDate=0524
+		    F15=[F15]
+		    SettlementDate=0527
+		    F18=[F18]
+		    TerminalType=7399
+		    F22=[F22]
+		    ServiceCode=000
+		    F25=[F25]
+		    ServiceConditionCode=08
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=00000313
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=725018
+		    Iss=[ISS]
+		    IssuerMemberId=970416
+		    Mid=[MID]
+		    MerchantIdentificationCode=NAPASTEST
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=null
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000000000
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000000000
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=835568179
+		    F38=[F38]
+		    AuthorizationNumber=791328
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAD2QDOWNo0pQAA
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=NAPASTEST              152566
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=ffa978f2e17fbb3882e5d88ef666ea39
+2019-05-31 20:31:40.564	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2019-05-31 20:31:40.564	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.564	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2019-05-31 20:31:40.564	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2019-05-31 20:31:40.564	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2019-05-31 20:31:40.564	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2019-05-31 20:31:40.564	[dbg_m]	Startup		  ==> flushDetectingMode
+2019-05-31 20:31:40.564	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.564	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.565	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2019-05-31 20:31:40.565	[dbg_m]	Startup		  ==> Computing recordCounter
+2019-05-31 20:31:40.565	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.565	[dbg  ]	Startup		retrieved [7]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=7
+		    recordCounter=6
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704163100002381
+		    F3=[F3]
+		    ProcessingCode=000000
+		    SvcDef=[SVC]
+		    NapasSvcCode=EC_PUR
+		    TccDef=[TCC]
+		    TransactionChannelCode=04
+		    F4=[F4]
+		    TransactionAmount=000014000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000014000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000014000000
+		    F50=[F50]
+		    SettlementCurrencyCode=704
+		    F9=[F9]
+		    FxRate=00000000
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000000
+		    F11=[F11]
+		    SystemTraceNumber=152563
+		    F12=[F12]
+		    LocalTransactionTime=182023
+		    F13=[F13]
+		    LocalTransactionDate=0524
+		    F15=[F15]
+		    SettlementDate=0527
+		    F18=[F18]
+		    TerminalType=7399
+		    F22=[F22]
+		    ServiceCode=000
+		    F25=[F25]
+		    ServiceConditionCode=08
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=00000313
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=725018
+		    Iss=[ISS]
+		    IssuerMemberId=970416
+		    Mid=[MID]
+		    MerchantIdentificationCode=NAPASTEST
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=null
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000000000
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000000000
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=835568178
+		    F38=[F38]
+		    AuthorizationNumber=791327
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAD2QDOWNo0pQAA
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=NAPASTEST              152563
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=1e3881931e5e0b928ecd0c3d7148db19
+2019-05-31 20:31:40.565	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2019-05-31 20:31:40.565	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.565	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2019-05-31 20:31:40.565	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2019-05-31 20:31:40.565	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2019-05-31 20:31:40.565	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2019-05-31 20:31:40.565	[dbg_m]	Startup		  ==> flushDetectingMode
+2019-05-31 20:31:40.565	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.565	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.565	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2019-05-31 20:31:40.565	[dbg_m]	Startup		  ==> Computing recordCounter
+2019-05-31 20:31:40.565	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.566	[dbg  ]	Startup		retrieved [8]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=8
+		    recordCounter=7
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704163100002381
+		    F3=[F3]
+		    ProcessingCode=000000
+		    SvcDef=[SVC]
+		    NapasSvcCode=EC_PUR
+		    TccDef=[TCC]
+		    TransactionChannelCode=04
+		    F4=[F4]
+		    TransactionAmount=000013000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000013000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000013000000
+		    F50=[F50]
+		    SettlementCurrencyCode=704
+		    F9=[F9]
+		    FxRate=00000000
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000000
+		    F11=[F11]
+		    SystemTraceNumber=152560
+		    F12=[F12]
+		    LocalTransactionTime=181905
+		    F13=[F13]
+		    LocalTransactionDate=0524
+		    F15=[F15]
+		    SettlementDate=0527
+		    F18=[F18]
+		    TerminalType=7399
+		    F22=[F22]
+		    ServiceCode=000
+		    F25=[F25]
+		    ServiceConditionCode=08
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=00000313
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=725018
+		    Iss=[ISS]
+		    IssuerMemberId=970416
+		    Mid=[MID]
+		    MerchantIdentificationCode=NAPASTEST
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=null
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000000000
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000000000
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=835568177
+		    F38=[F38]
+		    AuthorizationNumber=791326
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAD2QDOWNo0pQAA
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=NAPASTEST              152560
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=a9639d5f936a405aa0e85ad23e3f36ac
+2019-05-31 20:31:40.566	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2019-05-31 20:31:40.566	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.566	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2019-05-31 20:31:40.566	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2019-05-31 20:31:40.566	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2019-05-31 20:31:40.566	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2019-05-31 20:31:40.566	[dbg_m]	Startup		  ==> flushDetectingMode
+2019-05-31 20:31:40.566	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.566	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.566	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2019-05-31 20:31:40.566	[dbg_m]	Startup		  ==> Computing recordCounter
+2019-05-31 20:31:40.566	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.566	[dbg  ]	Startup		retrieved [9]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=9
+		    recordCounter=8
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704163100002381
+		    F3=[F3]
+		    ProcessingCode=000000
+		    SvcDef=[SVC]
+		    NapasSvcCode=EC_PUR
+		    TccDef=[TCC]
+		    TransactionChannelCode=04
+		    F4=[F4]
+		    TransactionAmount=000012000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000012000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000012000000
+		    F50=[F50]
+		    SettlementCurrencyCode=704
+		    F9=[F9]
+		    FxRate=00000000
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000000
+		    F11=[F11]
+		    SystemTraceNumber=152556
+		    F12=[F12]
+		    LocalTransactionTime=181703
+		    F13=[F13]
+		    LocalTransactionDate=0524
+		    F15=[F15]
+		    SettlementDate=0527
+		    F18=[F18]
+		    TerminalType=7399
+		    F22=[F22]
+		    ServiceCode=000
+		    F25=[F25]
+		    ServiceConditionCode=08
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=00000313
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=725018
+		    Iss=[ISS]
+		    IssuerMemberId=970416
+		    Mid=[MID]
+		    MerchantIdentificationCode=NAPASTEST
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=null
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000000000
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000000000
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=835568175
+		    F38=[F38]
+		    AuthorizationNumber=791325
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAD2QDOWNo0pQAA
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=NAPASTEST              152556
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=5031ac517cd79ce492315439fcfcd5db
+2019-05-31 20:31:40.566	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2019-05-31 20:31:40.566	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.566	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2019-05-31 20:31:40.566	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2019-05-31 20:31:40.566	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2019-05-31 20:31:40.567	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2019-05-31 20:31:40.567	[dbg_m]	Startup		  ==> flushDetectingMode
+2019-05-31 20:31:40.567	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.567	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.567	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2019-05-31 20:31:40.567	[dbg_m]	Startup		  ==> Computing recordCounter
+2019-05-31 20:31:40.567	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.567	[dbg  ]	Startup		retrieved [10]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=10
+		    recordCounter=9
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704163100002381
+		    F3=[F3]
+		    ProcessingCode=000000
+		    SvcDef=[SVC]
+		    NapasSvcCode=EC_PUR
+		    TccDef=[TCC]
+		    TransactionChannelCode=04
+		    F4=[F4]
+		    TransactionAmount=000011000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000011000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000011000000
+		    F50=[F50]
+		    SettlementCurrencyCode=704
+		    F9=[F9]
+		    FxRate=00000000
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000000
+		    F11=[F11]
+		    SystemTraceNumber=152552
+		    F12=[F12]
+		    LocalTransactionTime=181547
+		    F13=[F13]
+		    LocalTransactionDate=0524
+		    F15=[F15]
+		    SettlementDate=0527
+		    F18=[F18]
+		    TerminalType=7399
+		    F22=[F22]
+		    ServiceCode=000
+		    F25=[F25]
+		    ServiceConditionCode=08
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=00000313
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=725018
+		    Iss=[ISS]
+		    IssuerMemberId=970416
+		    Mid=[MID]
+		    MerchantIdentificationCode=NAPASTEST
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=null
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000000000
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000000000
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=835568173
+		    F38=[F38]
+		    AuthorizationNumber=791324
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAD2QDOWNo0pQAA
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=NAPASTEST              152552
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=1ee824468a66df3b9eb7f227d87288d3
+2019-05-31 20:31:40.567	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2019-05-31 20:31:40.567	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.567	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2019-05-31 20:31:40.567	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2019-05-31 20:31:40.567	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2019-05-31 20:31:40.567	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2019-05-31 20:31:40.567	[dbg_m]	Startup		  ==> flushDetectingMode
+2019-05-31 20:31:40.567	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.567	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.567	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2019-05-31 20:31:40.567	[dbg_m]	Startup		  ==> Computing recordCounter
+2019-05-31 20:31:40.568	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.568	[dbg  ]	Startup		retrieved [11]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=11
+		    recordCounter=10
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704163100002381
+		    F3=[F3]
+		    ProcessingCode=000000
+		    SvcDef=[SVC]
+		    NapasSvcCode=EC_PUR
+		    TccDef=[TCC]
+		    TransactionChannelCode=04
+		    F4=[F4]
+		    TransactionAmount=000008000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000008000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000008000000
+		    F50=[F50]
+		    SettlementCurrencyCode=704
+		    F9=[F9]
+		    FxRate=00000000
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000000
+		    F11=[F11]
+		    SystemTraceNumber=152545
+		    F12=[F12]
+		    LocalTransactionTime=181302
+		    F13=[F13]
+		    LocalTransactionDate=0524
+		    F15=[F15]
+		    SettlementDate=0527
+		    F18=[F18]
+		    TerminalType=7399
+		    F22=[F22]
+		    ServiceCode=000
+		    F25=[F25]
+		    ServiceConditionCode=08
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=00000313
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=725018
+		    Iss=[ISS]
+		    IssuerMemberId=970416
+		    Mid=[MID]
+		    MerchantIdentificationCode=NAPASTEST
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=null
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000000000
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000000000
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=835568170
+		    F38=[F38]
+		    AuthorizationNumber=791322
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAD2QDOWNo0pQAA
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=NAPASTEST              152545
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=2cd2b1fed3192b854ac7a6254fd7703f
+2019-05-31 20:31:40.568	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2019-05-31 20:31:40.568	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.568	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2019-05-31 20:31:40.568	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2019-05-31 20:31:40.568	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2019-05-31 20:31:40.568	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2019-05-31 20:31:40.568	[dbg_m]	Startup		  ==> flushDetectingMode
+2019-05-31 20:31:40.568	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.568	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.568	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2019-05-31 20:31:40.568	[dbg_m]	Startup		  ==> Computing recordCounter
+2019-05-31 20:31:40.568	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.568	[dbg  ]	Startup		retrieved [12]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=12
+		    recordCounter=11
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704162001133824
+		    F3=[F3]
+		    ProcessingCode=000000
+		    SvcDef=[SVC]
+		    NapasSvcCode=EC_PUR
+		    TccDef=[TCC]
+		    TransactionChannelCode=04
+		    F4=[F4]
+		    TransactionAmount=000007000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000007000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000007000000
+		    F50=[F50]
+		    SettlementCurrencyCode=704
+		    F9=[F9]
+		    FxRate=00000000
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000000
+		    F11=[F11]
+		    SystemTraceNumber=152515
+		    F12=[F12]
+		    LocalTransactionTime=175217
+		    F13=[F13]
+		    LocalTransactionDate=0524
+		    F15=[F15]
+		    SettlementDate=0527
+		    F18=[F18]
+		    TerminalType=7399
+		    F22=[F22]
+		    ServiceCode=000
+		    F25=[F25]
+		    ServiceConditionCode=08
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=00000313
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=725018
+		    Iss=[ISS]
+		    IssuerMemberId=970416
+		    Mid=[MID]
+		    MerchantIdentificationCode=NAPASTEST
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=null
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000000000
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000000000
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=835568158
+		    F38=[F38]
+		    AuthorizationNumber=196252
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAD2QDOWNo0pQAA
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=NAPASTEST              152515
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=333b0099a8e8c348d88f58fcc2f221c2
+2019-05-31 20:31:40.568	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2019-05-31 20:31:40.568	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.568	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2019-05-31 20:31:40.568	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2019-05-31 20:31:40.568	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2019-05-31 20:31:40.568	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2019-05-31 20:31:40.569	[dbg_m]	Startup		  ==> flushDetectingMode
+2019-05-31 20:31:40.569	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.569	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.569	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2019-05-31 20:31:40.569	[dbg_m]	Startup		  ==> Computing recordCounter
+2019-05-31 20:31:40.569	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.569	[dbg  ]	Startup		retrieved [13]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=13
+		    recordCounter=12
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704162001133824
+		    F3=[F3]
+		    ProcessingCode=000000
+		    SvcDef=[SVC]
+		    NapasSvcCode=EC_PUR
+		    TccDef=[TCC]
+		    TransactionChannelCode=04
+		    F4=[F4]
+		    TransactionAmount=000005000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000005000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000005000000
+		    F50=[F50]
+		    SettlementCurrencyCode=704
+		    F9=[F9]
+		    FxRate=00000000
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000000
+		    F11=[F11]
+		    SystemTraceNumber=152512
+		    F12=[F12]
+		    LocalTransactionTime=174853
+		    F13=[F13]
+		    LocalTransactionDate=0524
+		    F15=[F15]
+		    SettlementDate=0527
+		    F18=[F18]
+		    TerminalType=7399
+		    F22=[F22]
+		    ServiceCode=000
+		    F25=[F25]
+		    ServiceConditionCode=08
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=00000313
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=725018
+		    Iss=[ISS]
+		    IssuerMemberId=970416
+		    Mid=[MID]
+		    MerchantIdentificationCode=NAPASTEST
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=null
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000000000
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000000000
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=835568156
+		    F38=[F38]
+		    AuthorizationNumber=196251
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAD2QDOWNo0pQAA
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=NAPASTEST              152512
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=39437700c32b1254752e32d5fb0c05c3
+2019-05-31 20:31:40.571	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2019-05-31 20:31:40.571	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.571	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2019-05-31 20:31:40.571	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2019-05-31 20:31:40.571	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2019-05-31 20:31:40.571	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2019-05-31 20:31:40.571	[dbg_m]	Startup		  ==> flushDetectingMode
+2019-05-31 20:31:40.571	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.571	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.571	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2019-05-31 20:31:40.571	[dbg_m]	Startup		  ==> Computing recordCounter
+2019-05-31 20:31:40.571	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.571	[dbg  ]	Startup		retrieved [14]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=14
+		    recordCounter=13
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704162001133824
+		    F3=[F3]
+		    ProcessingCode=000000
+		    SvcDef=[SVC]
+		    NapasSvcCode=EC_PUR
+		    TccDef=[TCC]
+		    TransactionChannelCode=04
+		    F4=[F4]
+		    TransactionAmount=000060000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000060000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000060000000
+		    F50=[F50]
+		    SettlementCurrencyCode=704
+		    F9=[F9]
+		    FxRate=00000000
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000000
+		    F11=[F11]
+		    SystemTraceNumber=152492
+		    F12=[F12]
+		    LocalTransactionTime=173756
+		    F13=[F13]
+		    LocalTransactionDate=0524
+		    F15=[F15]
+		    SettlementDate=0527
+		    F18=[F18]
+		    TerminalType=7399
+		    F22=[F22]
+		    ServiceCode=000
+		    F25=[F25]
+		    ServiceConditionCode=08
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=00000313
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=725018
+		    Iss=[ISS]
+		    IssuerMemberId=970416
+		    Mid=[MID]
+		    MerchantIdentificationCode=NAPASTEST
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=null
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000000000
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000000000
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=835568146
+		    F38=[F38]
+		    AuthorizationNumber=196250
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAD2QDOWNo0pQAA
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=NAPASTEST              152492
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=ae12dfe6ffffae2273c9b20e6a92c1ec
+2019-05-31 20:31:40.572	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2019-05-31 20:31:40.572	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.572	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2019-05-31 20:31:40.572	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2019-05-31 20:31:40.572	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2019-05-31 20:31:40.572	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2019-05-31 20:31:40.572	[dbg_m]	Startup		  ==> flushDetectingMode
+2019-05-31 20:31:40.572	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.572	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.572	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2019-05-31 20:31:40.572	[dbg_m]	Startup		  ==> Computing recordCounter
+2019-05-31 20:31:40.572	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.572	[dbg  ]	Startup		retrieved [15]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=15
+		    recordCounter=14
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704162001133824
+		    F3=[F3]
+		    ProcessingCode=000000
+		    SvcDef=[SVC]
+		    NapasSvcCode=EC_PUR
+		    TccDef=[TCC]
+		    TransactionChannelCode=04
+		    F4=[F4]
+		    TransactionAmount=000030000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000030000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000030000000
+		    F50=[F50]
+		    SettlementCurrencyCode=704
+		    F9=[F9]
+		    FxRate=00000000
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000000
+		    F11=[F11]
+		    SystemTraceNumber=152401
+		    F12=[F12]
+		    LocalTransactionTime=153713
+		    F13=[F13]
+		    LocalTransactionDate=0524
+		    F15=[F15]
+		    SettlementDate=0527
+		    F18=[F18]
+		    TerminalType=7399
+		    F22=[F22]
+		    ServiceCode=000
+		    F25=[F25]
+		    ServiceConditionCode=08
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=00000313
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=725018
+		    Iss=[ISS]
+		    IssuerMemberId=970416
+		    Mid=[MID]
+		    MerchantIdentificationCode=NAPASTEST
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=null
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000000000
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000000000
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=835568101
+		    F38=[F38]
+		    AuthorizationNumber=196247
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAD2QDOWNo0pQAA
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=NAPASTEST              152401
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=07404763b0b9f8a2ea807cb128724b83
+2019-05-31 20:31:40.572	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2019-05-31 20:31:40.572	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.572	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2019-05-31 20:31:40.572	[dbg  ]	Startup		[Record type detecting] It is the last line
+2019-05-31 20:31:40.573	[dbg  ]	Startup		[Record type detecting] FileTrailerRecord selected
+2019-05-31 20:31:40.573	[dbg_m]	Startup		  ==> flushDetectingMode
+2019-05-31 20:31:40.573	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.573	[dbg_m]	Startup		    ==> Field:rowCounter
+2019-05-31 20:31:40.573	[dbg_m]	Startup		Computing functions: PARSING_END,FileTrailerRecord ...
+2019-05-31 20:31:40.573	[dbg_m]	Startup		  ==> Computing recordCounter
+2019-05-31 20:31:40.573	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2019-05-31 20:31:40.573	[dbg  ]	Startup		retrieved [16]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=16
+		    recordCounter=14
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileTrailerRecord
+		    TrailerRecord=TR
+		    Not=[NOT]
+		    NumberofRecordsinTheFile=14
+		    Cre=[CRE]
+		    Generator=NAPAS
+		    Time=[TIME]
+		    FileGenerationTime=155410
+		    Date=[DATE]
+		    FileGenerationDate=31052019
+		    Csf=[CSF]
+		    ChecksumFileValue=e314d421eee1aa738c891ccc95c4ae60
+2019-05-31 20:31:40.573	[uncon]	Startup		Trace: [NapasImport]:Validation for 052719_ISS_ACB_970416_2_TC_ECOM.dat is completed
+2019-05-31 20:31:40.573	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[O]
+		messagetext=[[NapasImport]:Validation for 052719_ISS_ACB_970416_2_TC_ECOM.dat is completed]
+2019-05-31 20:31:40.575	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.575	[dbg_m]	Startup		  ==> Computing (FILE_START) rowCounter
+2019-05-31 20:31:40.575	[dbg_m]	Startup		  ==> Computing (FILE_START) recordCounter
+2019-05-31 20:31:40.575	[dbg_m]	Startup		  ==> Computing (FILE_START) fileRegistryFlag
+2019-05-31 20:31:40.575	[dbg_m]	Startup		  ==> Computing (FILE_START) fileIdentifier
+2019-05-31 20:31:40.575	[dbg_m]	Startup		  ==> Computing (FILE_START) fileIdentifierQualifier
+2019-05-31 20:31:40.576	[dbg  ]	Startup		retrieved [17]  (source)
+		  Record: Embedded Fields
+		    fileName=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=0
+		    recordCounter=0
+		    fileRegistryFlag=true
+		    fileIdentifier=052719_ISS_ACB_970416_2_TC_ECOM.dat
+		    fileIdentifierQualifier=null
+		  Record: FileNameRecord
+		    FileGeneratingDate=2019-05-27 00:00:00.0
+		    FileTarget=ISS
+		    BankName=ACB
+		    MemberBankCode=970416
+		    OrderNumber=2
+		    FileType=TC
+		    FileService=ECOM.dat
+2019-05-31 20:31:40.576	[dbg  ]	Startup		executing  (getBankingDate)
+2019-05-31 20:31:40.582	[dbg  ]	Startup		executed  (getBankingDate)
+		  bankingDate=[2019-05-30]
+2019-05-31 20:31:40.582	[dbg  ]	Startup		executing  (checkOPTSMLDOC)
+		  PROCESS_DATE=[2019-05-30]
+		  FILE_NAME=[052719_ISS_ACB_970416_2_TC_ECOM.dat]
+2019-05-31 20:31:40.585	[dbg  ]	Startup		executed  (checkOPTSMLDOC)
+		  id=[43442798]
+2019-05-31 20:31:40.585	[uncon]	Startup		Error: [NapasImport]:Data in 2019-05-30 have already processed. Skip this file.
+2019-05-31 20:31:40.585	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[E]
+		messagetext=[[NapasImport]:Data in 2019-05-30 have already processed. Skip this file.]
+2019-05-31 20:31:40.587	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.587	[uncon]	Startup		Error: File [C:\OPW\workspace\napasincoming\err\052719_ISS_ACB_970416_2_TC_ECOM.dat] already exists
+2019-05-31 20:31:40.587	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[E]
+		messagetext=[File [C:\OPW\workspace\napasincoming\err\052719_ISS_ACB_970416_2_TC_ECOM.dat] already exists]
+2019-05-31 20:31:40.590	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.590	[uncon]	Startup		Information: Finish file C:\OPW\workspace\napasincoming\in\052719_ISS_ACB_970416_2_TC_ECOM.dat
+2019-05-31 20:31:40.590	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Finish file C:\OPW\workspace\napasincoming\in\052719_ISS_ACB_970416_2_TC_ECOM.dat]
+2019-05-31 20:31:40.593	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.593	[info ]	Startup		Committing after 17 rows
+2019-05-31 20:31:40.598	[dbg  ]	Startup		Executing sy_process.LOCK_PROCESS_STATUS1
+		processid=[16380355]
+2019-05-31 20:31:40.600	[dbg  ]	Startup		Executed sy_process.LOCK_PROCESS_STATUS1
+		return value=[A]
+2019-05-31 20:31:40.600	[dbg  ]	Startup		Committed
+2019-05-31 20:31:40.601	[info ]	Startup		Committing after 17 rows
+2019-05-31 20:31:40.604	[dbg  ]	Startup		Executing sy_process.LOCK_PROCESS_STATUS1
+		processid=[16380355]
+2019-05-31 20:31:40.606	[dbg  ]	Startup		Executed sy_process.LOCK_PROCESS_STATUS1
+		return value=[A]
+2019-05-31 20:31:40.606	[dbg  ]	Startup		Committed
+2019-05-31 20:31:40.606	[dbg_m]	Startup		Closing mapper
+2019-05-31 20:31:40.606	[uncon]	Startup		Trace: [NapasImport]:Converted 052719_ISS_ACB_970416_2_TC_ECOM.dat completed.
+2019-05-31 20:31:40.606	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16380355]
+		docid=[null]
+		messagetype=[O]
+		messagetext=[[NapasImport]:Converted 052719_ISS_ACB_970416_2_TC_ECOM.dat completed.]
+2019-05-31 20:31:40.609	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-31 20:31:40.609	[dbg_m]	Startup		Closing getBankingDate
+2019-05-31 20:31:40.609	[dbg_m]	Startup		Closing getTransID
+2019-05-31 20:31:40.609	[dbg_m]	Startup		Closing updateOPTSMLDOC
+2019-05-31 20:31:40.609	[dbg_m]	Startup		Closing checkOPTSMLDOC
+2019-05-31 20:31:40.609	[dbg_m]	Startup		Closing source
+2019-05-31 20:31:40.610	[dbg  ]	Startup		Executing stnd.GET_DB_VERSION
+2019-05-31 20:31:40.612	[dbg  ]	Startup		Executed stnd.GET_DB_VERSION
+		versname=[03_47_30]
+2019-05-31 20:31:40.612	[dbg  ]	Startup		Executing sy_process.GET_PROCESS_ERROR_LEVEL
+2019-05-31 20:31:40.614	[dbg  ]	Startup		Executed sy_process.GET_PROCESS_ERROR_LEVEL
+		return value=[null]
+2019-05-31 20:31:40.614	[dbg  ]	Startup		Executing sy_process.FINISH_CURRENT
+		isok=[Y]
+2019-05-31 20:31:40.619	[dbg  ]	Startup		Executed sy_process.FINISH_CURRENT
+2019-05-31 20:31:40.621	[uncon]	Startup		Shutting down com.openwaygroup.pipe.napasincoming
+2019-05-31 20:31:40.623	[dbg  ]	Components_Shutdowner		Entering stop: [0]/getBankingDate
+2019-05-31 20:31:40.623	[dbg  ]	Components_Shutdowner		Exited stop: [0]/getBankingDate
+2019-05-31 20:31:40.623	[dbg  ]	Components_Shutdowner		Entering stop: [0]/getBankingDate
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited stop: [0]/getBankingDate
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering stop: [0]/getTransID
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited stop: [0]/getTransID
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering stop: [0]/getTransID
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited stop: [0]/getTransID
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering stop: [0]/updateOPTSMLDOC
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited stop: [0]/updateOPTSMLDOC
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering stop: [0]/updateOPTSMLDOC
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited stop: [0]/updateOPTSMLDOC
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering stop: [0]/checkOPTSMLDOC
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited stop: [0]/checkOPTSMLDOC
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering stop: [0]/checkOPTSMLDOC
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited stop: [0]/checkOPTSMLDOC
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering close: [0]/getBankingDate
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited close: [0]/getBankingDate
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering close: [0]/getBankingDate
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited close: [0]/getBankingDate
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering close: [0]/getTransID
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited close: [0]/getTransID
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering close: [0]/getTransID
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited close: [0]/getTransID
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering close: [0]/updateOPTSMLDOC
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited close: [0]/updateOPTSMLDOC
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering close: [0]/updateOPTSMLDOC
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited close: [0]/updateOPTSMLDOC
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering close: [0]/checkOPTSMLDOC
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited close: [0]/checkOPTSMLDOC
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering close: [0]/checkOPTSMLDOC
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited close: [0]/checkOPTSMLDOC
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering close: [0]/source
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited close: [0]/source
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Entering close: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2019-05-31 20:31:40.624	[dbg  ]	Components_Shutdowner		Exited close: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2019-05-31 20:31:40.625	[dbg  ]	Components_Shutdowner		Entering close: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2019-05-31 20:31:40.625	[dbg  ]	Components_Shutdowner		Exited close: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2019-05-31 20:31:40.625	[dbg  ]	Components_Shutdowner		Entering close: [0]/source
+2019-05-31 20:31:40.625	[dbg  ]	Components_Shutdowner		Exited close: [0]/source
+2019-05-31 20:31:40.625	[uncon]	Components_Shutdowner		com.openwaygroup.pipe.napasincoming Shutdown complete
+2019-05-31 20:31:40.625	[uncon]	Startup		Shutting down launch
+2019-05-31 20:31:40.625	[dbg  ]	Components_Shutdowner		Entering stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 20:31:40.625	[dbg  ]	Components_Shutdowner		Exited stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 20:31:40.625	[dbg  ]	Components_Shutdowner		Entering stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 20:31:40.625	[dbg  ]	Components_Shutdowner		Exited stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 20:31:40.625	[dbg  ]	Components_Shutdowner		Entering stop: [0]/JdbcConnectionPool
+2019-05-31 20:31:40.625	[dbg  ]	Components_Shutdowner		Exited stop: [0]/JdbcConnectionPool
+2019-05-31 20:31:40.625	[dbg  ]	Components_Shutdowner		Entering stop: [0]/JdbcConnectionPool
+2019-05-31 20:31:40.625	[dbg  ]	Components_Shutdowner		Exited stop: [0]/JdbcConnectionPool
+2019-05-31 20:31:40.625	[dbg  ]	Components_Shutdowner		Entering close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 20:31:40.625	[dbg  ]	Components_Shutdowner		Exited close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 20:31:40.625	[dbg  ]	Components_Shutdowner		Entering close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 20:31:40.626	[dbg  ]	Components_Shutdowner		Exited close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 20:31:40.626	[dbg  ]	Components_Shutdowner		Entering close: [0]/JdbcConnectionPool
+2019-05-31 20:31:40.634	[dbg  ]	Components_Shutdowner		Exited close: [0]/JdbcConnectionPool
+2019-05-31 20:31:40.634	[dbg  ]	Components_Shutdowner		Entering close: [0]/JdbcConnectionPool
+2019-05-31 20:31:40.634	[dbg  ]	Components_Shutdowner		Exited close: [0]/JdbcConnectionPool
+2019-05-31 20:31:40.634	[uncon]	Components_Shutdowner		launch Shutdown complete

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><application>
+  <pipe commit_interval="0" name="napasincomingfindebit" package="com.openwaygroup.pipe.napasincomingfindebit.autogen" version="00.00.01">
+    <db_grants>
+      <set name="default"/>
+    </db_grants>
+    <parameters>
+      <parameter name="OUTPUT_DIR"/>
+      <parameter name="FILE_TYPE"/>
+      <parameter name="CURRENT_USER"/>
+      <parameter name="PRODUCT_GROUP"/>
+      <parameter name="NAPAS_CHANNEL_CODE"/>
+      <parameter name="MEMBER_BANK_CODE"/>
+      <parameter name="DESCRIPTION"/>
+    </parameters>
+  </pipe>
+  <component buffer_class="com.openwaygroup.pipe.napasincomingfindebit.autogen.Source" class="pipe.source.sql_select" name="source" pipe_service="yes" source="yes">
+    <sql_statement>select * from dual</sql_statement>
+    <sql_select_count_statement/>
+  </component>
+  <component buffer_class="com.openwaygroup.pipe.napasincomingfindebit.autogen.DocFileXml" class="pipe.target.xml.writer" commit_on_file_finish="yes" indent="yes" name="docFileXml" pipe_service="yes" validate="yes">
+    <component class="pipe.writer.stream" encoding="UTF-8">
+      <component class="pipe.output_stream.file_stream" create_empty_files="yes" file_directory="{$OUTPUT_DIR}" file_info_file_type="NAPAS FIN DOC" file_mode="confirm" file_name="xml_file.xml"/>
+    </component>
+  </component>
+  <component buffer_class="com.openwaygroup.pipe.napasincomingfindebit.autogen.FileSequence" class="pipe.target.sql_select" name="fileSequence" pipe_service="yes" throw_exception_on_data_not_found="yes">
+    <sql_statement>SELECT (count(*)+1) as next_seq
+  FROM   file_info f
+ WHERE  trunc(f.creation_date) = trunc(sysdate)
+ and F.FILE_TYPE like 'NAPAS FIN DOC'
+</sql_statement>
+  </component>
+  <component buffer_class="com.openwaygroup.pipe.napasincomingfindebit.autogen.IncomingFinDebit" class="pipe.source.sql_select" name="incomingFinDebit" pipe_service="yes">
+    <sql_statement>/*Giao dich FIN gui 117*/
+select distinct
+    dc.id,
+    dc.Target_Number as Card_Number,
+    dc.Processing_Code as ProcessingCode,
+    dc.Trans_Amount as transamount,
+    dc.System_Trace_Number as SystemTraceNumber,
+    to_char(dc.Trans_Date,'YYYY-MM-DD HH24:MI:SS') as LocalTransactionDate,
+    to_char(dc.Posting_Date,'MMDD') as SettlementDate,
+    dc.Sic_Code as SicCode,
+    dc.Source_Member_Id as AcquiringInstitutionCode,
+    substr(dc.Target_Number,1,6) as IssuerBankCode,
+    dc.Auth_Code as AuthorizationNumber,
+    NVL(dc.Ret_Ref_Number,'000000000000') as RetrievalReferenceNumber,
+    dc.Source_Number as TerminalIdentification,
+    dc.Trans_Curr as TransactionCurrencyCode,
+    NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'FromAccount'),'00000000000000000000') as FromAccount,
+    NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'ToAccount'),'00000000000000000000') as ToAccount,
+    dc.Return_Code,
+    dc.trans_date
+from opt_smldoc dc, acnt_contract ac, appl_product p
+where dc.Amnd_State = 'A'
+and p.amnd_state = 'A'
+and ac.amnd_state = 'A'
+and dc.target_number = ac.contract_number
+and ac.product = p.internal_code
+and p.product_group = '{$PRODUCT_GROUP}'
+and trim(dc.file_type) = '{$FILE_TYPE}'
+and trim(dc.status)='SENT'
+and dc.is_authorization = 'N'
+and dc.request_category = 'P'
+and trim(dc.process_date)='2018-04-20'--(select to_char(local_date,'yyyy-MM-dd') from f_i where id = 745 and amnd_state = 'A')
+</sql_statement>
+    <sql_select_count_statement/>
+  </component>
+</application>

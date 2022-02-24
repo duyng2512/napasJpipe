@@ -1,0 +1,543 @@
+launch
+Startup time: 2019-05-06 16:51:59.013
+Host: 10.101.144.182 (10.101.144.182)
+Java: 1.6.0_45 (Java HotSpot(TM) Client VM) in C:\Program Files (x86)\Java\jdk1.6.0_45\jre
+OS: Windows 8(x86) 6.2
+User: Openway
+Current Dir: C:\OPW\workspace\napasoutgoing
+User Home Dir: C:\Users\Openway
+Max Heap Size: 259522560 bytes
+Processors: 8
+Telnet Console Port: 23789
+Java System Properties: java.endorsed.dirs=C:/OPW/03.35.30.26_HOME/client/shared/javalib/endorsed; java.io.tmpdir=C:\Users\Openway\AppData\Local\Temp\; user.country=US; user.language=en; user.timezone=Asia/Bangkok; 
+----------------------------------------------------------
+2019-05-06 16:51:59.665	[uncon]	Startup		Starting up launch
+2019-05-06 16:51:59.732	[dbg  ]	Startup		Entering open: [0]/JdbcConnectionPool
+2019-05-06 16:51:59.736	[info ]	Startup		Connecting to [jdbc:oracle:thin:@10.56.244.42:1521:acbway4 (owsacs)]...
+2019-05-06 16:52:00.079	[dbg  ]	Startup		Executing sql statement [alter session set current_schema=OWSACS]
+2019-05-06 16:52:00.083	[dbg  ]	Startup		Executing sql statement [{call soft.start_simple('','Console Pipe',null)}]
+2019-05-06 16:52:00.196	[log  ]	Startup		Successfully connected to [jdbc:oracle:thin:@10.56.244.42:1521:acbway4 (owsacs)]
+2019-05-06 16:52:00.196	[dbg  ]	Startup		Exited open: [0]/JdbcConnectionPool
+2019-05-06 16:52:00.196	[dbg  ]	Startup		Entering open container: [0]/JdbcConnectionPool
+2019-05-06 16:52:00.197	[dbg  ]	Startup		Exited open container: [0]/JdbcConnectionPool
+2019-05-06 16:52:00.197	[dbg  ]	Startup		Entering open: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:52:00.197	[dbg  ]	Startup		Exited open: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:52:00.197	[dbg  ]	Startup		Entering open container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:52:00.197	[dbg  ]	Startup		Exited open container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:52:00.197	[dbg  ]	Startup		Entering start: [0]/JdbcConnectionPool
+2019-05-06 16:52:00.198	[dbg  ]	Startup		Exited start: [0]/JdbcConnectionPool
+2019-05-06 16:52:00.198	[dbg  ]	Startup		Entering start container: [0]/JdbcConnectionPool
+2019-05-06 16:52:00.198	[dbg  ]	Startup		Exited start container: [0]/JdbcConnectionPool
+2019-05-06 16:52:00.198	[dbg  ]	Startup		Entering start: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:52:00.198	[dbg_m]	Startup		Waiting for connection context
+2019-05-06 16:52:00.199	[dbg  ]	Startup		Executing stnd.GET_DB_VERSION
+2019-05-06 16:52:00.238	[dbg  ]	Startup		Executed stnd.GET_DB_VERSION
+		versname=[03_47_30]
+2019-05-06 16:52:00.239	[dbg  ]	Startup		Exited start: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:52:00.239	[dbg  ]	Startup		Entering start container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:52:00.239	[dbg  ]	Startup		Exited start container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:52:00.239	[uncon]	Startup		launch Startup complete
+2019-05-06 16:52:00.257	[uncon]	Startup		Starting up com.openwaygroup.pipe.napasoutgoing
+2019-05-06 16:52:00.290	[dbg  ]	Startup		Entering open: [0]/source
+2019-05-06 16:52:00.290	[dbg  ]	Startup		Service: source. SQL statement: [select * from dual]
+2019-05-06 16:52:00.290	[dbg  ]	Startup		SQL Select Count statement: [null]
+2019-05-06 16:52:00.290	[dbg  ]	Startup		Exited open: [0]/source
+2019-05-06 16:52:00.290	[dbg  ]	Startup		Entering open container: [0]/source
+2019-05-06 16:52:00.290	[dbg  ]	Startup		Exited open container: [0]/source
+2019-05-06 16:52:00.290	[dbg  ]	Startup		Entering open: [0]/outWardFile
+2019-05-06 16:52:00.290	[dbg  ]	Startup		Exited open: [0]/outWardFile
+2019-05-06 16:52:00.290	[dbg  ]	Startup		Entering open: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:52:00.290	[dbg  ]	Startup		Exited open: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:52:00.291	[dbg  ]	Startup		Entering open container: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:52:00.291	[dbg  ]	Startup		Exited open container: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:52:00.291	[dbg  ]	Startup		Entering open container: [0]/outWardFile
+2019-05-06 16:52:00.291	[dbg  ]	Startup		Exited open container: [0]/outWardFile
+2019-05-06 16:52:00.291	[dbg  ]	Startup		Entering open: [0]/fileSequence
+2019-05-06 16:52:00.291	[dbg  ]	Startup		Service: fileSequence. SQL statement: [SELECT (count(*)+1) as next_seq
+		  FROM   file_info f
+		 WHERE  PARMS LIKE 
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         
+		         ?
+		 and F.FILE_TYPE like 'ACB Outward File'
+		]
+2019-05-06 16:52:00.291	[dbg  ]	Startup		Exited open: [0]/fileSequence
+2019-05-06 16:52:00.291	[dbg  ]	Startup		Entering open container: [0]/fileSequence
+2019-05-06 16:52:00.291	[dbg  ]	Startup		Exited open container: [0]/fileSequence
+2019-05-06 16:52:00.291	[dbg  ]	Startup		Entering open: [0]/disputeRecord
+2019-05-06 16:52:00.291	[dbg  ]	Startup		Service: disputeRecord. SQL statement: [select distinct
+		            dc.id,
+		            dc.Card_Number,
+		            dc.Processing_Code as ProcessingCode,
+		            dc.Trans_Amount as TransAmount,
+		            dc.System_Trace_Number as SystemTraceNumber,
+		            dc.Trans_Time as LocalTransactionTime,
+		            dc.Trans_Date as LocalTransactionDate,
+		            dc.Settl_Date as SettlementDate,
+		            dc.Terminal_Type as SicCode,
+		            dc.Acquiring_member_id as AcquiringInstitutionCode,
+		            substr(dc.Card_Number,1,6) as IssuerBankCode,
+		            dc.Auth_Code as AuthorizationNumber,   
+		            dc.Terminal_Id as TerminalIdentification,
+		            dc.Trans_Curr as TransactionCurrencyCode,
+		            NVL(dc.From_Account,'00000000000000000000') as FromAccount,
+		            NVL(dc.To_Account,'00000000000000000000') as ToAccount,
+		            dc.message_code as MessageTypeIdentifierCode,
+		            dc.return_code as TransactionStatus,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'SVC'),'') as NapasSvcCode,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'TCC'),'') as TransactionChannelCode,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'RTA'),'0')) as RealTransactionAmount,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F5'),'0')) as SettlementAmount,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F50'),'0') as SettlementCurrencyCode,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F9'),'0')) as FxRate,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F6'),'0')) as CardholderAmount,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'RCA'),'0')) as RealCardholderAmount,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F51'),'704') as CardholerCurrencyCode,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F10'),'0')) as CardholderFxRate,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F22'),'') as ServiceCode,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F25'),'') as ServiceConditionCode,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'MID'),'0') as MerchantIdentificationCode,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'BNB'),'0') as BeneficiaryIdentify,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'TRN'),'') as TransactionReferenceNumber,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'RRN'),'') as RetrievalReferenceNumber
+		from opt_smldis dc
+		where dc.Amnd_State = 'A'
+		    and trim(dc.direction) = 'ISS'
+		    and trim(dc.status) = 'TO BE SENT'
+		    and trim(dc.process_date)=SUBSTR(TO_CHAR('2018-04-11'),0,10)
+		    and trim(dc.napas_service) = 'ECOM'
+		]
+2019-05-06 16:52:00.291	[dbg  ]	Startup		SQL Select Count statement: [null]
+2019-05-06 16:52:00.291	[dbg  ]	Startup		Exited open: [0]/disputeRecord
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Entering open container: [0]/disputeRecord
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Exited open container: [0]/disputeRecord
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Entering open: [0]/getTransLastDate
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Service: getTransLastDate. SQL statement: [SELECT NVL(TO_CHAR(MAX(TRANS_DATE_2),'MMddyyyyy'),'01012000') "MAX_DATE"
+		FROM OPT_SMLDIS
+		WHERE  TRIM(PROCESS_DATE) =  '2018-04-11'
+		      AND DIRECTION = 'ISS' 
+		      AND TRIM(NAPAS_SERVICE) = 'ECOM'
+		]
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Exited open: [0]/getTransLastDate
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Entering open container: [0]/getTransLastDate
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Exited open container: [0]/getTransLastDate
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Entering start: [0]/source
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Exited start: [0]/source
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Entering start container: [0]/source
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Exited start container: [0]/source
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Entering start: [0]/outWardFile
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Exited start: [0]/outWardFile
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Entering start: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Exited start: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Entering start container: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:52:00.292	[dbg  ]	Startup		Exited start container: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:52:00.293	[dbg  ]	Startup		Entering start container: [0]/outWardFile
+2019-05-06 16:52:00.293	[dbg  ]	Startup		Exited start container: [0]/outWardFile
+2019-05-06 16:52:00.293	[dbg  ]	Startup		Entering start: [0]/fileSequence
+2019-05-06 16:52:00.293	[dbg  ]	Startup		Exited start: [0]/fileSequence
+2019-05-06 16:52:00.293	[dbg  ]	Startup		Entering start container: [0]/fileSequence
+2019-05-06 16:52:00.293	[dbg  ]	Startup		Exited start container: [0]/fileSequence
+2019-05-06 16:52:00.293	[dbg  ]	Startup		Entering start: [0]/disputeRecord
+2019-05-06 16:52:00.293	[dbg  ]	Startup		Exited start: [0]/disputeRecord
+2019-05-06 16:52:00.293	[dbg  ]	Startup		Entering start container: [0]/disputeRecord
+2019-05-06 16:52:00.293	[dbg  ]	Startup		Exited start container: [0]/disputeRecord
+2019-05-06 16:52:00.293	[dbg  ]	Startup		Entering start: [0]/getTransLastDate
+2019-05-06 16:52:00.293	[dbg  ]	Startup		Exited start: [0]/getTransLastDate
+2019-05-06 16:52:00.293	[dbg  ]	Startup		Entering start container: [0]/getTransLastDate
+2019-05-06 16:52:00.293	[dbg  ]	Startup		Exited start container: [0]/getTransLastDate
+2019-05-06 16:52:00.293	[uncon]	Startup		com.openwaygroup.pipe.napasoutgoing Startup complete
+2019-05-06 16:52:00.314	[dbg_m]	Startup		Waiting for connection context
+2019-05-06 16:52:00.314	[dbg  ]	Startup		Executing stnd.SET_GL_CONSTANTS
+2019-05-06 16:52:00.320	[dbg  ]	Startup		Executed stnd.SET_GL_CONSTANTS
+2019-05-06 16:52:00.320	[dbg  ]	Startup		Executing sy_process.START_CURRENT_V3
+		processname=[napasoutgoing]
+		processparms=[null]
+		isunique=[N]
+		tostartsub=[Y]
+		objecttype=[null]
+		objectid=[null]
+2019-05-06 16:52:00.376	[dbg  ]	Startup		Executed sy_process.START_CURRENT_V3
+		isactive=[Y]
+2019-05-06 16:52:00.376	[dbg  ]	Startup		Executing sy_process.GET_CURRENT_PROCESS
+2019-05-06 16:52:00.379	[dbg  ]	Startup		Executed sy_process.GET_CURRENT_PROCESS
+		return value=[16377247]
+2019-05-06 16:52:00.379	[dbg  ]	Startup		Executing stnd.GET_PARMS
+2019-05-06 16:52:00.385	[dbg  ]	Startup		Executed stnd.GET_PARMS
+		newconnectionid=[1997139]
+		newofficerid=[null]
+2019-05-06 16:52:00.388	[dbg  ]	Startup		Executing soft.Get_Officer_Id
+2019-05-06 16:52:00.392	[dbg  ]	Startup		Executed soft.Get_Officer_Id
+		return value=[null]
+2019-05-06 16:52:00.392	[dbg  ]	Startup		Executing soft.Get_Officer_Name
+2019-05-06 16:52:00.394	[dbg  ]	Startup		Executed soft.Get_Officer_Name
+		return value=[null]
+2019-05-06 16:52:00.394	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377247]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[DB Version: 03_47_30]
+2019-05-06 16:52:00.397	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:52:00.398	[uncon]	Startup		Information: Pipe Version: 00.00.01
+2019-05-06 16:52:00.398	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377247]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Pipe Version: 00.00.01]
+2019-05-06 16:52:00.402	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:52:00.402	[info ]	Startup		DB version: 03_47_30
+2019-05-06 16:52:00.402	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377247]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Pipe:com.openwaygroup.pipe.napasoutgoing.jar]
+2019-05-06 16:52:00.405	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:52:00.406	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377247]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: OUTPUT_DIR=D:/Way4IDE/workspaces/napasoutgoing/out]
+2019-05-06 16:52:00.408	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:52:00.408	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377247]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: NAPAS_CHANNEL_CODE=b]
+2019-05-06 16:52:00.411	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:52:00.411	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377247]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: CURRENT_USER=1]
+2019-05-06 16:52:00.414	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:52:00.414	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377247]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: BANK_PASSWORD=970416]
+2019-05-06 16:52:00.417	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:52:00.417	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377247]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: ABBREVIATION_BANK_NAME=ACB]
+2019-05-06 16:52:00.420	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:52:00.420	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377247]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: MEMBER_BANK_CODE=970416]
+2019-05-06 16:52:00.422	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:52:00.422	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377247]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: NAPAS_PROCESS_DATE=2018-04-11]
+2019-05-06 16:52:00.424	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:52:00.424	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377247]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: SERVICE=ECOM]
+2019-05-06 16:52:00.427	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:52:00.428	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377247]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: DIRECTION=ISS]
+2019-05-06 16:52:00.430	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:52:00.445	[dbg_m]	Startup		Opening source
+2019-05-06 16:52:00.447	[dbg_m]	Startup		Opening outWardFile
+2019-05-06 16:52:00.456	[info ]	Startup		Opening outWardFile
+2019-05-06 16:52:00.456	[dbg_m]	Startup		Opening fileSequence
+2019-05-06 16:52:00.456	[dbg_m]	Startup		Opening disputeRecord
+2019-05-06 16:52:00.457	[dbg_m]	Startup		Opening getTransLastDate
+2019-05-06 16:52:00.457	[dbg_m]	Startup		Opening mapper
+2019-05-06 16:52:00.457	[uncon]	Startup		Trace: [NapasOutward]:sProcessDates 2 = 2018-04-11
+2019-05-06 16:52:00.457	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377247]
+		docid=[null]
+		messagetype=[O]
+		messagetext=[[NapasOutward]:sProcessDates 2 = 2018-04-11]
+2019-05-06 16:52:00.459	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:52:00.459	[dbg  ]	Startup		executing  (fileSequence)
+		  PARMS=[050619_ISS_ACB_970416]
+2019-05-06 16:52:00.862	[dbg  ]	Startup		executed  (fileSequence)
+		  nextSeq=[1]
+2019-05-06 16:52:00.862	[dbg  ]	Startup		TargetFileParameters (com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent$FileInfoExtendedFileParameters@858bf1). File name was changed.
+2019-05-06 16:52:00.862	[uncon]	Startup		Trace: [NapasOutward]:FileSequence:1
+2019-05-06 16:52:00.862	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377247]
+		docid=[null]
+		messagetype=[O]
+		messagetext=[[NapasOutward]:FileSequence:1]
+2019-05-06 16:52:00.865	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:52:00.865	[uncon]	Startup		Trace: [NapasOutward]:FileName: 050619_ISS_ACB_970416_1_SL_ECOM.dat
+2019-05-06 16:52:00.865	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377247]
+		docid=[null]
+		messagetype=[O]
+		messagetext=[[NapasOutward]:FileName: 050619_ISS_ACB_970416_1_SL_ECOM.dat]
+2019-05-06 16:52:00.869	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:52:00.873	[dbg  ]	Startup		executing  (getTransLastDate)
+2019-05-06 16:52:01.265	[dbg  ]	Startup		executed  (getTransLastDate)
+		  maxDate=[01012000]
+2019-05-06 16:52:01.265	[dbg  ]	Startup		executing  (outWardFile)
+		  Record Type=fileHeaderRecord
+		  headerRecord=[HR]
+		  binDef=[[REV]]
+		  bin=[  970416]
+		  dateDef=[[DATE]]
+		  transactionDate=[01012000]
+2019-05-06 16:52:01.265	[dbg  ]	Startup		executing   Record Type=fileHeaderRecord
+		  headerRecord=[HR]
+		  binDef=[[REV]]
+		  bin=[  970416]
+		  dateDef=[[DATE]]
+		  transactionDate=[01012000]
+2019-05-06 16:52:01.265	[dbg  ]	Startup		TargetFileParameters (com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent$FileInfoExtendedFileParameters@858bf1). Flag 'changed' was set directly to TRUE.
+2019-05-06 16:52:01.267	[dbg  ]	Startup		Executing sy_file.COMPUTE_FILE_NUMBER
+		filetype=[ACB Outward File]
+		numeratetype=[C]
+		filequalifier=[null]
+2019-05-06 16:52:02.232	[dbg  ]	Startup		Executed sy_file.COMPUTE_FILE_NUMBER
+		filenumber=[1]
+		errmsg=[I OK]
+2019-05-06 16:52:02.234	[error]	Startup		Exception in outWardFile service.
+		Could not create directory [D:\Way4IDE\workspaces\napasoutgoing\out]
+	Stack trace:
+		java.lang.Exception: Exception in outWardFile service.
+			at com.openwaygroup.application.pipe.impl.ServiceForBuffer.update(ServiceForBuffer.java:92)
+			at com.openwaygroup.application.pipe.spi.base.vector.TargetVectorBuffer.update(TargetVectorBuffer.java:14)
+			at com.openwaygroup.application.pipe.impl.filer.target.FlatFileTargetBuffer.update(FlatFileTargetBuffer.java:183)
+			at com.openwaygroup.pipe.napasoutgoing.Mapper.createHeaderFile(Mapper.java:198)
+			at com.openwaygroup.pipe.napasoutgoing.Mapper.open(Mapper.java:57)
+			at com.openwaygroup.application.pipe.impl.java_mapper.JavaMapperImpl.open(JavaMapperImpl.java:25)
+			at com.openwaygroup.application.pipe.impl.ServiceForBuffer.open(ServiceForBuffer.java:42)
+			at com.openwaygroup.application.pipe.impl.Pipe.executeModel(Pipe.java:205)
+			at com.openwaygroup.application.process.impl.AbstractProcess.execute(AbstractProcess.java:69)
+			at com.openwaygroup.application.pipe.impl.Pipe.execute(Pipe.java:150)
+			at com.openwaygroup.application.pipe.PipeLauncherComponent.execute(PipeLauncherComponent.java:38)
+			at com.openwaygroup.application.ApplicationProcessComponent.afterStartup(ApplicationProcessComponent.java:36)
+			at com.openwaygroup.application.impl.Application.fireStartupListeners(Application.java:328)
+			at com.openwaygroup.application.impl.Application.startUp(Application.java:82)
+			at com.openwaygroup.application.ApplicationStarter.startApplication(ApplicationStarter.java:163)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:98)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:145)
+		Caused by: java.lang.Exception: Could not create directory [D:\Way4IDE\workspaces\napasoutgoing\out]
+			at com.openwaygroup.application.pipe.impl.stream.FileTargetComponent$ExtendedFileParameters.createNewOutputStream(FileTargetComponent.java:191)
+			at com.openwaygroup.application.pipe.impl.stream.FileTargetComponent$ExtendedFileParameters.getOutputStream(FileTargetComponent.java:160)
+			at com.openwaygroup.application.pipe.impl.filer.target.FlatFileTarget.update(FlatFileTarget.java:234)
+			at com.openwaygroup.application.pipe.impl.ServiceForBuffer.update(ServiceForBuffer.java:83)
+			... 16 more
+
+2019-05-06 16:52:02.235	[error]	Startup		Exception in outWardFile service.
+		Could not create directory [D:\Way4IDE\workspaces\napasoutgoing\out]
+	Stack trace:
+		java.lang.Exception: Exception in outWardFile service.
+			at com.openwaygroup.application.pipe.impl.ServiceForBuffer.update(ServiceForBuffer.java:92)
+			at com.openwaygroup.application.pipe.spi.base.vector.TargetVectorBuffer.update(TargetVectorBuffer.java:14)
+			at com.openwaygroup.application.pipe.impl.filer.target.FlatFileTargetBuffer.update(FlatFileTargetBuffer.java:183)
+			at com.openwaygroup.pipe.napasoutgoing.Mapper.createHeaderFile(Mapper.java:198)
+			at com.openwaygroup.pipe.napasoutgoing.Mapper.open(Mapper.java:57)
+			at com.openwaygroup.application.pipe.impl.java_mapper.JavaMapperImpl.open(JavaMapperImpl.java:25)
+			at com.openwaygroup.application.pipe.impl.ServiceForBuffer.open(ServiceForBuffer.java:42)
+			at com.openwaygroup.application.pipe.impl.Pipe.executeModel(Pipe.java:205)
+			at com.openwaygroup.application.process.impl.AbstractProcess.execute(AbstractProcess.java:69)
+			at com.openwaygroup.application.pipe.impl.Pipe.execute(Pipe.java:150)
+			at com.openwaygroup.application.pipe.PipeLauncherComponent.execute(PipeLauncherComponent.java:38)
+			at com.openwaygroup.application.ApplicationProcessComponent.afterStartup(ApplicationProcessComponent.java:36)
+			at com.openwaygroup.application.impl.Application.fireStartupListeners(Application.java:328)
+			at com.openwaygroup.application.impl.Application.startUp(Application.java:82)
+			at com.openwaygroup.application.ApplicationStarter.startApplication(ApplicationStarter.java:163)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:98)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:145)
+		Caused by: java.lang.Exception: Could not create directory [D:\Way4IDE\workspaces\napasoutgoing\out]
+			at com.openwaygroup.application.pipe.impl.stream.FileTargetComponent$ExtendedFileParameters.createNewOutputStream(FileTargetComponent.java:191)
+			at com.openwaygroup.application.pipe.impl.stream.FileTargetComponent$ExtendedFileParameters.getOutputStream(FileTargetComponent.java:160)
+			at com.openwaygroup.application.pipe.impl.filer.target.FlatFileTarget.update(FlatFileTarget.java:234)
+			at com.openwaygroup.application.pipe.impl.ServiceForBuffer.update(ServiceForBuffer.java:83)
+			... 16 more
+
+2019-05-06 16:52:02.239	[dbg_m]	Startup		Closing mapper
+2019-05-06 16:52:02.240	[dbg  ]	Startup		executing  (outWardFile)
+		  Record Type=fileTrailerRecord
+		  trailerRecord=[TR]
+		  notDef=[[NOT]]
+		  numberOfRecordsInTheFile=[000000000]
+		  generatorDef=[[CRE]]
+		  generator=[                   1]
+		  generateTimeDef=[[TIME]]
+		  fileGenerationTime=[165202]
+		  generateDateDef=[[DATE]]
+		  fileGenerationDate=[06052019]
+		  csfDef=[[CSF]]
+		  checksumFileValue=[43779e065ec326dcd7308ccdaabdf719]
+2019-05-06 16:52:02.240	[dbg  ]	Startup		executing   Record Type=fileTrailerRecord
+		  trailerRecord=[TR]
+		  notDef=[[NOT]]
+		  numberOfRecordsInTheFile=[000000000]
+		  generatorDef=[[CRE]]
+		  generator=[                   1]
+		  generateTimeDef=[[TIME]]
+		  fileGenerationTime=[165202]
+		  generateDateDef=[[DATE]]
+		  fileGenerationDate=[06052019]
+		  csfDef=[[CSF]]
+		  checksumFileValue=[43779e065ec326dcd7308ccdaabdf719]
+2019-05-06 16:52:02.240	[dbg  ]	Startup		TargetFileParameters (com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent$FileInfoExtendedFileParameters@858bf1). Flag 'changed' was set directly to TRUE.
+2019-05-06 16:52:02.241	[dbg  ]	Startup		Executing sy_file.COMPUTE_FILE_NUMBER
+		filetype=[ACB Outward File]
+		numeratetype=[C]
+		filequalifier=[null]
+2019-05-06 16:52:02.243	[dbg  ]	Startup		Executed sy_file.COMPUTE_FILE_NUMBER
+		filenumber=[1]
+		errmsg=[I OK]
+2019-05-06 16:52:02.244	[error]	Startup		Exception in outWardFile service.
+		Could not create directory [D:\Way4IDE\workspaces\napasoutgoing\out]
+	Stack trace:
+		java.lang.Exception: Exception in outWardFile service.
+			at com.openwaygroup.application.pipe.impl.ServiceForBuffer.update(ServiceForBuffer.java:92)
+			at com.openwaygroup.application.pipe.spi.base.vector.TargetVectorBuffer.update(TargetVectorBuffer.java:14)
+			at com.openwaygroup.application.pipe.impl.filer.target.FlatFileTargetBuffer.update(FlatFileTargetBuffer.java:183)
+			at com.openwaygroup.pipe.napasoutgoing.Mapper.close(Mapper.java:150)
+			at com.openwaygroup.application.pipe.impl.java_mapper.JavaMapperImpl.close(JavaMapperImpl.java:33)
+			at com.openwaygroup.application.pipe.impl.ServiceForBuffer.close(ServiceForBuffer.java:57)
+			at com.openwaygroup.application.pipe.impl.Pipe.close(Pipe.java:386)
+			at com.openwaygroup.application.pipe.impl.Pipe.processException(Pipe.java:335)
+			at com.openwaygroup.application.process.impl.AbstractProcess.execute(AbstractProcess.java:84)
+			at com.openwaygroup.application.pipe.impl.Pipe.execute(Pipe.java:150)
+			at com.openwaygroup.application.pipe.PipeLauncherComponent.execute(PipeLauncherComponent.java:38)
+			at com.openwaygroup.application.ApplicationProcessComponent.afterStartup(ApplicationProcessComponent.java:36)
+			at com.openwaygroup.application.impl.Application.fireStartupListeners(Application.java:328)
+			at com.openwaygroup.application.impl.Application.startUp(Application.java:82)
+			at com.openwaygroup.application.ApplicationStarter.startApplication(ApplicationStarter.java:163)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:98)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:145)
+		Caused by: java.lang.Exception: Could not create directory [D:\Way4IDE\workspaces\napasoutgoing\out]
+			at com.openwaygroup.application.pipe.impl.stream.FileTargetComponent$ExtendedFileParameters.createNewOutputStream(FileTargetComponent.java:191)
+			at com.openwaygroup.application.pipe.impl.stream.FileTargetComponent$ExtendedFileParameters.getOutputStream(FileTargetComponent.java:160)
+			at com.openwaygroup.application.pipe.impl.filer.target.FlatFileTarget.update(FlatFileTarget.java:234)
+			at com.openwaygroup.application.pipe.impl.ServiceForBuffer.update(ServiceForBuffer.java:83)
+			... 16 more
+
+2019-05-06 16:52:02.244	[dbg_m]	Startup		Closing getTransLastDate
+2019-05-06 16:52:02.244	[dbg_m]	Startup		Closing disputeRecord
+2019-05-06 16:52:02.244	[dbg_m]	Startup		Closing fileSequence
+2019-05-06 16:52:02.244	[dbg_m]	Startup		Closing outWardFile
+2019-05-06 16:52:02.244	[dbg_m]	Startup		Closing source
+2019-05-06 16:52:02.244	[error]	Startup		Result message: Exception in outWardFile service.
+		Could not create directory [D:\Way4IDE\workspaces\napasoutgoing\out]
+2019-05-06 16:52:02.244	[uncon]	Startup		Error: Exception in outWardFile service.
+		Could not create directory [D:\Way4IDE\workspaces\napasoutgoing\out]
+2019-05-06 16:52:02.244	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16377247]
+		docid=[null]
+		messagetype=[E]
+		messagetext=[Exception in outWardFile service.
+		Could not create directory [D:\Way4IDE\workspaces\napasoutgoing\out]]
+2019-05-06 16:52:02.273	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-06 16:52:02.289	[dbg  ]	Startup		Executing stnd.GET_DB_VERSION
+2019-05-06 16:52:02.292	[dbg  ]	Startup		Executed stnd.GET_DB_VERSION
+		versname=[03_47_30]
+2019-05-06 16:52:02.292	[dbg  ]	Startup		Executing sy_process.GET_PROCESS_ERROR_LEVEL
+2019-05-06 16:52:02.295	[dbg  ]	Startup		Executed sy_process.GET_PROCESS_ERROR_LEVEL
+		return value=[null]
+2019-05-06 16:52:02.295	[dbg  ]	Startup		Executing sy_process.FINISH_CURRENT
+		isok=[N]
+2019-05-06 16:52:02.327	[dbg  ]	Startup		Executed sy_process.FINISH_CURRENT
+2019-05-06 16:52:02.330	[uncon]	Startup		Shutting down com.openwaygroup.pipe.napasoutgoing
+2019-05-06 16:52:02.331	[dbg  ]	Components_Shutdowner		Entering stop: [0]/getTransLastDate
+2019-05-06 16:52:02.332	[dbg  ]	Components_Shutdowner		Exited stop: [0]/getTransLastDate
+2019-05-06 16:52:02.332	[dbg  ]	Components_Shutdowner		Entering stop: [0]/getTransLastDate
+2019-05-06 16:52:02.332	[dbg  ]	Components_Shutdowner		Exited stop: [0]/getTransLastDate
+2019-05-06 16:52:02.332	[dbg  ]	Components_Shutdowner		Entering stop: [0]/disputeRecord
+2019-05-06 16:52:02.332	[dbg  ]	Components_Shutdowner		Exited stop: [0]/disputeRecord
+2019-05-06 16:52:02.332	[dbg  ]	Components_Shutdowner		Entering stop: [0]/disputeRecord
+2019-05-06 16:52:02.332	[dbg  ]	Components_Shutdowner		Exited stop: [0]/disputeRecord
+2019-05-06 16:52:02.332	[dbg  ]	Components_Shutdowner		Entering stop: [0]/fileSequence
+2019-05-06 16:52:02.332	[dbg  ]	Components_Shutdowner		Exited stop: [0]/fileSequence
+2019-05-06 16:52:02.332	[dbg  ]	Components_Shutdowner		Entering stop: [0]/fileSequence
+2019-05-06 16:52:02.332	[dbg  ]	Components_Shutdowner		Exited stop: [0]/fileSequence
+2019-05-06 16:52:02.332	[dbg  ]	Components_Shutdowner		Entering stop: [0]/outWardFile
+2019-05-06 16:52:02.332	[dbg  ]	Components_Shutdowner		Exited stop: [0]/outWardFile
+2019-05-06 16:52:02.333	[dbg  ]	Components_Shutdowner		Entering stop: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:52:02.333	[dbg  ]	Components_Shutdowner		Exited stop: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:52:02.333	[dbg  ]	Components_Shutdowner		Entering stop: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:52:02.333	[dbg  ]	Components_Shutdowner		Exited stop: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:52:02.333	[dbg  ]	Components_Shutdowner		Entering stop: [0]/outWardFile
+2019-05-06 16:52:02.333	[dbg  ]	Components_Shutdowner		Exited stop: [0]/outWardFile
+2019-05-06 16:52:02.333	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source
+2019-05-06 16:52:02.333	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source
+2019-05-06 16:52:02.333	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source
+2019-05-06 16:52:02.333	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source
+2019-05-06 16:52:02.333	[dbg  ]	Components_Shutdowner		Entering close: [0]/getTransLastDate
+2019-05-06 16:52:02.333	[dbg  ]	Components_Shutdowner		Exited close: [0]/getTransLastDate
+2019-05-06 16:52:02.333	[dbg  ]	Components_Shutdowner		Entering close: [0]/getTransLastDate
+2019-05-06 16:52:02.333	[dbg  ]	Components_Shutdowner		Exited close: [0]/getTransLastDate
+2019-05-06 16:52:02.334	[dbg  ]	Components_Shutdowner		Entering close: [0]/disputeRecord
+2019-05-06 16:52:02.334	[dbg  ]	Components_Shutdowner		Exited close: [0]/disputeRecord
+2019-05-06 16:52:02.334	[dbg  ]	Components_Shutdowner		Entering close: [0]/disputeRecord
+2019-05-06 16:52:02.334	[dbg  ]	Components_Shutdowner		Exited close: [0]/disputeRecord
+2019-05-06 16:52:02.334	[dbg  ]	Components_Shutdowner		Entering close: [0]/fileSequence
+2019-05-06 16:52:02.334	[dbg  ]	Components_Shutdowner		Exited close: [0]/fileSequence
+2019-05-06 16:52:02.334	[dbg  ]	Components_Shutdowner		Entering close: [0]/fileSequence
+2019-05-06 16:52:02.334	[dbg  ]	Components_Shutdowner		Exited close: [0]/fileSequence
+2019-05-06 16:52:02.334	[dbg  ]	Components_Shutdowner		Entering close: [0]/outWardFile
+2019-05-06 16:52:02.334	[dbg  ]	Components_Shutdowner		Exited close: [0]/outWardFile
+2019-05-06 16:52:02.334	[dbg  ]	Components_Shutdowner		Entering close: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:52:02.334	[dbg  ]	Components_Shutdowner		Exited close: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:52:02.334	[dbg  ]	Components_Shutdowner		Entering close: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:52:02.334	[dbg  ]	Components_Shutdowner		Exited close: [0]/outWardFile/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileTargetComponent
+2019-05-06 16:52:02.334	[dbg  ]	Components_Shutdowner		Entering close: [0]/outWardFile
+2019-05-06 16:52:02.334	[dbg  ]	Components_Shutdowner		Exited close: [0]/outWardFile
+2019-05-06 16:52:02.335	[dbg  ]	Components_Shutdowner		Entering close: [0]/source
+2019-05-06 16:52:02.335	[dbg  ]	Components_Shutdowner		Exited close: [0]/source
+2019-05-06 16:52:02.335	[dbg  ]	Components_Shutdowner		Entering close: [0]/source
+2019-05-06 16:52:02.335	[dbg  ]	Components_Shutdowner		Exited close: [0]/source
+2019-05-06 16:52:02.335	[uncon]	Components_Shutdowner		com.openwaygroup.pipe.napasoutgoing Shutdown complete
+2019-05-06 16:52:02.335	[uncon]	Startup		Shutting down launch
+2019-05-06 16:52:02.335	[dbg  ]	Components_Shutdowner		Entering stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:52:02.335	[dbg  ]	Components_Shutdowner		Exited stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:52:02.335	[dbg  ]	Components_Shutdowner		Entering stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:52:02.335	[dbg  ]	Components_Shutdowner		Exited stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:52:02.335	[dbg  ]	Components_Shutdowner		Entering stop: [0]/JdbcConnectionPool
+2019-05-06 16:52:02.335	[dbg  ]	Components_Shutdowner		Exited stop: [0]/JdbcConnectionPool
+2019-05-06 16:52:02.335	[dbg  ]	Components_Shutdowner		Entering stop: [0]/JdbcConnectionPool
+2019-05-06 16:52:02.336	[dbg  ]	Components_Shutdowner		Exited stop: [0]/JdbcConnectionPool
+2019-05-06 16:52:02.336	[dbg  ]	Components_Shutdowner		Entering close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:52:02.336	[dbg  ]	Components_Shutdowner		Exited close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:52:02.336	[dbg  ]	Components_Shutdowner		Entering close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:52:02.336	[dbg  ]	Components_Shutdowner		Exited close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-06 16:52:02.336	[dbg  ]	Components_Shutdowner		Entering close: [0]/JdbcConnectionPool
+2019-05-06 16:52:02.386	[dbg  ]	Components_Shutdowner		Exited close: [0]/JdbcConnectionPool
+2019-05-06 16:52:02.386	[dbg  ]	Components_Shutdowner		Entering close: [0]/JdbcConnectionPool
+2019-05-06 16:52:02.386	[dbg  ]	Components_Shutdowner		Exited close: [0]/JdbcConnectionPool
+2019-05-06 16:52:02.386	[uncon]	Components_Shutdowner		launch Shutdown complete

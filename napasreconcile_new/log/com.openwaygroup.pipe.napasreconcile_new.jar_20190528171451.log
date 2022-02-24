@@ -1,0 +1,1080 @@
+launch
+Startup time: 2019-05-28 17:14:46.914
+Host: LAPTOP-1R6H4EI0 (192.168.2.1)
+Java: 1.6.0_45 (Java HotSpot(TM) Client VM) in C:\Program Files (x86)\Java\jdk1.6.0_45\jre
+OS: Windows 8(x86) 6.2
+User: Openway
+Current Dir: C:\OPW\workspace\napasreconcile_new
+User Home Dir: C:\Users\Openway
+Max Heap Size: 259522560 bytes
+Processors: 8
+Telnet Console Port: 23789
+Java System Properties: java.endorsed.dirs=C:/OPW/03.35.30.26_HOME/client/shared/javalib/endorsed; java.io.tmpdir=C:\Users\Openway\AppData\Local\Temp\; user.country=US; user.language=en; user.timezone=Asia/Bangkok; 
+----------------------------------------------------------
+2019-05-28 17:14:51.445	[uncon]	Startup		Starting up launch
+2019-05-28 17:14:51.497	[dbg  ]	Startup		Entering open: [0]/JdbcConnectionPool
+2019-05-28 17:14:51.513	[info ]	Startup		Connecting to [jdbc:oracle:thin:@10.56.244.42:1521:acbway4 (owsacs)]...
+2019-05-28 17:14:51.676	[dbg  ]	Startup		Executing sql statement [alter session set current_schema=OWSACS]
+2019-05-28 17:14:51.676	[dbg  ]	Startup		Executing sql statement [{call soft.start_simple('','Console Pipe',null)}]
+2019-05-28 17:14:51.877	[log  ]	Startup		Successfully connected to [jdbc:oracle:thin:@10.56.244.42:1521:acbway4 (owsacs)]
+2019-05-28 17:14:51.877	[dbg  ]	Startup		Exited open: [0]/JdbcConnectionPool
+2019-05-28 17:14:51.877	[dbg  ]	Startup		Entering open container: [0]/JdbcConnectionPool
+2019-05-28 17:14:51.877	[dbg  ]	Startup		Exited open container: [0]/JdbcConnectionPool
+2019-05-28 17:14:51.877	[dbg  ]	Startup		Entering open: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-28 17:14:51.877	[dbg  ]	Startup		Exited open: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-28 17:14:51.877	[dbg  ]	Startup		Entering open container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-28 17:14:51.877	[dbg  ]	Startup		Exited open container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-28 17:14:51.877	[dbg  ]	Startup		Entering start: [0]/JdbcConnectionPool
+2019-05-28 17:14:51.877	[dbg  ]	Startup		Exited start: [0]/JdbcConnectionPool
+2019-05-28 17:14:51.877	[dbg  ]	Startup		Entering start container: [0]/JdbcConnectionPool
+2019-05-28 17:14:51.892	[dbg  ]	Startup		Exited start container: [0]/JdbcConnectionPool
+2019-05-28 17:14:51.892	[dbg  ]	Startup		Entering start: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-28 17:14:51.892	[dbg_m]	Startup		Waiting for connection context
+2019-05-28 17:14:51.892	[dbg  ]	Startup		Executing stnd.GET_DB_VERSION
+2019-05-28 17:14:51.930	[dbg  ]	Startup		Executed stnd.GET_DB_VERSION
+		versname=[03_47_30]
+2019-05-28 17:14:51.930	[dbg  ]	Startup		Exited start: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-28 17:14:51.930	[dbg  ]	Startup		Entering start container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-28 17:14:51.930	[dbg  ]	Startup		Exited start container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-28 17:14:51.930	[uncon]	Startup		launch Startup complete
+2019-05-28 17:14:56.465	[uncon]	Startup		Starting up com.openwaygroup.pipe.napasreconcile_new
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open: [0]/source
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Service: source. SQL statement: [select * from dual]
+2019-05-28 17:14:56.484	[dbg  ]	Startup		SQL Select Count statement: [null]
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open: [0]/source
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open container: [0]/source
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open container: [0]/source
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open: [0]/issService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Service: issService. SQL statement: [SELECT * FROM
+		(
+		    /*Giao dich co o ACB nhung ko co o SML */
+		    (select distinct
+			 dc.id,
+		     dc.Target_Number as Card_Number,
+		     SY_CONVERT.Get_Tag_Value(dc.Add_Info,'ProcessingCode') as ProcessingCode,
+		     dc.Trans_Amount as TransAmount,
+		     SY_CONVERT.Get_Tag_Value(dc.Add_Info,'SystemTraceNumber') as SystemTraceNumber,
+		     to_char(dc.Trans_Date,'HH24MISS') as LocalTransactionTime,
+		     to_char(dc.Trans_Date,'MMDD') as LocalTransactionDate,
+		     SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F15') as SettlementDate,
+		     dc.Sic_Code as SicCode,
+		     dc.Source_Member_Id as AcquiringInstitutionCode,
+		     substr(dc.Target_Number,1,6) as IssuerBankCode,
+		     dc.Auth_Code as AuthorizationNumber,
+		     dc.Ret_Ref_Number as RetrievalReferenceNumber,
+		     dc.Source_Number as TerminalIdentification,
+		     dc.Trans_Curr as TransactionCurrencyCode,
+		     NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'FromAccount'),'00000000000000000000') as FromAccount,
+		     NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'ToAccount'),'00000000000000000000') as ToAccount,
+		     '0210' as MessageTypeIdentifierCode,
+		     '0116' as TransactionStatus,
+		     dc.trans_date,
+		 	  '' as NapasSvcCode,
+		 	  '' as TransactionChannelCode,
+		 	  dc.Settl_Amount as RealTransactionAmount,
+		 	  dc.Settl_Amount as SettlementAmount,
+		 	  dc.Settl_Curr as SettlementCurrencyCode,
+		 	  0 as FxRate,
+		 	  0 as CardholderAmount,
+		 	  dc.Trans_Amount as RealCardholderAmount,
+		 	  '' as CardholerCurrencyCode,
+		 	  0 as CardholderFxRate,
+			  '' as ServiceCode,
+			  '' as ServiceConditionCode,
+		 	  '' as MerchantIdentificationCode,
+		 	  '' as BeneficiaryIdentify,
+		 	  '' as TransactionReferenceNumber
+		     from doc dc
+			  left join 
+		     (select smldoc.* 
+		      from opt_smldoc smldoc
+		            where smldoc.Amnd_State = 'A'
+		       and smldoc.Is_Authorization in ('Y','N')
+		       and smldoc.file_type = 'NAPAS ISS-TC-ECOM'
+		       and smldoc.status = 'LOAD'
+		       and smldoc.process_date = SUBSTR(TO_CHAR('2018-04-11'),0,10)
+		       and smldoc.return_code=0
+		       and (smldoc.Source_Channel = 'b' or (smldoc.Source_Channel = 'P' and smldoc.source_member_id = '970416'))
+		     ) x
+		     on trunc(x.Trans_Date) = trunc(dc.Trans_Date)
+		       and x.Source_Number = dc.Source_Number
+		       and x.Target_Number = dc.Target_Number
+		       and x.Trans_Amount = dc.Trans_Amount
+		       and x.System_Trace_Number = SY_CONVERT.Get_Tag_Value(dc.Add_Info,'SystemTraceNumber')
+		       and x.Processing_Code = SY_CONVERT.Get_Tag_Value(dc.Add_Info,'ProcessingCode')
+		     where x.Target_Number is null
+		       and dc.Amnd_State = 'A'
+				 and dc.Return_Code =0
+				 and (exists (
+					select 1 from coms_log c where c.int_key = dc.source_reg_num and (mtid = '1110' or mtid = '1210') and rc = 000
+				 ) or substr(dc.Target_Number,1,7) = '9704163')
+				 and not exists (
+					select 1 from coms_log c where c.int_key = dc.source_reg_num and mtid = '1430' and rc = 000
+				 )
+				 and dc.POSTING_STATUS in ('I','C','P')
+		         and dc.Is_Authorization='Y'
+		        and dc.Posting_Date >= trunc(sysdate) - 13
+				 and dc.Trans_Date >= trunc(sysdate) - 13
+		         and SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F15') in (
+					select distinct nvl(to_char(posting_date,'MMDD'),'0000') SETTL_DATE
+					  from opt_smldoc
+					 where amnd_state = 'A'
+					   and process_date = SUBSTR(TO_CHAR('2018-04-11'),0,10)
+					   and FILE_TYPE = 'NAPAS ISS-TC-ECOM'
+		               and status = 'LOAD'
+				 )
+		         and dc.source_channel = 'b'
+		         and substr(dc.Target_Number,1,6) = '970416'
+		         and dc.sic_code <> '7399'
+		         and nvl(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'SERV_TAG'),'null') = 'SSP'
+		     )
+		UNION
+		     /*Giao dich co o SML nhung ko co o ACB */
+		     (select distinct
+			  dc.id,
+		      dc.Target_Number as Card_Number,
+		      dc.Processing_Code as ProcessingCode,
+		      dc.Trans_Amount as transamount,
+		      dc.System_Trace_Number as SystemTraceNumber,
+		      to_char(dc.Trans_Date,'HH24MISS') as LocalTransactionTime,
+		      to_char(dc.Trans_Date,'MMDD') as LocalTransactionDate,
+		      to_char(dc.Posting_Date,'MMDD') as SettlementDate,
+		      dc.Sic_Code as SicCode,
+		      dc.Source_Member_Id as AcquiringInstitutionCode,
+		      substr(dc.Target_Number,1,6) as IssuerBankCode,
+		      dc.Auth_Code as AuthorizationNumber,
+		      dc.Ret_Ref_Number as RetrievalReferenceNumber,
+		      dc.Source_Number as TerminalIdentification,
+		      dc.Trans_Curr as TransactionCurrencyCode,
+		      NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'FromAccount'),'00000000000000000000') as FromAccount,
+		      NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'ToAccount'),'00000000000000000000') as ToAccount,
+		      '0210' as MessageTypeIdentifierCode,
+		      '0117' as TransactionStatus,
+		      dc.trans_date,
+		      NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'SVC'),'') as NapasSvcCode,
+			   NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'TCC'),'') as TransactionChannelCode,
+			   TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'RTA'),'0')) as RealTransactionAmount,
+		 	   dc.Settl_Amount as SettlementAmount,
+		 	   dc.Settl_Curr as SettlementCurrencyCode,
+		 	   TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F9'),'0')) as FxRate,
+		 	   TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F6'),'0')) as CardholderAmount,
+		 	   TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'RCA'),'0')) as RealCardholderAmount,
+		 	   NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F51'),'704') as CardholerCurrencyCode,
+		 	   TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F10'),'0')) as CardholderFxRate,
+			   NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F22'),'') as ServiceCode,
+			   NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F25'),'') as ServiceConditionCode,
+			   NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'MID'),'0') as MerchantIdentificationCode,
+			   NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'BNB'),'0') as BeneficiaryIdentify,
+			   NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'TRN'),'') as TransactionReferenceNumber
+		      from opt_smldoc dc
+		      where dc.Amnd_State = 'A'
+			    and dc.Is_Authorization in ('N','Y')
+				and dc.file_type = 'NAPAS ISS-TC-ECOM'
+				and dc.status='LOAD'
+				and dc.process_date=SUBSTR(TO_CHAR('2018-04-11'),0,10)
+				and dc.Return_Code=0
+		        and not exists (
+		            select onlinedoc.id 
+					from doc onlinedoc
+		            where onlinedoc.Amnd_State = 'A'
+					 and onlinedoc.Return_Code=0
+					 and onlinedoc.POSTING_STATUS in ('I','C','P')
+		             and onlinedoc.Is_Authorization in ('Y')
+		             and onlinedoc.Trans_Date >= trunc(sysdate) - 13
+				     and nvl(SY_CONVERT.Get_Tag_Value(onlinedoc.Add_Info,'F15'),'9999') = nvl(to_char(dc.posting_date,'MMDD'),'0000')
+				     and onlinedoc.source_channel = 'b'
+		             and substr(onlinedoc.Target_Number,1,6) = '970416'
+					 and not exists(
+						select r.id from doc r 
+						where onlinedoc.Ret_Ref_Number = r.Ret_Ref_Number and r.amnd_state='A' and r.is_authorization='Y' and r.request_category='R' and r.return_code=0 and onlinedoc.target_number = r.target_number
+					)
+		             and onlinedoc.sic_code <> '7399'
+		             and onlinedoc.Trans_Date = dc.Trans_Date
+		             and onlinedoc.Source_Number = dc.Source_Number
+		             and onlinedoc.Target_Number = dc.Target_Number
+		             and onlinedoc.Trans_Amount = dc.Trans_Amount			 
+					 and SY_CONVERT.Get_Tag_Value(onlinedoc.Add_Info,'SystemTraceNumber') = dc.System_Trace_Number
+					 and SY_CONVERT.Get_Tag_Value(onlinedoc.Add_Info,'ProcessingCode') = dc.Processing_Code
+		         )
+		     )
+		)
+		ORDER BY Trans_Date
+		]
+2019-05-28 17:14:56.484	[dbg  ]	Startup		SQL Select Count statement: [null]
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open: [0]/issService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open container: [0]/issService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open container: [0]/issService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open: [0]/acqService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Service: acqService. SQL statement: [SELECT * FROM 
+		(
+		  /*Giao dich co o ACB nhung ko co o SML -> send 0117 - giao dich doi boi hoan. Balance Inquiy: PreAuth-Request; ATM: Fin-Advise */
+		    (select distinct
+		            dc.id,
+		            dc.Target_Number as Card_Number,
+		            SY_CONVERT.Get_Tag_Value(dc.Add_Info,'ProcessingCode') as ProcessingCode,
+		            dc.Trans_Amount as TransAmount,
+		            SY_CONVERT.Get_Tag_Value(dc.Add_Info,'SystemTraceNumber') as SystemTraceNumber,
+		            to_char(dc.Trans_Date,'HH24MISS') as LocalTransactionTime,
+		            to_char(dc.Trans_Date,'MMDD') as LocalTransactionDate,
+		            SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F15') as SettlementDate,
+		            dc.Sic_Code as SicCode,
+		             '970416' as AcquiringInstitutionCode,
+		            substr(dc.Target_Member_Id,1,6) as IssuerBankCode,
+		            NVL(dc.Auth_Code,'000000') as AuthorizationNumber,
+		            dc.Ret_Ref_Number as RetrievalReferenceNumber,
+		            dc.Source_Number as TerminalIdentification,
+		            dc.Trans_Curr as TransactionCurrencyCode,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'FromAccount'),'00000000000000000000') as FromAccount,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'ToAccount'),'00000000000000000000') as ToAccount,
+		            '0210' as MessageTypeIdentifierCode,
+		            '0117' as TransactionStatus,
+		            dc.trans_date,
+		            '' as NapasSvcCode,
+		            '' as TransactionChannelCode,
+		            dc.Settl_Amount as RealTransactionAmount,
+		            dc.Settl_Amount as SettlementAmount,
+		            dc.Settl_Curr as SettlementCurrencyCode,
+		            0 as FxRate,
+		            0 as CardholderAmount,
+		            dc.Trans_Amount as RealCardholderAmount,
+		             '' as CardholerCurrencyCode,
+		             0 as CardholderFxRate,
+		             '' as ServiceCode,
+		             '' as ServiceConditionCode,
+		             '' as MerchantIdentificationCode,
+		             '' as BeneficiaryIdentify,
+		             '' as TransactionReferenceNumber,
+		             'Y' as OnlineLogFlag,
+		             '' as STATUS
+		       from doc dc
+			   left join
+		        (select smldoc.* 
+		          from opt_smldoc smldoc
+		         where smldoc.Amnd_State = 'A'
+		           and smldoc.Is_Authorization in ('N','P')
+		           and smldoc.file_type = 'NAPAS ISS-TC-ECOM'
+		           and smldoc.status = 'LOAD'
+		           and smldoc.process_date = SUBSTR(TO_CHAR('2018-04-11'),0,10)
+		           and smldoc.return_code=0
+		           and smldoc.Target_Channel = 'b'
+		        ) x
+		        on x.Trans_Date = dc.Trans_Date
+		           and x.Source_Number = dc.Source_Number
+		           and x.Target_Number = dc.Target_Number
+		           and x.Trans_Amount = dc.Trans_Amount
+		           and x.System_Trace_Number = SY_CONVERT.Get_Tag_Value(dc.Add_Info,'SystemTraceNumber')
+		           and x.Processing_Code = SY_CONVERT.Get_Tag_Value(dc.Add_Info,'ProcessingCode')
+		      where x.source_number is null
+		        and dc.Amnd_State = 'A'
+		        and dc.Return_Code=0
+		        and dc.POSTING_STATUS in ('P','I','W')
+		        and dc.Is_Authorization in ('N','P')
+		        and dc.Trans_Date >= trunc(sysdate) - 13
+		        and SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F15') in (
+					select distinct nvl(to_char(posting_date,'MMDD'),'0000') SETTL_DATE
+					  from opt_smldoc
+					 where amnd_state = 'A'
+					   and process_date = SUBSTR(TO_CHAR('2018-04-11'),0,10)
+					   and FILE_TYPE = 'NAPAS ISS-TC-ECOM'
+				)
+		         and dc.Target_Channel = 'b'
+		         and substr(dc.Target_Number,1,6) <> '970416'
+		         and dc.trans_condition is not null
+		         and dc.doc__summ__id is null
+		         and not exists
+		         (select r.id from doc r 
+		           where r.Ret_Ref_Number = dc.Ret_Ref_Number and r.amnd_state='A' and r.Is_Authorization='N' and r.request_category='R' and r.Return_Code=0 and r.Posting_status in ('P','I','C')
+		         )
+		    )
+		UNION
+		    /*Giao dich co o SML nhung ko co o ACB -> send 0115 - giao dich chu dong hoan tra toan phan*/
+		    (select distinct
+		            dc.id,
+		            dc.Target_Number as Card_Number,
+		            dc.Processing_Code as ProcessingCode,
+		            dc.Trans_Amount as TransAmount,
+		            dc.System_Trace_Number as SystemTraceNumber,
+		            to_char(dc.Trans_Date,'HH24MISS') as LocalTransactionTime,
+		            to_char(dc.Trans_Date,'MMDD') as LocalTransactionDate,
+		            to_char(dc.Posting_Date,'MMDD') as SettlementDate,
+		            dc.Sic_Code as SicCode,
+		            '970416' as AcquiringInstitutionCode,
+		            substr(dc.Target_Member_Id,1,6) as IssuerBankCode,
+		            dc.Auth_Code as AuthorizationNumber,   
+		            dc.Ret_Ref_Number as RetrievalReferenceNumber,
+		            dc.Source_Number as TerminalIdentification,
+		            dc.Trans_Curr as TransactionCurrencyCode,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'FromAccount'),'00000000000000000000') as FromAccount,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'ToAccount'),'00000000000000000000') as ToAccount,
+		            '0210' as MessageTypeIdentifierCode,
+		            '0115' as TransactionStatus,
+		            dc.trans_date,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'SVC'),'') as NapasSvcCode,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'TCC'),'') as TransactionChannelCode,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'RTA'),'0')) as RealTransactionAmount,
+		            dc.Settl_Amount as SettlementAmount,
+		            dc.Settl_Curr as SettlementCurrencyCode,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F9'),'0')) as FxRate,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F6'),'0')) as CardholderAmount,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'RCA'),'0')) as RealCardholderAmount,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F51'),'704') as CardholerCurrencyCode,
+		            TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F10'),'0')) as CardholderFxRate,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F22'),'') as ServiceCode,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F25'),'') as ServiceConditionCode,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'MID'),'0') as MerchantIdentificationCode,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'BNB'),'0') as BeneficiaryIdentify,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'TRN'),'') as TransactionReferenceNumber,
+		            'N' as OnlineLogFlag,
+		            'HOLD' as STATUS
+		            from opt_smldoc dc
+		     where dc.Amnd_State = 'A'
+		       and dc.Is_Authorization in ('N','P')
+		       and dc.File_Type = 'NAPAS ISS-TC-ECOM'
+		       and dc.status = 'LOAD'
+		       and dc.process_date=SUBSTR(TO_CHAR('2018-04-11'),0,10)
+		       and dc.Return_Code=0
+		       and dc.Target_Channel = 'b'
+		       and not exists
+		       (select onlinedoc.Id 
+		          from doc onlinedoc
+		         where onlinedoc.Amnd_State = 'A'
+		           and (onlinedoc.Return_Code=0 
+		              or
+		              (onlinedoc.source_channel = 'A' and onlinedoc.return_code = 102
+		               and exists (select 1 from coms_log where int_key = onlinedoc.source_reg_num and mtid = '0210' and rc = 00)
+		              )
+		           )
+		           and onlinedoc.POSTING_STATUS in ('P','I','W')
+		           and onlinedoc.Is_Authorization in ('N','P')
+		           and onlinedoc.Trans_Date >= trunc(sysdate) - 13
+		           and nvl(SY_CONVERT.Get_Tag_Value(onlinedoc.Add_Info,'F15'),'9999') = nvl(to_char(dc.posting_date,'MMDD'),'0000')
+		           and onlinedoc.Target_Channel = 'b'
+		           and substr(onlinedoc.Target_Number,1,6) <> '970416'
+		           and not exists(
+		                select r.id from doc r 
+		                 where onlinedoc.Ret_Ref_Number = r.Ret_Ref_Number and r.amnd_state='A' and r.is_authorization='N' and r.request_category='R' and r.return_code=0 and r.Posting_status in ('P','I','C')
+		                   and r.amnd_officer in (23,35)
+		           )
+		           and onlinedoc.Trans_Date = dc.Trans_Date
+		           and onlinedoc.Source_Number = dc.Source_Number
+		           and onlinedoc.Target_Number = dc.Target_Number
+		           and onlinedoc.Trans_Amount = dc.Trans_Amount
+		           and SY_CONVERT.Get_Tag_Value(onlinedoc.Add_Info,'SystemTraceNumber') = dc.System_Trace_Number
+		           and SY_CONVERT.Get_Tag_Value(onlinedoc.Add_Info,'ProcessingCode') = dc.Processing_Code
+		        )
+		    )
+		UNION 
+		    (select distinct
+		            dc.id as id,
+		            dc.Target_Number as Card_Number,
+		            SY_CONVERT.Get_Tag_Value(dc.Add_Info,'ProcessingCode') as ProcessingCode,
+		            dc.Trans_Amount as TransAmount,
+		            SY_CONVERT.Get_Tag_Value(dc.Add_Info,'SystemTraceNumber') as SystemTraceNumber,
+		            to_char(dc.Trans_Date,'HH24MISS') as LocalTransactionTime,
+		            to_char(dc.Trans_Date,'MMDD') as LocalTransactionDate,
+		            SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F15') as SettlementDate,
+		            dc.Sic_Code as SicCode,
+		            '970416' as AcquiringInstitutionCode,
+		            dc.Ret_Ref_Number as RetrievalReferenceNumber,
+		            substr(dc.Target_Member_Id,1,6) as IssuerBankCode,
+		            NVL(dc.Auth_Code,'000000') as AuthorizationNumber,
+		            dc.Source_Number as TerminalIdentification,
+		            dc.Trans_Curr as TransactionCurrencyCode,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'FromAccount'),'00000000000000000000') as FromAccount,
+		            NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'ToAccount'),'00000000000000000000') as ToAccount,
+		            '0210' as MessageTypeIdentifierCode,
+		            '0115' as TransactionStatus,
+		            dc.trans_date,
+		            '' as NapasSvcCode,
+		            '' as TransactionChannelCode,
+		            dc.Settl_Amount as RealTransactionAmount,
+		            dc.Settl_Amount as SettlementAmount,
+		            dc.Settl_Curr as SettlementCurrencyCode,
+		            0 as FxRate,
+		            0 as CardholderAmount,
+		            dc.Trans_Amount as RealCardholderAmount,
+		             '' as CardholerCurrencyCode,
+		            0 as CardholderFxRate,
+		             '' as ServiceCode,
+		             '' as ServiceConditionCode,
+		             '' as MerchantIdentificationCode,
+		             '' as BeneficiaryIdentify,
+		             '' as TransactionReferenceNumber,
+		             'Y' as OnlineLogFlag,
+		             '' as STATUS
+		       from doc dc
+		      where dc.Amnd_State = 'A'
+		        and dc.Return_Code = 0
+		        and dc.POSTING_STATUS = 'C'
+		        and dc.Is_Authorization = 'N'
+		        and dc.request_category = 'R'
+		        and dc.Target_Channel = 'b'
+		        and substr(dc.Target_Number,1,6) <> '970416'
+		        and dc.trans_condition is not null
+		        and dc.doc__summ__id is null
+		        and dc.posting_date >= (select trunc(local_date) from f_i where id = 745) - 30
+		        and dc.posting_date < (select trunc(local_date) from f_i where id = 745)
+		        and dc.amnd_officer not in (23,35)
+		        and dc.source_channel = 'P'
+		        and not exists
+		        (select smldis.id
+		          from opt_smldis smldis
+		         where smldis.Amnd_State = 'A'
+		           and smldis.direction='ACQ'
+		           and smldis.return_code='0115'
+		           and smldis.trans_date_2 = dc.Trans_Date
+		           and smldis.terminal_id = dc.Source_Number
+		           and smldis.card_Number = dc.Target_Number
+		           and smldis.Trans_Amount = dc.Trans_Amount
+		           and smldis.System_Trace_Number = SY_CONVERT.Get_Tag_Value(dc.Add_Info,'SystemTraceNumber')
+		           and smldis.Processing_Code = SY_CONVERT.Get_Tag_Value(dc.Add_Info,'ProcessingCode')
+		        )
+		    )
+		UNION 
+		    (select distinct
+		            orgdoc.id as id,
+		            dc.Target_Number as Card_Number,
+		            SY_CONVERT.Get_Tag_Value(orgdoc.Add_Info,'ProcessingCode') as ProcessingCode,
+		            dc.Trans_Amount as TransAmount,
+		            SY_CONVERT.Get_Tag_Value(orgdoc.Add_Info,'SystemTraceNumber') as SystemTraceNumber,
+		            to_char(dc.Trans_Date,'HH24MISS') as LocalTransactionTime,
+		            to_char(dc.Trans_Date,'MMDD') as LocalTransactionDate,
+		            SY_CONVERT.Get_Tag_Value(orgdoc.Add_Info,'F15') as SettlementDate,
+		            dc.Sic_Code as SicCode,
+		            '970416' as AcquiringInstitutionCode,
+		            substr(dc.Target_Member_Id,1,6) as IssuerBankCode,
+		            NVL(dc.Auth_Code,'000000') as AuthorizationNumber,   
+		            orgdoc.Ret_Ref_Number as RetrievalReferenceNumber,
+		            dc.Source_Number as TerminalIdentification,
+		            dc.Trans_Curr as TransactionCurrencyCode,
+		            NVL(SY_CONVERT.Get_Tag_Value(orgdoc.Add_Info,'FromAccount'),'00000000000000000000') as FromAccount,
+		            NVL(SY_CONVERT.Get_Tag_Value(orgdoc.Add_Info,'ToAccount'),'00000000000000000000') as ToAccount,
+		            '0210' as MessageTypeIdentifierCode,
+		            '0114' as TransactionStatus,
+		            dc.trans_date,
+		            '' as NapasSvcCode,
+		            '' as TransactionChannelCode,
+		            dc.Settl_Amount as RealTransactionAmount,
+		            dc.Settl_Amount as SettlementAmount,
+		            dc.Settl_Curr as SettlementCurrencyCode,
+		            0 as FxRate,
+		            0 as CardholderAmount,
+		            dc.Trans_Amount as RealCardholderAmount,
+		             '' as CardholerCurrencyCode,
+		            0 as CardholderFxRate,
+		             '' as ServiceCode,
+		             '' as ServiceConditionCode,
+		             '' as MerchantIdentificationCode,
+		             '' as BeneficiaryIdentify,
+		             '' as TransactionReferenceNumber,
+		             'Y' as OnlineLogFlag,
+		             '' as STATUS
+		       from doc dc, doc orgdoc
+		      where dc.doc__orig__id = orgdoc.id
+		        and dc.Amnd_State = 'A'
+		        and dc.Return_Code = 0
+		        and dc.POSTING_STATUS = 'P'
+		        and dc.Is_Authorization = 'N'
+		        and dc.request_category = 'J'
+		        and dc.Target_Channel = 'b'
+		        and substr(dc.Target_Number,1,6) <> '970416'
+		        and dc.trans_condition is not null
+		        and orgdoc.doc__summ__id is null
+		        and dc.posting_date >= (select trunc(local_date) from f_i where id = 745) - 30
+		        and dc.posting_date < (select trunc(local_date) from f_i where id = 745)
+		        and dc.amnd_officer not in (23,35)
+		        and dc.source_channel = 'P'
+		        and not exists
+		        (select smldis.id
+		          from opt_smldis smldis
+		         where smldis.Amnd_State = 'A'
+		           and smldis.direction='ACQ'
+		           and smldis.return_code='0114'
+		           and smldis.trans_date_2 = dc.Trans_Date
+		           and smldis.terminal_id = dc.Source_Number
+		           and smldis.card_Number = dc.Target_Number
+		           and smldis.Trans_Amount = dc.Trans_Amount
+		           and smldis.System_Trace_Number = SY_CONVERT.Get_Tag_Value(orgdoc.Add_Info,'SystemTraceNumber')
+		           and smldis.Processing_Code = SY_CONVERT.Get_Tag_Value(orgdoc.Add_Info,'ProcessingCode')
+		        )
+		    )
+		)
+		ORDER BY Trans_Date ASC
+		]
+2019-05-28 17:14:56.484	[dbg  ]	Startup		SQL Select Count statement: [select max(to_char(doc.TRANS_DATE,'DDMMYYYY')) as max_trans_date
+		  from DOC]
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open: [0]/acqService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open container: [0]/acqService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open container: [0]/acqService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open: [0]/disputeService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open: [0]/disputeService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open container: [0]/disputeService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open container: [0]/disputeService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open: [0]/checkOPTSMLDIS
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Service: checkOPTSMLDIS. SQL statement: [SELECT NVL(MAX(ID),0) "ID" FROM OPT_SMLDIS WHERE PROCESS_DATE=  
+		         
+		         
+		         
+		         
+		         ? AND DIRECTION=
+		         
+		         
+		         
+		         
+		         ? AND NAPAS_SERVICE =
+		         
+		         
+		         
+		         
+		         ? AND ROWNUM <=1
+		]
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open: [0]/checkOPTSMLDIS
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open container: [0]/checkOPTSMLDIS
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open container: [0]/checkOPTSMLDIS
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open: [0]/getMinDateEcom
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Service: getMinDateEcom. SQL statement: [select nvl(trunc(min(trans_date)),TO_DATE('2000-01-01 00:00:00','YYYY-DD-MM HH24:MI:SS')) "MIN_DATE"
+		  from opt_smldoc dc
+		 where dc.amnd_state = 'A'
+		   and dc.process_date = SUBSTR(TO_CHAR('2018-04-11'),0,10)
+		   and FILE_TYPE = 'NAPAS ISS-TC-ECOM'
+		   and dc.status = 'LOAD'
+		]
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open: [0]/getMinDateEcom
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open container: [0]/getMinDateEcom
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open container: [0]/getMinDateEcom
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open: [0]/getMaxDateEcom
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Service: getMaxDateEcom. SQL statement: [select nvl(trunc(max(trans_date)),TO_DATE('2000-01-01 00:00:00','YYYY-DD-MM HH24:MI:SS')) "MAX_DATE"
+		  from opt_smldoc dc
+		 where dc.amnd_state = 'A'
+		   and dc.process_date = SUBSTR(TO_CHAR('2018-04-11'),0,10)
+		   and FILE_TYPE = 'NAPAS ISS-TC-ECOM'
+		   and dc.status = 'LOAD'
+		]
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open: [0]/getMaxDateEcom
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open container: [0]/getMaxDateEcom
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open container: [0]/getMaxDateEcom
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open: [0]/issEcomService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Service: issEcomService. SQL statement: [SELECT * FROM
+		(
+		    /*Giao dich co o ACB nhung ko co o SML */
+		    (select distinct
+		     dc.id,
+		     dc.Target_Number as Card_Number,
+		     SY_CONVERT.Get_Tag_Value(dc.Add_Info,'ProcessingCode') as ProcessingCode,
+		     dc.Trans_Amount as TransAmount,
+		     SY_CONVERT.Get_Tag_Value(dc.Add_Info,'SystemTraceNumber') as SystemTraceNumber,
+		     to_char(dc.Trans_Date,'HH24MISS') as LocalTransactionTime,
+		     to_char(dc.Trans_Date,'MMDD') as LocalTransactionDate,
+		     SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F15') as SettlementDate,
+		     dc.Sic_Code as SicCode,
+		     dc.Source_Member_Id as AcquiringInstitutionCode,
+		     substr(dc.Target_Number,1,6) as IssuerBankCode,
+		     dc.Auth_Code as AuthorizationNumber,
+		     dc.Ret_Ref_Number as RetrievalReferenceNumber,
+		     dc.Source_Number as TerminalIdentification,
+		     dc.Trans_Curr as TransactionCurrencyCode,
+		     NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'FromAccount'),'00000000000000000000') as FromAccount,
+		     NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'ToAccount'),'00000000000000000000') as ToAccount,
+		     '0210' as MessageTypeIdentifierCode,
+		     '0116' as TransactionStatus,
+		     dc.trans_date,
+		 	  '' as NapasSvcCode,
+		 	  '' as TransactionChannelCode,
+		 	  dc.Settl_Amount as RealTransactionAmount,
+		 	  dc.Settl_Amount as SettlementAmount,
+		 	  dc.Settl_Curr as SettlementCurrencyCode,
+		 	  0 as FxRate,
+		 	  0 as CardholderAmount,
+		 	  dc.Trans_Amount as RealCardholderAmount,
+		 	  '' as CardholerCurrencyCode,
+		 	  0 as CardholderFxRate,
+			  '' as ServiceCode,
+			  '' as ServiceConditionCode,
+		 	  '' as MerchantIdentificationCode,
+		 	  '' as BeneficiaryIdentify,
+		 	  '' as TransactionReferenceNumber
+		     from doc dc
+			  left join 
+		     (select smldoc.*
+		      from opt_smldoc smldoc
+		            where smldoc.Amnd_State = 'A'
+		       and smldoc.Is_Authorization in ('Y','N')
+		       and smldoc.file_type = 'NAPAS ISS-TC-ECOM'
+		       and smldoc.status = 'LOAD'
+		       and smldoc.process_date = SUBSTR(TO_CHAR('2018-04-11'),0,10)
+		       and smldoc.return_code=0
+		       and smldoc.Source_Channel = 'b'
+		     ) x
+		     on trunc(x.Trans_Date) = trunc(dc.Trans_Date)
+		       and x.Source_Number = dc.Source_Number
+		       and x.Target_Number = dc.Target_Number
+		       and x.Trans_Amount = dc.Trans_Amount
+		       and x.System_Trace_Number = SY_CONVERT.Get_Tag_Value(dc.Add_Info,'SystemTraceNumber')
+		       and x.Processing_Code = SY_CONVERT.Get_Tag_Value(dc.Add_Info,'ProcessingCode')
+		     where x.Target_Number is null
+		       and dc.Amnd_State = 'A'
+		       and dc.Return_Code =0
+		       and dc.POSTING_STATUS in ('I','C','P')
+		       and dc.Is_Authorization='Y'
+		       and dc.posting_date >= trunc(sysdate) - 13
+		       and trunc(dc.Trans_Date) >= trunc(
+		         
+		         
+		         ?)
+		       and trunc(dc.Trans_Date) <= trunc(
+		         
+		         
+		         ?)
+		       and dc.source_channel = 'b'
+		       and substr(dc.Target_Number,1,6) = '970416'
+		       and not exists(
+		          select r.id from doc r 
+		          where dc.Ret_Ref_Number = r.Ret_Ref_Number and r.amnd_state='A' and r.is_authorization='Y' and r.request_category='R' and r.return_code=0 and dc.target_number = r.target_number
+		       )
+		       and dc.sic_code = '7399'
+		    )
+		UNION
+		     /*Giao dich co o SML nhung ko co o ACB */
+		     (select distinct
+		      dc.id,
+		      dc.Target_Number as Card_Number,
+		      dc.Processing_Code as ProcessingCode,
+		      dc.Trans_Amount as transamount,
+		      dc.System_Trace_Number as SystemTraceNumber,
+		      to_char(dc.Trans_Date,'HH24MISS') as LocalTransactionTime,
+		      to_char(dc.Trans_Date,'MMDD') as LocalTransactionDate,
+		      to_char(dc.Posting_Date,'MMDD') as SettlementDate,
+		      dc.Sic_Code as SicCode,
+		      dc.Source_Member_Id as AcquiringInstitutionCode,
+		      substr(dc.Target_Number,1,6) as IssuerBankCode,
+		      dc.Auth_Code as AuthorizationNumber,
+		      NVL(dc.Ret_Ref_Number,'000000000000') as RetrievalReferenceNumber,
+		      dc.Source_Number as TerminalIdentification,
+		      dc.Trans_Curr as TransactionCurrencyCode,
+		      NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'FromAccount'),'00000000000000000000') as FromAccount,
+		      NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'ToAccount'),'00000000000000000000') as ToAccount,
+		      '0210' as MessageTypeIdentifierCode,
+		      '0117' as TransactionStatus,
+		      dc.trans_date,
+		      NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'SVC'),'') as NapasSvcCode,
+			   NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'TCC'),'') as TransactionChannelCode,
+			   TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'RTA'),'0')) as RealTransactionAmount,
+		 	   dc.Settl_Amount as SettlementAmount,
+		 	   dc.Settl_Curr as SettlementCurrencyCode,
+		 	   TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F9'),'0')) as FxRate,
+		 	   TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F6'),'0')) as CardholderAmount,
+		 	   TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'RCA'),'0')) as RealCardholderAmount,
+		 	   NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F51'),'704') as CardholerCurrencyCode,
+		 	   TO_NUMBER(NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F10'),'0')) as CardholderFxRate,
+			   NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F22'),'') as ServiceCode,
+			   NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'F25'),'') as ServiceConditionCode,
+			   NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'MID'),'0') as MerchantIdentificationCode,
+			   NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'BNB'),'0') as BeneficiaryIdentify,
+			   NVL(SY_CONVERT.Get_Tag_Value(dc.Add_Info,'TRN'),'') as TransactionReferenceNumber
+		      from opt_smldoc dc
+		      where dc.Amnd_State = 'A'
+		        and dc.Is_Authorization in ('N','Y')
+		        and dc.file_type = 'NAPAS ISS-TC-ECOM'
+		        and dc.status='LOAD'
+		        and dc.process_date=SUBSTR(TO_CHAR('2018-04-11'),0,10)
+		        and dc.Return_Code=0
+		        and not exists (
+		            select onlinedoc.id 
+		            from doc onlinedoc
+		            where onlinedoc.Amnd_State = 'A'
+		             and onlinedoc.Return_Code=0
+		             and onlinedoc.POSTING_STATUS in ('I','C','P')
+		             and onlinedoc.Is_Authorization in ('Y')
+		             and onlinedoc.posting_date >= trunc(sysdate) - 13
+		             and trunc(onlinedoc.Trans_Date) >= trunc(
+		         
+		         
+		         ?)
+		             and trunc(onlinedoc.Trans_Date) <= trunc(
+		         
+		         
+		         ?)
+		             and onlinedoc.source_channel = 'b'
+		             and substr(onlinedoc.Target_Number,1,6) = '970416'
+		             and not exists(
+		                select r.id from doc r 
+		                where onlinedoc.Ret_Ref_Number = r.Ret_Ref_Number and r.amnd_state='A' and r.is_authorization='Y' and r.request_category='R' and r.return_code=0 and onlinedoc.target_number = r.target_number
+		             )
+		             and onlinedoc.sic_code = '7399'
+		             and onlinedoc.Trans_Date = dc.Trans_Date
+		             and onlinedoc.Source_Number = dc.Source_Number
+		             and onlinedoc.Target_Number = dc.Target_Number
+		             and onlinedoc.Trans_Amount = dc.Trans_Amount
+		             and SY_CONVERT.Get_Tag_Value(onlinedoc.Add_Info,'SystemTraceNumber') = dc.System_Trace_Number
+		             and SY_CONVERT.Get_Tag_Value(onlinedoc.Add_Info,'ProcessingCode') = dc.Processing_Code
+		         )
+		     )
+		)
+		ORDER BY Trans_Date
+		]
+2019-05-28 17:14:56.484	[dbg  ]	Startup		SQL Select Count statement: [null]
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open: [0]/issEcomService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open container: [0]/issEcomService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open container: [0]/issEcomService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open: [0]/onlineDoc
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Service: onlineDoc. SQL statement: [select int_key, 
+		       replace(regexp_replace(LISTAGG(NapasSvcCode, ',') WITHIN GROUP (ORDER BY NapasSvcCode),'([^,]+)(,\1)*(,|$)', '\1\3'),',') as NapasSvcCode,
+		       replace(regexp_replace(LISTAGG(TransactionChannelCode, ',') WITHIN GROUP (ORDER BY TransactionChannelCode),'([^,]+)(,\1)*(,|$)', '\1\3'),',') as TransactionChannelCode,
+		       replace(regexp_replace(LISTAGG(FxRate, ',') WITHIN GROUP (ORDER BY FxRate),'([^,]+)(,\1)*(,|$)', '\1\3'),',') as FxRate,
+		       replace(regexp_replace(LISTAGG(CardholderAmount, ',') WITHIN GROUP (ORDER BY CardholderAmount),'([^,]+)(,\1)*(,|$)', '\1\3'),',') as CardholderAmount,
+		       replace(regexp_replace(LISTAGG(CardholerCurrencyCode, ',') WITHIN GROUP (ORDER BY CardholerCurrencyCode),'([^,]+)(,\1)*(,|$)', '\1\3'),',') as CardholerCurrencyCode,
+		       replace(regexp_replace(LISTAGG(CardholderFxRate, ',') WITHIN GROUP (ORDER BY CardholderFxRate),'([^,]+)(,\1)*(,|$)', '\1\3'),',') as CardholderFxRate,
+		       replace(regexp_replace(LISTAGG(ServiceCode, ',') WITHIN GROUP (ORDER BY ServiceCode),'([^,]+)(,\1)*(,|$)', '\1\3'),',') as ServiceCode, 
+		       replace(regexp_replace(LISTAGG(ServiceConditionCode, ',') WITHIN GROUP (ORDER BY ServiceConditionCode),'([^,]+)(,\1)*(,|$)', '\1\3'),',') as ServiceConditionCode,        
+		       replace(regexp_replace(LISTAGG(MerchantIdentificationCode, ',') WITHIN GROUP (ORDER BY MerchantIdentificationCode),'([^,]+)(,\1)*(,|$)', '\1\3'),',') as MerchantIdentificationCode, 
+		       replace(regexp_replace(LISTAGG(BeneficiaryIdentify, ' ') WITHIN GROUP (ORDER BY BeneficiaryIdentify),'([^,]+)(,\1)*(,|$)', '\1\3'),',') as BeneficiaryIdentify, 
+		       replace(regexp_replace(LISTAGG(TransactionReferenceNumber, ' ') WITHIN GROUP (ORDER BY TransactionReferenceNumber),'([^,]+)(,\1)*(,|$)', '\1\3'),',') as TransactionReferenceNumber
+		from
+		(
+		select c.int_key,
+		       regexp_replace(decode(INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F62='), 0, '', substr(c.buf1 || c.buf2 || c.buf3 || c.buf4, INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F62=') + LENGTH('F62='), 10)), '[0-9]', '') NapasSvcCode,
+		       trim(decode(INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F60='), 0, '', substr(c.buf1 || c.buf2 || c.buf3 || c.buf4, INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F60=') + LENGTH('F60='), 2))) TransactionChannelCode,
+		       trim(decode(INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F9='), 0, '', substr(c.buf1 || c.buf2 || c.buf3 || c.buf4, INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F9=') + LENGTH('F9='), 8))) FxRate,
+		       trim(decode(INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F6='), 0, '', substr(c.buf1 || c.buf2 || c.buf3 || c.buf4, INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F6=') + LENGTH('F6='), 12))) CardholderAmount,
+		       trim(decode(INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F51='), 0, '', substr(c.buf1 || c.buf2 || c.buf3 || c.buf4, INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F51=') + LENGTH('F51='), 3))) CardholerCurrencyCode,
+		       trim(decode(INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F10='), 0, '', substr(c.buf1 || c.buf2 || c.buf3 || c.buf4, INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F10=') + LENGTH('F10='), 8))) CardholderFxRate,
+		       trim(decode(INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F22='), 0, '', substr(c.buf1 || c.buf2 || c.buf3 || c.buf4, INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F22=') + LENGTH('F22='), 3))) ServiceCode,
+		       trim(decode(INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F25='), 0, '', substr(c.buf1 || c.buf2 || c.buf3 || c.buf4, INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F25=') + LENGTH('F25='), 2))) ServiceConditionCode,
+		       trim(decode(INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F42='), 0, '', substr(c.buf1 || c.buf2 || c.buf3 || c.buf4, INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F42=') + LENGTH('F42='), 15))) MerchantIdentificationCode,
+		       trim(decode(INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F100='), 0, '', substr(c.buf1 || c.buf2 || c.buf3 || c.buf4, INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F100=') + LENGTH('F100='), 8))) BeneficiaryIdentify,                
+		       trim(decode(INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F63='), 0, '', substr(c.buf1 || c.buf2 || c.buf3 || c.buf4, INSTR(c.buf1 || c.buf2 || c.buf3 || c.buf4,'F63=') + LENGTH('F63='), 16))) TransactionReferenceNumber              
+		 from COMS_LOG c, doc d
+		where 1=1
+		and c.int_key = d.source_reg_num
+		and d.id = 
+		         
+		         
+		         
+		         ?
+		and c.mtid in ('0200','0210','0420','0430')
+		)
+		group by int_key]
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open: [0]/onlineDoc
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering open container: [0]/onlineDoc
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited open container: [0]/onlineDoc
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start: [0]/source
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start: [0]/source
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start container: [0]/source
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start container: [0]/source
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start: [0]/issService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start: [0]/issService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start container: [0]/issService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start container: [0]/issService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start: [0]/acqService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start: [0]/acqService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start container: [0]/acqService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start container: [0]/acqService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start: [0]/disputeService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start: [0]/disputeService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start container: [0]/disputeService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start container: [0]/disputeService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start: [0]/checkOPTSMLDIS
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start: [0]/checkOPTSMLDIS
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start container: [0]/checkOPTSMLDIS
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start container: [0]/checkOPTSMLDIS
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start: [0]/getMinDateEcom
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start: [0]/getMinDateEcom
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start container: [0]/getMinDateEcom
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start container: [0]/getMinDateEcom
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start: [0]/getMaxDateEcom
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start: [0]/getMaxDateEcom
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start container: [0]/getMaxDateEcom
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start container: [0]/getMaxDateEcom
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start: [0]/issEcomService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start: [0]/issEcomService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start container: [0]/issEcomService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start container: [0]/issEcomService
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start: [0]/onlineDoc
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start: [0]/onlineDoc
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Entering start container: [0]/onlineDoc
+2019-05-28 17:14:56.484	[dbg  ]	Startup		Exited start container: [0]/onlineDoc
+2019-05-28 17:14:56.484	[uncon]	Startup		com.openwaygroup.pipe.napasreconcile_new Startup complete
+2019-05-28 17:14:56.499	[dbg_m]	Startup		Waiting for connection context
+2019-05-28 17:14:56.499	[dbg  ]	Startup		Executing stnd.SET_GL_CONSTANTS
+2019-05-28 17:14:56.515	[dbg  ]	Startup		Executed stnd.SET_GL_CONSTANTS
+2019-05-28 17:14:56.515	[dbg  ]	Startup		Executing sy_process.START_CURRENT_V3
+		processname=[napasreconcile_new]
+		processparms=[null]
+		isunique=[N]
+		tostartsub=[Y]
+		objecttype=[null]
+		objectid=[null]
+2019-05-28 17:14:56.597	[dbg  ]	Startup		Executed sy_process.START_CURRENT_V3
+		isactive=[Y]
+2019-05-28 17:14:56.597	[dbg  ]	Startup		Executing sy_process.GET_CURRENT_PROCESS
+2019-05-28 17:14:56.597	[dbg  ]	Startup		Executed sy_process.GET_CURRENT_PROCESS
+		return value=[16379519]
+2019-05-28 17:14:56.597	[dbg  ]	Startup		Executing stnd.GET_PARMS
+2019-05-28 17:14:56.597	[dbg  ]	Startup		Executed stnd.GET_PARMS
+		newconnectionid=[2001542]
+		newofficerid=[null]
+2019-05-28 17:14:56.597	[dbg  ]	Startup		Executing soft.Get_Officer_Id
+2019-05-28 17:14:56.597	[dbg  ]	Startup		Executed soft.Get_Officer_Id
+		return value=[null]
+2019-05-28 17:14:56.597	[dbg  ]	Startup		Executing soft.Get_Officer_Name
+2019-05-28 17:14:56.597	[dbg  ]	Startup		Executed soft.Get_Officer_Name
+		return value=[null]
+2019-05-28 17:14:56.597	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16379519]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[DB Version: 03_47_30]
+2019-05-28 17:14:56.612	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-28 17:14:56.612	[uncon]	Startup		Information: Pipe Version: 00.00.01
+2019-05-28 17:14:56.612	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16379519]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Pipe Version: 00.00.01]
+2019-05-28 17:14:56.612	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-28 17:14:56.612	[info ]	Startup		DB version: 03_47_30
+2019-05-28 17:14:56.612	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16379519]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Pipe:com.openwaygroup.pipe.napasreconcile_new.jar]
+2019-05-28 17:14:56.612	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-28 17:14:56.612	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16379519]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: FILE_TYPE=NAPAS ISS-TC-ECOM]
+2019-05-28 17:14:56.612	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-28 17:14:56.612	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16379519]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: NAPAS_CHANNEL_CODE=b]
+2019-05-28 17:14:56.612	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-28 17:14:56.612	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16379519]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: CURRENT_USER=1]
+2019-05-28 17:14:56.612	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-28 17:14:56.612	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16379519]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: BANK_PASSWORD=970416]
+2019-05-28 17:14:56.628	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-28 17:14:56.628	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16379519]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: ABBREVIATION_BANK_NAME=ACB]
+2019-05-28 17:14:56.628	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-28 17:14:56.628	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16379519]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: MEMBER_BANK_CODE=970416]
+2019-05-28 17:14:56.634	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-28 17:14:56.634	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16379519]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: NAPAS_PROCESS_DATE=2018-04-11]
+2019-05-28 17:14:56.634	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-28 17:14:56.634	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16379519]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: DIRECTION=ISS]
+2019-05-28 17:14:56.634	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-28 17:14:56.634	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16379519]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: SERVICE=ECOM]
+2019-05-28 17:14:56.634	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-28 17:14:56.650	[dbg_m]	Startup		Opening source
+2019-05-28 17:14:56.665	[dbg_m]	Startup		Opening issService
+2019-05-28 17:14:56.665	[dbg_m]	Startup		Opening acqService
+2019-05-28 17:31:24.264	[dbg_m]	Startup		Opening disputeService
+2019-05-28 17:31:24.264	[info ]	Startup		INSERT statement: [insert into OPT_SMLDIS(AMND_STATE,AMND_DATE,AMND_OFFICER,ID,DOC__OID,CARD_NUMBER,PROCESSING_CODE,TRANS_AMOUNT,SYSTEM_TRACE_NUMBER,TRANS_TIME,TRANS_DATE,SETTL_DATE,TERMINAL_TYPE,ACQUIRING_MEMBER_ID,AUTH_CODE,TERMINAL_ID,TRANS_CURR,FROM_ACCOUNT,TO_ACCOUNT,MESSAGE_CODE,DIRECTION,RETURN_CODE,PROCESS_DATE,ADD_INFO,CHECK_SUM_VALUE,NAPAS_RETURN_CODE,STATUS,OUTWARD_DATE,TRANS_DATE_2,NAPAS_SERVICE) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)]
+2019-05-28 17:31:24.266	[dbg_m]	Startup		Opening checkOPTSMLDIS
+2019-05-28 17:31:24.266	[dbg_m]	Startup		Opening getMinDateEcom
+2019-05-28 17:31:24.266	[dbg_m]	Startup		Opening getMaxDateEcom
+2019-05-28 17:31:24.266	[dbg_m]	Startup		Opening issEcomService
+2019-05-28 17:31:24.266	[dbg_m]	Startup		Opening onlineDoc
+2019-05-28 17:31:24.266	[dbg_m]	Startup		Opening mapper
+2019-05-28 17:31:24.266	[uncon]	Startup		Trace: [Napas Reconilation]:sProcessDates = 2018-04-11
+2019-05-28 17:31:24.266	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16379519]
+		docid=[null]
+		messagetype=[O]
+		messagetext=[[Napas Reconilation]:sProcessDates = 2018-04-11]
+2019-05-28 17:31:24.266	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-28 17:31:24.266	[dbg  ]	Startup		executing  (checkOPTSMLDIS)
+		  PROCESS_DATE=[2018-04-11]
+		  DIRECTION=[ISS]
+		  SERVICE=[ECOM]
+2019-05-28 17:31:24.298	[dbg  ]	Startup		executed  (checkOPTSMLDIS)
+		  id=[0]
+2019-05-28 17:31:24.298	[dbg  ]	Startup		executing  (getMinDateEcom)
+2019-05-28 17:31:26.314	[dbg  ]	Startup		executed  (getMinDateEcom)
+		  minDate=[2000-01-01 00:00:00.0]
+2019-05-28 17:31:26.314	[dbg  ]	Startup		executing  (getMaxDateEcom)
+2019-05-28 17:31:27.622	[dbg  ]	Startup		executed  (getMaxDateEcom)
+		  maxDate=[2000-01-01 00:00:00.0]
+2019-05-28 17:31:27.622	[uncon]	Startup		Trace: [Napas Reconilation]:dISS_MIN_DATE = 2000-01-01 00:00:00.0
+2019-05-28 17:31:27.622	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16379519]
+		docid=[null]
+		messagetype=[O]
+		messagetext=[[Napas Reconilation]:dISS_MIN_DATE = 2000-01-01 00:00:00.0]
+2019-05-28 17:31:27.631	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-28 17:31:27.631	[uncon]	Startup		Trace: [Napas Reconilation]:dISS_MAX_DATE = 2000-01-01 00:00:00.0
+2019-05-28 17:31:27.631	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[16379519]
+		docid=[null]
+		messagetype=[O]
+		messagetext=[[Napas Reconilation]:dISS_MAX_DATE = 2000-01-01 00:00:00.0]
+2019-05-28 17:31:27.631	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2019-05-28 17:31:27.631	[dbg  ]	Startup		selecting (issEcomService)
+		  MIN_DATE=[2000-01-01 00:00:00.0]
+		  MAX_DATE=[2000-01-01 00:00:00.0]
+		  MIN_DATE=[2000-01-01 00:00:00.0]
+		  MAX_DATE=[2000-01-01 00:00:00.0]
+2019-05-28 17:31:47.633	[dbg  ]	Startup		Source SELECT: No data found
+2019-05-28 17:31:47.633	[info ]	Startup		Committing after 0 rows
+2019-05-28 17:31:47.633	[dbg  ]	Startup		Executing sy_process.SET_TOTAL_NUMBER1
+		processid=[16379519]
+		n=[0]
+2019-05-28 17:31:47.643	[dbg  ]	Startup		Executed sy_process.SET_TOTAL_NUMBER1
+2019-05-28 17:31:47.643	[dbg  ]	Startup		Executing sy_process.LOCK_PROCESS_STATUS1
+		processid=[16379519]
+2019-05-28 17:31:47.643	[dbg  ]	Startup		Executed sy_process.LOCK_PROCESS_STATUS1
+		return value=[A]
+2019-05-28 17:31:47.643	[dbg  ]	Startup		Committed
+2019-05-28 17:31:47.643	[dbg  ]	Startup		retrieved [0]  (source)
+		  dummy=[X]
+2019-05-28 17:31:47.643	[dbg  ]	Startup		Source SELECT: No data found
+2019-05-28 17:31:47.643	[info ]	Startup		Committing after 1 rows
+2019-05-28 17:31:47.643	[dbg  ]	Startup		Executing sy_process.ADD_CURRENT_NUMBER1
+		processid=[16379519]
+		n=[1]
+2019-05-28 17:31:47.643	[dbg  ]	Startup		Executed sy_process.ADD_CURRENT_NUMBER1
+		return value=[0]
+2019-05-28 17:31:47.643	[dbg  ]	Startup		Executing sy_process.LOCK_PROCESS_STATUS1
+		processid=[16379519]
+2019-05-28 17:31:47.643	[dbg  ]	Startup		Executed sy_process.LOCK_PROCESS_STATUS1
+		return value=[A]
+2019-05-28 17:31:47.643	[dbg  ]	Startup		Committed
+2019-05-28 17:31:47.643	[dbg_m]	Startup		Closing mapper
+2019-05-28 17:31:47.643	[dbg_m]	Startup		Closing onlineDoc
+2019-05-28 17:31:47.643	[dbg_m]	Startup		Closing issEcomService
+2019-05-28 17:31:47.643	[dbg_m]	Startup		Closing getMaxDateEcom
+2019-05-28 17:31:47.643	[dbg_m]	Startup		Closing getMinDateEcom
+2019-05-28 17:31:47.643	[dbg_m]	Startup		Closing checkOPTSMLDIS
+2019-05-28 17:31:47.643	[dbg_m]	Startup		Closing disputeService
+2019-05-28 17:31:47.643	[dbg_m]	Startup		Closing acqService
+2019-05-28 17:31:47.643	[dbg_m]	Startup		Closing issService
+2019-05-28 17:31:47.643	[dbg_m]	Startup		Closing source
+2019-05-28 17:31:47.643	[dbg  ]	Startup		Executing stnd.GET_DB_VERSION
+2019-05-28 17:31:47.643	[dbg  ]	Startup		Executed stnd.GET_DB_VERSION
+		versname=[03_47_30]
+2019-05-28 17:31:47.643	[dbg  ]	Startup		Executing sy_process.GET_PROCESS_ERROR_LEVEL
+2019-05-28 17:31:47.659	[dbg  ]	Startup		Executed sy_process.GET_PROCESS_ERROR_LEVEL
+		return value=[null]
+2019-05-28 17:31:47.659	[dbg  ]	Startup		Executing sy_process.FINISH_CURRENT
+		isok=[Y]
+2019-05-28 17:31:47.659	[dbg  ]	Startup		Executed sy_process.FINISH_CURRENT
+2019-05-28 17:31:47.659	[uncon]	Startup		Shutting down com.openwaygroup.pipe.napasreconcile_new
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/onlineDoc
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/onlineDoc
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/onlineDoc
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/onlineDoc
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/issEcomService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/issEcomService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/issEcomService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/issEcomService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/getMaxDateEcom
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/getMaxDateEcom
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/getMaxDateEcom
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/getMaxDateEcom
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/getMinDateEcom
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/getMinDateEcom
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/getMinDateEcom
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/getMinDateEcom
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/checkOPTSMLDIS
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/checkOPTSMLDIS
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/checkOPTSMLDIS
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/checkOPTSMLDIS
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/disputeService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/disputeService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/disputeService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/disputeService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/acqService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/acqService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/acqService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/acqService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/issService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/issService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/issService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/issService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/onlineDoc
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/onlineDoc
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/onlineDoc
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/onlineDoc
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/issEcomService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/issEcomService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/issEcomService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/issEcomService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/getMaxDateEcom
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/getMaxDateEcom
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/getMaxDateEcom
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/getMaxDateEcom
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/getMinDateEcom
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/getMinDateEcom
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/getMinDateEcom
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/getMinDateEcom
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/checkOPTSMLDIS
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/checkOPTSMLDIS
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/checkOPTSMLDIS
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/checkOPTSMLDIS
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/disputeService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/disputeService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/disputeService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/disputeService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/acqService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/acqService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/acqService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/acqService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/issService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/issService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/issService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/issService
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/source
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/source
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/source
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/source
+2019-05-28 17:31:47.659	[uncon]	Components_Shutdowner		com.openwaygroup.pipe.napasreconcile_new Shutdown complete
+2019-05-28 17:31:47.659	[uncon]	Startup		Shutting down launch
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/JdbcConnectionPool
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/JdbcConnectionPool
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering stop: [0]/JdbcConnectionPool
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited stop: [0]/JdbcConnectionPool
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Exited close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-28 17:31:47.659	[dbg  ]	Components_Shutdowner		Entering close: [0]/JdbcConnectionPool
+2019-05-28 17:31:47.674	[dbg  ]	Components_Shutdowner		Exited close: [0]/JdbcConnectionPool
+2019-05-28 17:31:47.674	[dbg  ]	Components_Shutdowner		Entering close: [0]/JdbcConnectionPool
+2019-05-28 17:31:47.674	[dbg  ]	Components_Shutdowner		Exited close: [0]/JdbcConnectionPool
+2019-05-28 17:31:47.674	[uncon]	Components_Shutdowner		launch Shutdown complete

@@ -1,0 +1,73 @@
+launch
+Startup time: 2019-05-31 09:12:16.942
+Host: LAPTOP-1R6H4EI0 (192.168.2.1)
+Java: 1.6.0_45 (Java HotSpot(TM) Client VM) in C:\Program Files (x86)\Java\jdk1.6.0_45\jre
+OS: Windows 8(x86) 6.2
+User: Openway
+Current Dir: C:\OPW\workspace\napasincoming
+User Home Dir: C:\Users\Openway
+Max Heap Size: 259522560 bytes
+Processors: 8
+Telnet Console Port: 23788
+Java System Properties: java.endorsed.dirs=C:/OPW/03.35.30.26_HOME/client/shared/javalib/endorsed; java.io.tmpdir=C:\Users\Openway\AppData\Local\Temp\; user.country=US; user.language=en; user.timezone=Asia/Bangkok; 
+----------------------------------------------------------
+2019-05-31 09:12:21.468	[uncon]	Startup		Starting up launch
+2019-05-31 09:12:21.777	[dbg  ]	Startup		Entering open: [0]/JdbcConnectionPool
+2019-05-31 09:12:21.790	[info ]	Startup		Connecting to [jdbc:oracle:thin:@10.56.244.42:1521:acbway4 (owsacs)]...
+2019-05-31 09:12:22.228	[dbg  ]	Startup		Executing sql statement [alter session set current_schema=OWSACS]
+2019-05-31 09:12:22.233	[dbg  ]	Startup		Executing sql statement [{call soft.start_simple('','Console Pipe',null)}]
+2019-05-31 09:12:22.274	[log  ]	Startup		Successfully connected to [jdbc:oracle:thin:@10.56.244.42:1521:acbway4 (owsacs)]
+2019-05-31 09:12:22.274	[dbg  ]	Startup		Exited open: [0]/JdbcConnectionPool
+2019-05-31 09:12:22.275	[dbg  ]	Startup		Entering open container: [0]/JdbcConnectionPool
+2019-05-31 09:12:22.275	[dbg  ]	Startup		Exited open container: [0]/JdbcConnectionPool
+2019-05-31 09:12:22.275	[dbg  ]	Startup		Entering open: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 09:12:22.275	[dbg  ]	Startup		Exited open: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 09:12:22.276	[dbg  ]	Startup		Entering open container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 09:12:22.276	[dbg  ]	Startup		Exited open container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 09:12:22.277	[dbg  ]	Startup		Entering start: [0]/JdbcConnectionPool
+2019-05-31 09:12:22.278	[dbg  ]	Startup		Exited start: [0]/JdbcConnectionPool
+2019-05-31 09:12:22.278	[dbg  ]	Startup		Entering start container: [0]/JdbcConnectionPool
+2019-05-31 09:12:22.278	[dbg  ]	Startup		Exited start container: [0]/JdbcConnectionPool
+2019-05-31 09:12:22.278	[dbg  ]	Startup		Entering start: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 09:12:22.279	[dbg_m]	Startup		Waiting for connection context
+2019-05-31 09:12:22.281	[dbg  ]	Startup		Executing stnd.GET_DB_VERSION
+2019-05-31 09:12:22.379	[dbg  ]	Startup		Executed stnd.GET_DB_VERSION
+		versname=[03_47_30]
+2019-05-31 09:12:22.382	[dbg  ]	Startup		Exited start: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 09:12:22.382	[dbg  ]	Startup		Entering start container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 09:12:22.382	[dbg  ]	Startup		Exited start container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 09:12:22.382	[uncon]	Startup		launch Startup complete
+2019-05-31 09:12:22.408	[error]	Startup		Exception for [com.openwaygroup.pipe.acv.jar]
+		com/openwaygroup/pipe/acv/autogen/ows-application.xml not found neither in com.openwaygroup.pipe.acv.jar nor in other classpath
+	Stack trace:
+		java.lang.Exception: Exception for [com.openwaygroup.pipe.acv.jar]
+			at com.openwaygroup.application.pipe.impl.PipeFactoryImpl.open(PipeFactoryImpl.java:253)
+			at com.openwaygroup.application.pipe.PipeLauncherComponent.execute(PipeLauncherComponent.java:34)
+			at com.openwaygroup.application.ApplicationProcessComponent.afterStartup(ApplicationProcessComponent.java:36)
+			at com.openwaygroup.application.impl.Application.fireStartupListeners(Application.java:328)
+			at com.openwaygroup.application.impl.Application.startUp(Application.java:82)
+			at com.openwaygroup.application.ApplicationStarter.startApplication(ApplicationStarter.java:163)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:98)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:145)
+		Caused by: java.lang.Exception: com/openwaygroup/pipe/acv/autogen/ows-application.xml not found neither in com.openwaygroup.pipe.acv.jar nor in other classpath
+			at com.openwaygroup.application.pipe.impl.PipeFactoryImpl.open(PipeFactoryImpl.java:202)
+			... 7 more
+
+2019-05-31 09:12:22.412	[uncon]	Startup		Shutting down launch
+2019-05-31 09:12:22.415	[dbg  ]	Components_Shutdowner		Entering stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 09:12:22.417	[dbg  ]	Components_Shutdowner		Exited stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 09:12:22.417	[dbg  ]	Components_Shutdowner		Entering stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 09:12:22.418	[dbg  ]	Components_Shutdowner		Exited stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 09:12:22.418	[dbg  ]	Components_Shutdowner		Entering stop: [0]/JdbcConnectionPool
+2019-05-31 09:12:22.418	[dbg  ]	Components_Shutdowner		Exited stop: [0]/JdbcConnectionPool
+2019-05-31 09:12:22.418	[dbg  ]	Components_Shutdowner		Entering stop: [0]/JdbcConnectionPool
+2019-05-31 09:12:22.419	[dbg  ]	Components_Shutdowner		Exited stop: [0]/JdbcConnectionPool
+2019-05-31 09:12:22.419	[dbg  ]	Components_Shutdowner		Entering close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 09:12:22.420	[dbg  ]	Components_Shutdowner		Exited close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 09:12:22.420	[dbg  ]	Components_Shutdowner		Entering close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 09:12:22.420	[dbg  ]	Components_Shutdowner		Exited close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2019-05-31 09:12:22.420	[dbg  ]	Components_Shutdowner		Entering close: [0]/JdbcConnectionPool
+2019-05-31 09:12:22.427	[dbg  ]	Components_Shutdowner		Exited close: [0]/JdbcConnectionPool
+2019-05-31 09:12:22.427	[dbg  ]	Components_Shutdowner		Entering close: [0]/JdbcConnectionPool
+2019-05-31 09:12:22.430	[dbg  ]	Components_Shutdowner		Exited close: [0]/JdbcConnectionPool
+2019-05-31 09:12:22.430	[uncon]	Components_Shutdowner		launch Shutdown complete
