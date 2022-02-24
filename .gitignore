@@ -1,5 +1,0 @@
-# Ignore Git here
-.git
-
-# But not these files...
-!.gitignore
