@@ -1,0 +1,9 @@
+.classpath
+.project
+.settings/com.openwaygroup.ide.javapipe.prefs
+.settings/org.eclipse.jdt.core.prefs
+classes/
+out/
+log/
+src/com/openwaygroup/pipe/napasackupload/autogen/
+.settings/org.eclipse.ltk.core.refactoring.prefs

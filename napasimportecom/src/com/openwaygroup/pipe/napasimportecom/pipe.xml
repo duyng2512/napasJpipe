@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><pipe commit_interval="0" name="napasimportecom" version="00.00.01">
+   <parameters>
+      <parameter name="SOURCE_DIR"/>
+      <parameter name="PROCESSED_DIR"/>
+      <parameter name="ERROR_DIR"/>
+      <parameter name="OUTPUT_DIR"/>
+      <parameter name="OUR_MEMBER_ID"/>
+      <parameter name="SMARTLINK_CHANNEL_CODE"/>
+      <parameter name="FILE_MASK"/>
+      <parameter name="DIRECTION"/>
+      <parameter name="CHECK_CHECKSUM"/>
+      <parameter name="BANK_PASSWORD"/>
+   </parameters>
+   <db_grants>
+      <set name="default"/>
+   </db_grants>
+   <main_source class="pipe.source.filer">
+      <processing_settings break_duplicate_files="yes" break_on_format_error="no" check_uniqueness="no" file_code_page="cp1251" process_code="ACB {$DIRECTION} IMPORT" read_file_twice="yes" register_file="no" send_eof_message="no"/>
+      <format_description line_extract_method="EOL" line_length="0" line_terminator="0D0A">
+         <record is_mandatory="no" kind="FILE_NAME" line_length="0" name="FileNameRecord" send_to_mapper="yes">
+            <field field_offset="1" format="MMddyy" kind="VARIABLE" length_in_file="6" name="FileGeneratingDate" value_type="DATETIME"/>
+            <field field_offset="6" kind="VARIABLE" length_in_file="1" name="Filter" value_type="STRING"/>
+            <field field_offset="7" kind="VARIABLE" length_in_file="3" name="FileTarget" value_type="STRING"/>
+            <field field_offset="10" kind="VARIABLE" length_in_file="1" name="Filter" value_type="STRING"/>
+            <field field_offset="20" kind="VARIABLE" name="FileEnding" value_type="STRING"/>
+         </record>
+         <record enabling_condition="" field_delimiter="" is_mandatory="no" kind="FILE_HEADER" line_length="0" name="FileHeaderRecord" send_to_mapper="yes" terminate_last_field="">
+            <field field_offset="0" is_key="no" kind="VARIABLE" length_in_file="4" name="RecordType" value_type="STRING"/>
+            <field field_offset="4" kind="VARIABLE" length_in_file="8" name="BIN" value_type="STRING"/>
+            <field field_offset="12" format="MMddyy" kind="VARIABLE" length_in_file="6" name="TransactionDate" value_type="DATETIME"/>
+            <field field_offset="18" kind="VARIABLE" length_in_file="152" name="Spaces1" value_type="STRING"/>
+         </record>
+         <record enabling_condition="" field_delimiter="" is_mandatory="no" kind="FILE_RECORD" line_length="0" name="FileDataRecord" send_to_mapper="yes" terminate_last_field="">
+            <field field_offset="0" is_key="yes" kind="VARIABLE" length_in_file="4" name="RecordType" value_type="STRING"/>
+            <field field_offset="4" kind="VARIABLE" length_in_file="19" name="CardNumber" value_type="STRING"/>
+            <field field_offset="23" kind="VARIABLE" length_in_file="6" name="ProcessingCode" value_type="STRING"/>
+            <field field_offset="29" kind="VARIABLE" length_in_file="12" name="TransactionAmount" value_type="STRING"/>
+            <field field_offset="106" kind="VARIABLE" length_in_file="6" name="SystemTraceNumber" value_type="STRING"/>
+            <field field_offset="113" kind="VARIABLE" length_in_file="6" name="LocalTransactionTime" value_type="STRING"/>
+            <field field_offset="119" kind="VARIABLE" length_in_file="4" name="LocalTransactionDate" value_type="STRING"/>
+            <field field_offset="123" kind="VARIABLE" length_in_file="4" name="SettlementDate" value_type="STRING"/>
+            <field field_offset="127" kind="VARIABLE" length_in_file="4" name="TerminalType" value_type="STRING"/>
+            <field field_offset="131" kind="VARIABLE" length_in_file="8" name="AcquiringInstitutionCode" value_type="STRING"/>
+            <field field_offset="163" kind="VARIABLE" length_in_file="6" name="AuthorizationNumber" value_type="STRING"/>
+            <field field_offset="183" kind="VARIABLE" length_in_file="8" name="CardAcceptorTerminalIdentification" value_type="STRING"/>
+            <field field_offset="191" kind="VARIABLE" length_in_file="3" name="TransactionCurrencyCode" value_type="STRING"/>
+            <field field_offset="87" kind="VARIABLE" length_in_file="20" name="FromAccount" value_type="STRING"/>
+            <field field_offset="107" kind="VARIABLE" length_in_file="20" name="ToAccount" value_type="STRING"/>
+            <field field_offset="256" kind="VARIABLE" length_in_file="4" name="MessageTypeIdentifierCode" value_type="STRING"/>
+            <field field_offset="260" kind="VARIABLE" length_in_file="4" name="ResponseCode" value_type="STRING"/>
+            <field field_offset="312" kind="VARIABLE" length_in_file="32" name="ChecksumRecordValue" value_type="STRING"/>
+         </record>
+         <record enabling_condition="" field_delimiter="" is_mandatory="no" kind="FILE_TRAILER" line_length="0" name="FileTrailerRecord" send_to_mapper="yes" terminate_last_field="no">
+            <field field_offset="0" kind="VARIABLE" length_in_file="4" name="RecordType" value_type="STRING"/>
+            <field field_offset="4" kind="VARIABLE" length_in_file="9" name="NumberofRecordsinTheFile" value_type="STRING"/>
+            <field field_offset="13" kind="VARIABLE" length_in_file="20" name="Generator" value_type="STRING"/>
+            <field field_offset="33" kind="VARIABLE" length_in_file="6" name="FileGenerationTime" value_type="STRING"/>
+            <field field_offset="39" kind="VARIABLE" length_in_file="8" name="FileGenerationDate" value_type="STRING"/>
+            <field field_offset="47" kind="VARIABLE" length_in_file="32" name="ChecksumFileValue" value_type="STRING"/>
+            <field field_offset="79" kind="VARIABLE" length_in_file="91" name="Spaces" value_type="STRING"/>
+         </record>
+      </format_description>
+      <component class="pipe.input_stream.file_stream" error_directory="{$ERROR_DIR}" file_mask="{$FILE_MASK}" log_to_file_info="false" overwrite_processed_files="no" processed_directory="{$PROCESSED_DIR}" source_directory="{$SOURCE_DIR}"/>
+   </main_source>
+   <parameters>
+      <parameter name="SOURCE_DIR"/>
+      <parameter name="PROCESSED_DIR"/>
+      <parameter name="ERROR_DIR"/>
+      <parameter name="OUTPUT_DIR"/>
+   </parameters>
+   <service class="pipe.target.sql_select" name="checkOPTSMLDOC" throw_exception_on_data_not_found="yes">
+      <sql_statement>SELECT NVL(MAX(ID),0) "ID" FROM OPT_SMLDOC WHERE PROCESS_DATE=
+         <parameter name="PROCESS_DATE" sql_data_type="VARCHAR"/> AND FILE_NAME=    
+         <parameter name="FILE_NAME" sql_data_type="VARCHAR"/> AND ROWNUM &lt;=1
+</sql_statement>
+   </service>
+   <service batch_size="500" class="pipe.target.sql_table" name="updateOPTSMLDOC" options="insert" return_record_id="false" table="OPT_SMLDOC"/>
+   <service class="pipe.target.sql_select" name="getTransID" throw_exception_on_data_not_found="yes">
+      <sql_statement>SELECT ID FROM TRANS_TYPE WHERE TRANS_CODE=
+
+         <parameter name="TRANS_CODE" sql_data_type="VARCHAR"/> AND AMND_STATE='A' AND 
+         S_CAT = 'M' AND T_CAT = 'C' AND
+         ROWNUM &lt;=1
+
+</sql_statement>
+   </service>
+   <service class="pipe.target.sql_select" name="getBankingDate" throw_exception_on_data_not_found="yes">
+      <sql_statement>select to_char(local_date,'yyyy-MM-dd') banking_date from f_i where id = 1 and amnd_state = 'A'
+</sql_statement>
+   </service>
+</pipe>

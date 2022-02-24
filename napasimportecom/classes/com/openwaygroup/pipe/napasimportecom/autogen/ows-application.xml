@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><application>
+  <pipe commit_interval="0" name="napasimportecom" package="com.openwaygroup.pipe.napasimportecom.autogen" version="00.00.01">
+    <db_grants>
+      <set name="default"/>
+    </db_grants>
+  </pipe>
+  <component buffer_class="com.openwaygroup.pipe.napasimportecom.autogen.Source" class="pipe.source.sql_select" name="source" pipe_service="yes" source="yes">
+    <sql_statement>select * from dual</sql_statement>
+    <sql_select_count_statement/>
+  </component>
+  <component buffer_class="com.openwaygroup.pipe.napasimportecom.autogen.NewService" class="pipe.target.xml.writer" commit_on_file_finish="yes" indent="yes" name="newService" pipe_service="yes" validate="yes">
+    <component class="pipe.writer.stream" encoding="UTF-8">
+      <component class="pipe.output_stream.file_stream" create_empty_files="yes" file_directory="C:\OUT_DIR" file_mode="confirm" file_name="xml_file.xml"/>
+    </component>
+  </component>
+</application>
