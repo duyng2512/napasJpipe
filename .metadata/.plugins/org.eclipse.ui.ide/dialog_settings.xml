@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.openwaygroup.ide.javapipe:2.4.3.0000-RELEASE"/>
+		<item value="com.openwaygroup.ide.way4u:2.4.3.0000-RELEASE"/>
+		<item value="com.openwaygroup.ide:2.4.3.0000-RELEASE"/>
+		<item value="org.eclipse.help:1.2.0.v20100427-7e7jEQFEp4jsWcboLU9l93"/>
+		<item value="org.eclipse.jdt:3.6.1.r361_v20100714-0800-7z8XFUSFLFlmgLc5z-Bvrt8-HVkH"/>
+		<item value="org.eclipse.platform:3.6.1.r361_v20100909-9gF78GrkFqw7GrsZnvz0JWNTeb6fue6896L"/>
+		<item value="org.eclipse.rcp:3.6.1.r361_v20100827-9OArFLdFjY-ThSQXmKvKz0_T"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+	</section>
+	<section name="CleanDialogSettings">
+		<item value="828" key="DIALOG_WIDTH"/>
+		<item value="213" key="DIALOG_Y_ORIGIN"/>
+		<item value="446" key="DIALOG_HEIGHT"/>
+		<item value="546" key="DIALOG_X_ORIGIN"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="com.openwaygroup.ide.javapipe.ui.NewPipeWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.openwaygroup.ide.wizards.new"/>
+		</list>
+	</section>
+</section>

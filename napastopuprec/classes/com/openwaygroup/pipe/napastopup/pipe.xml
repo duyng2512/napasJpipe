@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pipe commit_interval="0" name="napastopup" version="00.00.01">
+	<parameters>
+		<parameter name="SOURCE_DIR"/>
+		<parameter name="PROCESSED_DIR"/>
+		<parameter name="ERROR_DIR"/>
+		<parameter name="OUTPUT_DIR"/>
+		<parameter name="OUR_MEMBER_ID"/>
+		<parameter name="NAPAS_CHANNEL_CODE"/>
+		<parameter name="FILE_MASK"/>
+		<parameter name="DIRECTION"/>
+		<parameter name="CHECK_CHECKSUM"/>
+		<parameter name="BANK_PASSWORD"/>
+		<parameter name="SERVICE"/>
+	</parameters>
+	<db_grants>
+		<set name="default"/>
+	</db_grants>
+	<main_source class="pipe.source.filer">
+		<processing_settings break_duplicate_files="yes" 
+							break_on_format_error="no" 
+							check_uniqueness="no" 
+							file_code_page="cp1251" 
+							process_code="ACB IMPORT" 
+							read_file_twice="yes" 
+							register_file="no" 
+							send_eof_message="no" />
+		<format_description line_extract_method="EOL" line_length="0" line_terminator="0D0A">
+			<record disabled="no" field_delimiter="5F" 
+					is_mandatory="no" 
+					kind="FILE_NAME" 
+					line_length="0" 
+					name="FileNameRecord" 
+					send_to_mapper="yes" 
+					terminate_last_field="no">
+				<field field_offset="0" format="MMddyy" kind="VARIABLE" name="FileGeneratingDate" value_type="DATETIME"/>
+			 </record>
+			 <record enabling_condition="" field_delimiter="" is_mandatory="no" kind="FILE_HEADER" line_length="0" name="FileHeaderRecord" send_to_mapper="yes" terminate_last_field=""><!--<field field_offset="" kind="VARIABLE" length_in_file="6" name="Date" value_type="STRING"/>-->
+            <field check_rule="getHeaderRecord().equals(&quot;HR&quot;)" field_offset="0" is_key="no" kind="VARIABLE" length_in_file="2" name="HeaderRecord" value_type="STRING"/>
+            <field check_rule="getReceiver().equals(&quot;[REV]&quot;)" field_offset="2" kind="VARIABLE" length_in_file="5" name="Receiver" value_type="STRING"/>
+            <field field_offset="6" kind="VARIABLE" length_in_file="8" name="BIN" value_type="STRING"/>
+            <field check_rule="getDate().equals(&quot;[DATE]&quot;)" field_offset="15" kind="VARIABLE" length_in_file="6" name="Date" value_type="STRING"/>
+            <field field_offset="21" format="ddMMyyyy" kind="VARIABLE" length_in_file="8" name="TransactionDate" value_type="DATETIME"/>
+         </record>
+         <record enabling_condition="" field_delimiter="" is_mandatory="no" kind="FILE_RECORD" line_length="0" name="FileDataRecord" send_to_mapper="yes" terminate_last_field="">
+            <field check_rule="getDataRecord().equals(&quot;DR&quot;)" field_offset="0" is_key="no" kind="VARIABLE" length_in_file="2" name="DataRecord" value_type="STRING"/>
+            <field check_rule="getMtiDef().equals(&quot;[MTI]&quot;)" field_offset="4" kind="VARIABLE" length_in_file="5" name="MtiDef" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="4" name="MessageTypeIdentifierCode" value_type="STRING"/>
+            <field check_rule="getF2().equals(&quot;[F2]&quot;)" field_offset="13" kind="VARIABLE" length_in_file="4" name="F2" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="19" name="CardNumber" value_type="STRING"/>
+            <field check_rule="getF3().equals(&quot;[F3]&quot;)" field_offset="36" kind="VARIABLE" length_in_file="4" name="F3" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="6" name="ProcessingCode" value_type="STRING"/>
+            <field check_rule="getSvcDef().equals(&quot;[SVC]&quot;)" field_offset="46" kind="VARIABLE" length_in_file="5" name="SvcDef" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="10" name="NapasSvcCode" value_type="STRING"/>
+            <field check_rule="getTccDef().equals(&quot;[TCC]&quot;)" field_offset="61" kind="VARIABLE" length_in_file="5" name="TccDef" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="2" name="TransactionChannelCode" value_type="STRING"/>
+            <field check_rule="getF4().equals(&quot;[F4]&quot;)" field_offset="68" kind="VARIABLE" length_in_file="4" name="F4" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="12" name="TransactionAmount" value_type="STRING"/>
+            <field check_rule="getRta().equals(&quot;[RTA]&quot;)" field_offset="84" kind="VARIABLE" length_in_file="5" name="Rta" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="12" name="RealTransactionAmount" value_type="STRING"/>
+            <field check_rule="getF49().equals(&quot;[F49]&quot;)" field_offset="101" kind="VARIABLE" length_in_file="5" name="F49" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="3" name="TransactionCurrencyCode" value_type="STRING"/>
+            <field check_rule="getF5().equals(&quot;[F5]&quot;)" field_offset="109" kind="VARIABLE" length_in_file="4" name="F5" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="12" name="SettlementAmount" value_type="STRING"/>
+            <field check_rule="getF50().equals(&quot;[F50]&quot;)" field_offset="125" kind="VARIABLE" length_in_file="5" name="F50" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="3" name="SettlementCurrencyCode" value_type="STRING"/>
+            <field check_rule="getF9().equals(&quot;[F9]&quot;)" field_offset="133" kind="VARIABLE" length_in_file="4" name="F9" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="8" name="FxRate" value_type="STRING"/>
+            <field check_rule="getF6().equals(&quot;[F6]&quot;)" field_offset="145" kind="VARIABLE" length_in_file="4" name="F6" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="12" name="CardholderAmount" value_type="STRING"/>
+            <field check_rule="getRca().equals(&quot;[RCA]&quot;)" field_offset="161" kind="VARIABLE" length_in_file="5" name="Rca" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="12" name="RealCardholerAmount" value_type="STRING"/>
+            <field check_rule="getF51().equals(&quot;[F51]&quot;)" field_offset="178" kind="VARIABLE" length_in_file="5" name="F51" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="3" name="CardholerCurrencyCode" value_type="STRING"/>
+            <field check_rule="getF10().equals(&quot;[F10]&quot;)" field_offset="186" kind="VARIABLE" length_in_file="5" name="F10" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="8" name="CardholderFxRate" value_type="STRING"/>
+            <field check_rule="getF11().equals(&quot;[F11]&quot;)" field_offset="199" kind="VARIABLE" length_in_file="5" name="F11" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="6" name="SystemTraceNumber" value_type="STRING"/>
+            <field check_rule="getF12().equals(&quot;[F12]&quot;)" field_offset="210" kind="VARIABLE" length_in_file="5" name="F12" value_type="STRING"/>
+            <field field_offset="" format="hhmmss" kind="VARIABLE" length_in_file="6" name="LocalTransactionTime" value_type="STRING"/>
+            <field check_rule="getF13().equals(&quot;[F13]&quot;)" field_offset="221" kind="VARIABLE" length_in_file="5" name="F13" value_type="STRING"/>
+            <field field_offset="" format="MMdd" kind="VARIABLE" length_in_file="4" name="LocalTransactionDate" value_type="STRING"/>
+            <field check_rule="getF15().equals(&quot;[F15]&quot;)" field_offset="230" kind="VARIABLE" length_in_file="5" name="F15" value_type="STRING"/>
+            <field field_offset="233" format="MMdd" kind="VARIABLE" length_in_file="4" name="SettlementDate" value_type="STRING"/>
+            <field check_rule="getF18().equals(&quot;[F18]&quot;)" field_offset="239" kind="VARIABLE" length_in_file="5" name="F18" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="4" name="TerminalType" value_type="STRING"/>
+            <field check_rule="getF22().equals(&quot;[F22]&quot;)" field_offset="248" kind="VARIABLE" length_in_file="5" name="F22" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="3" name="ServiceCode" value_type="STRING"/>
+            <field check_rule="getF25().equals(&quot;[F25]&quot;)" field_offset="256" kind="VARIABLE" length_in_file="5" name="F25" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="2" name="ServiceConditionCode" value_type="STRING"/>
+            <field check_rule="getF41().equals(&quot;[F41]&quot;)" field_offset="263" kind="VARIABLE" length_in_file="5" name="F41" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="8" name="CardAcceptorTerminalIdentification" value_type="STRING"/>
+            <field check_rule="getAcq().equals(&quot;[ACQ]&quot;)" field_offset="276" kind="VARIABLE" length_in_file="5" name="Acq" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="8" name="AcquiringInstitutionCode" value_type="STRING"/>
+            <field check_rule="getIss().equals(&quot;[ISS]&quot;)" field_offset="289" kind="VARIABLE" length_in_file="5" name="Iss" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="8" name="IssuerMemberId" value_type="STRING"/>
+            <field check_rule="getMid().equals(&quot;[MID]&quot;)" field_offset="302" kind="VARIABLE" length_in_file="5" name="Mid" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="15" name="MerchantIdentificationCode" value_type="STRING"/>
+            <field check_rule="getBnb().equals(&quot;[BNB]&quot;)" field_offset="322" kind="VARIABLE" length_in_file="5" name="Bnb" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="8" name="BeneficiaryIdentify" value_type="STRING"/>
+            <field check_rule="getF102().equals(&quot;[F102]&quot;)" field_offset="335" kind="VARIABLE" length_in_file="6" name="F102" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="28" name="FromAccount" value_type="STRING"/>
+            <field check_rule="getF103().equals(&quot;[F103]&quot;)" field_offset="369" kind="VARIABLE" length_in_file="6" name="F103" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="28" name="ToAccount" value_type="STRING"/>
+            <field check_rule="getSvfissnp().equals(&quot;[SVFISSNP]&quot;)" field_offset="403" kind="VARIABLE" length_in_file="10" name="Svfissnp" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="12" name="SvFeeIssNapas" value_type="STRING"/>
+            <field check_rule="getIrfissacq().equals(&quot;[IRFISSACQ]&quot;)" field_offset="425" kind="VARIABLE" length_in_file="11" name="Irfissacq" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="12" name="IrFeeIssAcq" value_type="STRING"/>
+            <field check_rule="getIrfissbnb().equals(&quot;[IRFISSBNB]&quot;)" field_offset="447" kind="VARIABLE" length_in_file="11" name="Irfissbnb" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="12" name="IrFeeIssBnb" value_type="STRING"/>
+            <field check_rule="getSvfacqnp().equals(&quot;[SVFACQNP]&quot;)" field_offset="469" kind="VARIABLE" length_in_file="10" name="Svfacqnp" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="12" name="SvFeeAcqNapas" value_type="STRING"/>
+            <field check_rule="getIrfacqiss().equals(&quot;[IRFACQISS]&quot;)" field_offset="491" kind="VARIABLE" length_in_file="11" name="Irfacqiss" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="12" name="IrFeeAcqIss" value_type="STRING"/>
+            <field check_rule="getIrfacqbnb().equals(&quot;[IRFACQBNB]&quot;)" field_offset="513" kind="VARIABLE" length_in_file="11" name="Irfacqbnb" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="12" name="IrFeeAcqBnb" value_type="STRING"/>
+            <field check_rule="getSvfbnbnp().equals(&quot;[SVFBNBNP]&quot;)" field_offset="535" kind="VARIABLE" length_in_file="10" name="Svfbnbnp" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="12" name="SvFeeBnbNapas" value_type="STRING"/>
+            <field check_rule="getIrfbnbiss().equals(&quot;[IRFBNBISS]&quot;)" field_offset="557" kind="VARIABLE" length_in_file="11" name="Irfbnbiss" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="12" name="IrFeeBnbIss" value_type="STRING"/>
+            <field check_rule="getIrfbnbacq().equals(&quot;[IRFBNBACQ]&quot;)" field_offset="579" kind="VARIABLE" length_in_file="11" name="Irfbnbacq" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="12" name="IrFeeBnbAcq" value_type="STRING"/>
+            <field check_rule="getF37().equals(&quot;[F37]&quot;)" field_offset="601" kind="VARIABLE" length_in_file="5" name="F37" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="12" name="Rrn" value_type="STRING"/>
+            <field check_rule="getF38().equals(&quot;[F38]&quot;)" field_offset="618" kind="VARIABLE" length_in_file="5" name="F38" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="6" name="AuthorizationNumber" value_type="STRING"/>
+            <field check_rule="getTrn().equals(&quot;[TRN]&quot;)" field_offset="629" kind="VARIABLE" length_in_file="5" name="Trn" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="16" name="TransactionReferenceNumber" value_type="STRING"/>
+            <field check_rule="getRrc().equals(&quot;[RRC]&quot;)" field_offset="650" kind="VARIABLE" length_in_file="5" name="Rrc" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="4" name="ResponseCode" value_type="STRING"/>
+            <field check_rule="getRsv1Def().equals(&quot;[RSV1]&quot;)" field_offset="" kind="VARIABLE" length_in_file="6" name="Rsv1Def" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="100" name="Rsv1" value_type="STRING"/>
+            <field check_rule="getRsv2Def().equals(&quot;[RSV2]&quot;)" field_offset="" kind="VARIABLE" length_in_file="6" name="Rsv2Def" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="100" name="Rsv2" value_type="STRING"/>
+            <field check_rule="getRsv3Def().equals(&quot;[RSV3]&quot;)" field_offset="" kind="VARIABLE" length_in_file="6" name="Rsv3Def" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="100" name="Rsv3" value_type="STRING"/>
+            <field check_rule="getCsr().equals(&quot;[CSR]&quot;)" field_offset="659" kind="VARIABLE" length_in_file="5" name="Csr" value_type="STRING"/>
+            <field field_offset="" kind="VARIABLE" length_in_file="32" name="ChecksumRecordValue" value_type="STRING"/>
+         </record>
+         <record enabling_condition="" field_delimiter="" is_mandatory="no" kind="FILE_TRAILER" line_length="0" name="FileTrailerRecord" send_to_mapper="yes" terminate_last_field="no">
+            <field check_rule="getTrailerRecord().equals(&quot;TR&quot;)" field_offset="0" kind="VARIABLE" length_in_file="2" name="TrailerRecord" value_type="STRING"/>
+            <field check_rule="getNot().equals(&quot;[NOT]&quot;)" field_offset="2" kind="VARIABLE" length_in_file="5" name="Not" value_type="STRING"/>
+            <field field_offset="4" kind="VARIABLE" length_in_file="9" name="NumberofRecordsinTheFile" value_type="STRING"/>
+            <field check_rule="getCre().equals(&quot;[CRE]&quot;)" field_offset="16" kind="VARIABLE" length_in_file="5" name="Cre" value_type="STRING"/>
+            <field field_offset="13" kind="VARIABLE" length_in_file="20" name="Generator" value_type="STRING"/>
+            <field check_rule="getTime().equals(&quot;[TIME]&quot;)" field_offset="41" kind="VARIABLE" length_in_file="6" name="Time" value_type="STRING"/>
+            <field field_offset="47" format="hh:mm:ss" kind="VARIABLE" length_in_file="6" name="FileGenerationTime" value_type="STRING"/>
+            <field check_rule="getDate().equals(&quot;[DATE]&quot;)" field_offset="53" kind="VARIABLE" length_in_file="6" name="Date" value_type="STRING"/>
+            <field field_offset="59" format="ddMMyyyy" kind="VARIABLE" length_in_file="8" name="FileGenerationDate" value_type="STRING"/>
+            <field check_rule="getCsf().equals(&quot;[CSF]&quot;)" field_offset="67" kind="VARIABLE" length_in_file="5" name="Csf" value_type="STRING"/>
+            <field field_offset="72" kind="VARIABLE" length_in_file="32" name="ChecksumFileValue" value_type="STRING"/>
+         </record>
+		 <component class="pipe.input_stream.file_stream" error_directory="{$ERROR_DIR}" file_mask="{$FILE_MASK}" log_to_file_info="false" overwrite_processed_files="no" processed_directory="{$PROCESSED_DIR}" source_directory="{$SOURCE_DIR}"/>
+   
+		</format_description>
+	</main_source>
+	
+	   <parameters>
+	      <parameter name="SOURCE_DIR"/>
+	      <parameter name="PROCESSED_DIR"/>
+	      <parameter name="ERROR_DIR"/>
+	      <parameter name="OUTPUT_DIR"/>
+	   </parameters>
+	<service class="pipe.target.xml.writer" commit_on_file_finish="yes" indent="yes" name="newService" validate="yes">
+		<component class="pipe.writer.stream" encoding="UTF-8">
+			<component class="pipe.output_stream.file_stream" create_empty_files="yes" file_directory="C:\OUT_DIR" file_mode="confirm" file_name="xml_file.xml"/>
+		</component>
+	</service>
+</pipe>

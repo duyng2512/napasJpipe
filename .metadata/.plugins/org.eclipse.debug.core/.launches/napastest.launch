@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+<listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.openwaygroup.application.ApplicationStarter"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="resource:com/openwaygroup/owsysdb/pipe/launch/console_pipe.xml ows.application.show_exception_trace=yes ows.application.console_logger=yes pipe=com.openwaygroup.pipe.napastest.jar instance=C:/OPW/workspace/napastest/pipe.properties dbuser=OWS dbpassword=OWS dbowner=OWS dburl=jdbc:oracle:thin:@192.168.238.128:1521:orcl OWS_HOME=C:\_Work\Bank\Mirra\_Napas\pipe\03.35.30.26_HOME OWS_WORK=\\192.168.238.128\ows_work"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="napastest"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.endorsed.dirs=C:/_Work/Bank/Mirra/_Napas/pipe/03.35.30.26_HOME/client/shared/javalib/endorsed"/>
+</launchConfiguration>

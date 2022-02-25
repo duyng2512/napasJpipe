@@ -1,0 +1,12 @@
+package com.openwaygroup.pipe.napastest;
+
+import com.openwaygroup.application.pipe.IPipe;
+
+public class Util {
+	Ipipe pipe;
+
+	public Util(Ipipe pipe) {
+		super();
+		this.pipe = pipe;
+	} 
+}

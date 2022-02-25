@@ -1,0 +1,1177 @@
+launch
+Startup time: 2022-02-24 16:41:46.204
+Host: DESKTOP-HLTRTU1 (192.168.1.23)
+Java: 1.6.0_45 (Java HotSpot(TM) Client VM) in C:\java\jdk-6\jre
+OS: Windows 8(x86) 6.2
+User: duyng
+Current Dir: C:\OPW\workspace\napastest
+User Home Dir: C:\Users\duyng\OneDrive
+Max Heap Size: 259522560 bytes
+Processors: 8
+Telnet Console Port: 23789
+Java System Properties: java.endorsed.dirs=C:/_Work/Bank/Mirra/_Napas/pipe/03.35.30.26_HOME/client/shared/javalib/endorsed; java.io.tmpdir=C:\Users\duyng\AppData\Local\Temp\; user.country=US; user.language=en; user.timezone=Asia/Bangkok; 
+----------------------------------------------------------
+2022-02-24 16:41:50.713	[uncon]	Startup		Starting up launch
+2022-02-24 16:41:50.778	[dbg  ]	Startup		Entering open: [0]/JdbcConnectionPool
+2022-02-24 16:41:50.783	[info ]	Startup		Connecting to [jdbc:oracle:thin:@192.168.238.128:1521:orcl (OWS)]...
+2022-02-24 16:41:50.969	[dbg  ]	Startup		Executing sql statement [alter session set current_schema=OWS]
+2022-02-24 16:41:50.972	[dbg  ]	Startup		Executing sql statement [{call soft.start_simple('','Console Pipe',null)}]
+2022-02-24 16:41:50.996	[log  ]	Startup		Successfully connected to [jdbc:oracle:thin:@192.168.238.128:1521:orcl (OWS)]
+2022-02-24 16:41:50.996	[dbg  ]	Startup		Exited open: [0]/JdbcConnectionPool
+2022-02-24 16:41:50.996	[dbg  ]	Startup		Entering open container: [0]/JdbcConnectionPool
+2022-02-24 16:41:50.996	[dbg  ]	Startup		Exited open container: [0]/JdbcConnectionPool
+2022-02-24 16:41:50.996	[dbg  ]	Startup		Entering open: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:41:50.996	[dbg  ]	Startup		Exited open: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:41:50.996	[dbg  ]	Startup		Entering open container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:41:50.996	[dbg  ]	Startup		Exited open container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:41:50.996	[dbg  ]	Startup		Entering start: [0]/JdbcConnectionPool
+2022-02-24 16:41:50.997	[dbg  ]	Startup		Exited start: [0]/JdbcConnectionPool
+2022-02-24 16:41:50.997	[dbg  ]	Startup		Entering start container: [0]/JdbcConnectionPool
+2022-02-24 16:41:50.997	[dbg  ]	Startup		Exited start container: [0]/JdbcConnectionPool
+2022-02-24 16:41:50.997	[dbg  ]	Startup		Entering start: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:41:50.997	[dbg_m]	Startup		Waiting for connection context
+2022-02-24 16:41:50.998	[dbg  ]	Startup		Executing stnd.GET_DB_VERSION
+2022-02-24 16:41:51.039	[dbg  ]	Startup		Executed stnd.GET_DB_VERSION
+		versname=[03_52_30]
+2022-02-24 16:41:51.039	[dbg  ]	Startup		Exited start: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:41:51.040	[dbg  ]	Startup		Entering start container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:41:51.040	[dbg  ]	Startup		Exited start container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:41:51.040	[uncon]	Startup		launch Startup complete
+2022-02-24 16:41:51.054	[uncon]	Startup		Starting up com.openwaygroup.pipe.napastest
+2022-02-24 16:41:51.090	[dbg  ]	Startup		Entering open: [0]/source
+2022-02-24 16:41:51.090	[dbg  ]	Startup		Exited open: [0]/source
+2022-02-24 16:41:51.090	[dbg  ]	Startup		Entering open: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:41:51.091	[dbg  ]	Startup		Exited open: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:41:51.091	[dbg  ]	Startup		Entering open container: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:41:51.091	[dbg  ]	Startup		Exited open container: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:41:51.091	[dbg  ]	Startup		Entering open container: [0]/source
+2022-02-24 16:41:51.092	[dbg  ]	Startup		Exited open container: [0]/source
+2022-02-24 16:41:51.092	[dbg  ]	Startup		Entering start: [0]/source
+2022-02-24 16:41:51.092	[dbg  ]	Startup		Exited start: [0]/source
+2022-02-24 16:41:51.092	[dbg  ]	Startup		Entering start: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:41:51.092	[dbg  ]	Startup		Exited start: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:41:51.092	[dbg  ]	Startup		Entering start container: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:41:51.092	[dbg  ]	Startup		Exited start container: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:41:51.092	[dbg  ]	Startup		Entering start container: [0]/source
+2022-02-24 16:41:51.092	[dbg  ]	Startup		Exited start container: [0]/source
+2022-02-24 16:41:51.092	[uncon]	Startup		com.openwaygroup.pipe.napastest Startup complete
+2022-02-24 16:41:51.117	[dbg_m]	Startup		Waiting for connection context
+2022-02-24 16:41:51.117	[dbg  ]	Startup		Executing stnd.SET_GL_CONSTANTS
+2022-02-24 16:41:51.120	[dbg  ]	Startup		Executed stnd.SET_GL_CONSTANTS
+2022-02-24 16:41:51.120	[dbg  ]	Startup		Executing sy_process.START_CURRENT_V3
+		processname=[napastest]
+		processparms=[null]
+		isunique=[N]
+		tostartsub=[Y]
+		objecttype=[null]
+		objectid=[null]
+2022-02-24 16:41:51.126	[dbg  ]	Startup		Executed sy_process.START_CURRENT_V3
+		isactive=[Y]
+2022-02-24 16:41:51.126	[dbg  ]	Startup		Executing sy_process.GET_CURRENT_PROCESS
+2022-02-24 16:41:51.128	[dbg  ]	Startup		Executed sy_process.GET_CURRENT_PROCESS
+		return value=[56250]
+2022-02-24 16:41:51.128	[dbg  ]	Startup		Executing stnd.GET_PARMS
+2022-02-24 16:41:51.129	[dbg  ]	Startup		Executed stnd.GET_PARMS
+		newconnectionid=[35530]
+		newofficerid=[null]
+2022-02-24 16:41:51.132	[dbg  ]	Startup		Executing soft.Get_Officer_Id
+2022-02-24 16:41:51.132	[dbg  ]	Startup		Executed soft.Get_Officer_Id
+		return value=[null]
+2022-02-24 16:41:51.133	[dbg  ]	Startup		Executing soft.Get_Officer_Name
+2022-02-24 16:41:51.133	[dbg  ]	Startup		Executed soft.Get_Officer_Name
+		return value=[null]
+2022-02-24 16:41:51.133	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[DB Version: 03_52_30]
+2022-02-24 16:41:51.134	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.134	[uncon]	Startup		Information: Pipe Version: 00.00.01
+2022-02-24 16:41:51.134	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Pipe Version: 00.00.01]
+2022-02-24 16:41:51.135	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.135	[info ]	Startup		DB version: 03_52_30
+2022-02-24 16:41:51.135	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Pipe:com.openwaygroup.pipe.napastest.jar]
+2022-02-24 16:41:51.136	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.136	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: SOURCE_DIR=C:/OPW/workspace/napastest/in]
+2022-02-24 16:41:51.137	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.137	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: PROCESSED_DIR=C:/OPW/workspace/napastest/arch]
+2022-02-24 16:41:51.137	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.138	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: ERROR_DIR=C:/OPW/workspace/napastest/err]
+2022-02-24 16:41:51.138	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.138	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: OUTPUT_DIR=C:/OPW/workspace/napastest/out]
+2022-02-24 16:41:51.139	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.143	[dbg_m]	Startup		Opening source
+2022-02-24 16:41:51.146	[log+ ]	Startup		The file number limiter is 0
+2022-02-24 16:41:51.148	[dbg_m]	Startup		Opening mapper
+2022-02-24 16:41:51.148	[uncon]	Startup		null: Starting [OPEN] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022
+2022-02-24 16:41:51.148	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[Starting [OPEN] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022]
+2022-02-24 16:41:51.149	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.150	[uncon]	Startup		null: OUR_MEMBER_ID [970416]
+2022-02-24 16:41:51.150	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[OUR_MEMBER_ID [970416]]
+2022-02-24 16:41:51.150	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.150	[info ]	Startup		Committing after 0 rows
+2022-02-24 16:41:51.152	[dbg  ]	Startup		Executing sy_process.SET_TOTAL_NUMBER1
+		processid=[56250]
+		n=[0]
+2022-02-24 16:41:51.154	[dbg  ]	Startup		Executed sy_process.SET_TOTAL_NUMBER1
+2022-02-24 16:41:51.154	[dbg  ]	Startup		Executing sy_process.LOCK_PROCESS_STATUS1
+		processid=[56250]
+2022-02-24 16:41:51.155	[dbg  ]	Startup		Executed sy_process.LOCK_PROCESS_STATUS1
+		return value=[A]
+2022-02-24 16:41:51.156	[dbg  ]	Startup		Committed
+2022-02-24 16:41:51.160	[uncon]	Startup		Information: Start file C:\OPW\workspace\napastest\in\022422_VAS_ISS_INC_MFC789055.dat
+2022-02-24 16:41:51.160	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Start file C:\OPW\workspace\napastest\in\022422_VAS_ISS_INC_MFC789055.dat]
+2022-02-24 16:41:51.161	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.161	[dbg_m]	Startup		  ==> Computing (FILE_START) rowCounter
+2022-02-24 16:41:51.161	[dbg_m]	Startup		  ==> Computing (FILE_START) recordCounter
+2022-02-24 16:41:51.161	[dbg_m]	Startup		  ==> Computing (FILE_START) fileRegistryFlag
+2022-02-24 16:41:51.161	[dbg_m]	Startup		  ==> Computing (FILE_START) fileIdentifier
+2022-02-24 16:41:51.161	[dbg_m]	Startup		  ==> Computing (FILE_START) fileIdentifierQualifier
+2022-02-24 16:41:51.163	[dbg  ]	Startup		retrieved [0]  (source)
+		  Record: Embedded Fields
+		    fileName=022422_VAS_ISS_INC_MFC789055.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=0
+		    recordCounter=0
+		    fileRegistryFlag=true
+		    fileIdentifier=022422_VAS_ISS_INC_MFC789055.dat
+		    fileIdentifierQualifier=null
+		  Record: FileNameRecord
+		    FileGeneratingDate=2022-02-24 00:00:00.0
+		    ServiceCode=VAS
+		    Direction=ISS
+		    MemberBankCode=INC_MFC789055.dat
+2022-02-24 16:41:51.163	[uncon]	Startup		null: Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022
+2022-02-24 16:41:51.163	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022]
+2022-02-24 16:41:51.164	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.164	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2022-02-24 16:41:51.164	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.164	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2022-02-24 16:41:51.164	[dbg  ]	Startup		[Record type detecting] FileHeaderRecord hasn't detected before
+2022-02-24 16:41:51.164	[dbg  ]	Startup		[Record type detecting] FileHeaderRecord selected
+2022-02-24 16:41:51.164	[dbg_m]	Startup		  ==> flushDetectingMode
+2022-02-24 16:41:51.164	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.164	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.164	[dbg_m]	Startup		Computing functions: PARSING_END,FileHeaderRecord ...
+2022-02-24 16:41:51.164	[dbg_m]	Startup		  ==> Computing recordCounter
+2022-02-24 16:41:51.164	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.165	[dbg  ]	Startup		retrieved [1]  (source)
+		  Record: Embedded Fields
+		    fileName=022422_VAS_ISS_INC_MFC789055.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=1
+		    recordCounter=0
+		    fileRegistryFlag=true
+		    fileIdentifier=022422_VAS_ISS_INC_MFC789055.dat
+		    fileIdentifierQualifier=null
+		  Record: FileHeaderRecord
+		    HeaderRecord=HR
+		    Receiver=[REV]
+		    BIN=970468
+		    Date=[DATE]
+		    TransactionDate=2018-02-01 00:00:00.0
+2022-02-24 16:41:51.165	[uncon]	Startup		null: Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022
+2022-02-24 16:41:51.165	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022]
+2022-02-24 16:41:51.166	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.166	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2022-02-24 16:41:51.166	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.166	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2022-02-24 16:41:51.166	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2022-02-24 16:41:51.166	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2022-02-24 16:41:51.166	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2022-02-24 16:41:51.166	[dbg_m]	Startup		  ==> flushDetectingMode
+2022-02-24 16:41:51.166	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.166	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.169	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2022-02-24 16:41:51.169	[dbg_m]	Startup		  ==> Computing recordCounter
+2022-02-24 16:41:51.169	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.169	[dbg  ]	Startup		retrieved [2]  (source)
+		  Record: Embedded Fields
+		    fileName=022422_VAS_ISS_INC_MFC789055.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=2
+		    recordCounter=1
+		    fileRegistryFlag=true
+		    fileIdentifier=022422_VAS_ISS_INC_MFC789055.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704400300306121425
+		    F3=[F3]
+		    ProcessingCode=300000
+		    SvcDef=[SVC]
+		    NapasSvcCode=null
+		    TccDef=[TCC]
+		    TransactionChannelCode=null
+		    F4=[F4]
+		    TransactionAmount=000000000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000000000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000000000000
+		    F50=[F50]
+		    SettlementCurrencyCode=000
+		    F9=[F9]
+		    FxRate=00000001
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000001
+		    F11=[F11]
+		    SystemTraceNumber=110707
+		    F12=[F12]
+		    LocalTransactionTime=230000
+		    F13=[F13]
+		    LocalTransactionDate=1231
+		    F15=[F15]
+		    SettlementDate=1231
+		    F18=[F18]
+		    TerminalType=6011
+		    F22=[F22]
+		    ServiceCode=021
+		    F25=[F25]
+		    ServiceConditionCode=22
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=00990142
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=970488
+		    Iss=[ISS]
+		    IssuerMemberId=970468
+		    Mid=[MID]
+		    MerchantIdentificationCode=191 BA TRIEU
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=03000013843219
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000027500
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000027500
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=811108110707
+		    F38=[F38]
+		    AuthorizationNumber=425187
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAAywEmWlcltwAE
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=null
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=fbe1919f4eb6404421cb16e60a91d0dd
+2022-02-24 16:41:51.169	[uncon]	Startup		null: Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022
+2022-02-24 16:41:51.170	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022]
+2022-02-24 16:41:51.171	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.171	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2022-02-24 16:41:51.171	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.171	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2022-02-24 16:41:51.171	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2022-02-24 16:41:51.171	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2022-02-24 16:41:51.171	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2022-02-24 16:41:51.171	[dbg_m]	Startup		  ==> flushDetectingMode
+2022-02-24 16:41:51.171	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.171	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.172	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2022-02-24 16:41:51.172	[dbg_m]	Startup		  ==> Computing recordCounter
+2022-02-24 16:41:51.172	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.172	[dbg  ]	Startup		retrieved [3]  (source)
+		  Record: Embedded Fields
+		    fileName=022422_VAS_ISS_INC_MFC789055.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=3
+		    recordCounter=2
+		    fileRegistryFlag=true
+		    fileIdentifier=022422_VAS_ISS_INC_MFC789055.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704400300407199056
+		    F3=[F3]
+		    ProcessingCode=010000
+		    SvcDef=[SVC]
+		    NapasSvcCode=null
+		    TccDef=[TCC]
+		    TransactionChannelCode=null
+		    F4=[F4]
+		    TransactionAmount=000200000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000200000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000200000000
+		    F50=[F50]
+		    SettlementCurrencyCode=704
+		    F9=[F9]
+		    FxRate=00000001
+		    F6=[F6]
+		    CardholderAmount=000200000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000200000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000001
+		    F11=[F11]
+		    SystemTraceNumber=835305
+		    F12=[F12]
+		    LocalTransactionTime=191709
+		    F13=[F13]
+		    LocalTransactionDate=1231
+		    F15=[F15]
+		    SettlementDate=0101
+		    F18=[F18]
+		    TerminalType=6011
+		    F22=[F22]
+		    ServiceCode=901
+		    F25=[F25]
+		    ServiceConditionCode=22
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=24600008
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=970489
+		    Iss=[ISS]
+		    IssuerMemberId=970468
+		    Mid=[MID]
+		    MerchantIdentificationCode=000000024600008
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=0400014267008
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000110000
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000220000
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=811112835305
+		    F38=[F38]
+		    AuthorizationNumber=438960
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAA2QHGWldVxQAD
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=null
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=261d81010f319ceef7cc526aa7e55225
+2022-02-24 16:41:51.172	[uncon]	Startup		null: Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022
+2022-02-24 16:41:51.172	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022]
+2022-02-24 16:41:51.175	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.175	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2022-02-24 16:41:51.175	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.175	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2022-02-24 16:41:51.175	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2022-02-24 16:41:51.176	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2022-02-24 16:41:51.176	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2022-02-24 16:41:51.176	[dbg_m]	Startup		  ==> flushDetectingMode
+2022-02-24 16:41:51.176	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.176	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.176	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2022-02-24 16:41:51.176	[dbg_m]	Startup		  ==> Computing recordCounter
+2022-02-24 16:41:51.176	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.176	[dbg  ]	Startup		retrieved [4]  (source)
+		  Record: Embedded Fields
+		    fileName=022422_VAS_ISS_INC_MFC789055.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=4
+		    recordCounter=3
+		    fileRegistryFlag=true
+		    fileIdentifier=022422_VAS_ISS_INC_MFC789055.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704400300407481181
+		    F3=[F3]
+		    ProcessingCode=300000
+		    SvcDef=[SVC]
+		    NapasSvcCode=null
+		    TccDef=[TCC]
+		    TransactionChannelCode=null
+		    F4=[F4]
+		    TransactionAmount=000000000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000000000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000000000000
+		    F50=[F50]
+		    SettlementCurrencyCode=000
+		    F9=[F9]
+		    FxRate=00000001
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000001
+		    F11=[F11]
+		    SystemTraceNumber=744516
+		    F12=[F12]
+		    LocalTransactionTime=175126
+		    F13=[F13]
+		    LocalTransactionDate=0101
+		    F15=[F15]
+		    SettlementDate=0101
+		    F18=[F18]
+		    TerminalType=6011
+		    F22=[F22]
+		    ServiceCode=901
+		    F25=[F25]
+		    ServiceConditionCode=22
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=2807A002
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=970499
+		    Iss=[ISS]
+		    IssuerMemberId=970468
+		    Mid=[MID]
+		    MerchantIdentificationCode=BARD
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=04000014545128
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000027500
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000027500
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=811110744516
+		    F38=[F38]
+		    AuthorizationNumber=432972
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAAugDyWldCVQAI
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=null
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=0ca7d1afc3c42f80decde6cc67d79640
+2022-02-24 16:41:51.176	[uncon]	Startup		null: Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022
+2022-02-24 16:41:51.177	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022]
+2022-02-24 16:41:51.178	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.178	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2022-02-24 16:41:51.178	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.178	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2022-02-24 16:41:51.178	[dbg  ]	Startup		[Record type detecting] It is the last line
+2022-02-24 16:41:51.178	[dbg  ]	Startup		[Record type detecting] FileTrailerRecord selected
+2022-02-24 16:41:51.178	[dbg_m]	Startup		  ==> flushDetectingMode
+2022-02-24 16:41:51.178	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.178	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.178	[dbg_m]	Startup		Computing functions: PARSING_END,FileTrailerRecord ...
+2022-02-24 16:41:51.178	[dbg_m]	Startup		  ==> Computing recordCounter
+2022-02-24 16:41:51.179	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.179	[dbg  ]	Startup		retrieved [5]  (source)
+		  Record: Embedded Fields
+		    fileName=022422_VAS_ISS_INC_MFC789055.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=5
+		    recordCounter=3
+		    fileRegistryFlag=true
+		    fileIdentifier=022422_VAS_ISS_INC_MFC789055.dat
+		    fileIdentifierQualifier=null
+		  Record: FileTrailerRecord
+		    TrailerRecord=TR
+		    Not=[NOT]
+		    NumberofRecordsinTheFile=000000003
+		    Cre=[CRE]
+		    Generator=trungnv
+		    Time=[TIME]
+		    FileGenerationTime=093605
+		    Date=[DATE]
+		    FileGenerationDate=12012018
+		    Csf=[CSF]
+		    ChecksumFileValue=ea7ae1e6dde9b068df6028bd94d0fb36
+2022-02-24 16:41:51.179	[uncon]	Startup		null: Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022
+2022-02-24 16:41:51.179	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022]
+2022-02-24 16:41:51.181	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.181	[dbg_m]	Startup		  ==> Computing (FILE_START) rowCounter
+2022-02-24 16:41:51.181	[dbg_m]	Startup		  ==> Computing (FILE_START) recordCounter
+2022-02-24 16:41:51.181	[dbg_m]	Startup		  ==> Computing (FILE_START) fileRegistryFlag
+2022-02-24 16:41:51.181	[dbg_m]	Startup		  ==> Computing (FILE_START) fileIdentifier
+2022-02-24 16:41:51.181	[dbg_m]	Startup		  ==> Computing (FILE_START) fileIdentifierQualifier
+2022-02-24 16:41:51.181	[dbg  ]	Startup		retrieved [6]  (source)
+		  Record: Embedded Fields
+		    fileName=022422_VAS_ISS_INC_MFC789055.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=0
+		    recordCounter=0
+		    fileRegistryFlag=true
+		    fileIdentifier=022422_VAS_ISS_INC_MFC789055.dat
+		    fileIdentifierQualifier=null
+		  Record: FileNameRecord
+		    FileGeneratingDate=2022-02-24 00:00:00.0
+		    ServiceCode=VAS
+		    Direction=ISS
+		    MemberBankCode=INC_MFC789055.dat
+2022-02-24 16:41:51.182	[uncon]	Startup		null: Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022
+2022-02-24 16:41:51.182	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022]
+2022-02-24 16:41:51.183	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.183	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2022-02-24 16:41:51.183	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.183	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2022-02-24 16:41:51.183	[dbg  ]	Startup		[Record type detecting] FileHeaderRecord hasn't detected before
+2022-02-24 16:41:51.183	[dbg  ]	Startup		[Record type detecting] FileHeaderRecord selected
+2022-02-24 16:41:51.183	[dbg_m]	Startup		  ==> flushDetectingMode
+2022-02-24 16:41:51.183	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.183	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.183	[dbg_m]	Startup		Computing functions: PARSING_END,FileHeaderRecord ...
+2022-02-24 16:41:51.183	[dbg_m]	Startup		  ==> Computing recordCounter
+2022-02-24 16:41:51.183	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.183	[dbg  ]	Startup		retrieved [7]  (source)
+		  Record: Embedded Fields
+		    fileName=022422_VAS_ISS_INC_MFC789055.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=1
+		    recordCounter=0
+		    fileRegistryFlag=true
+		    fileIdentifier=022422_VAS_ISS_INC_MFC789055.dat
+		    fileIdentifierQualifier=null
+		  Record: FileHeaderRecord
+		    HeaderRecord=HR
+		    Receiver=[REV]
+		    BIN=970468
+		    Date=[DATE]
+		    TransactionDate=2018-02-01 00:00:00.0
+2022-02-24 16:41:51.183	[uncon]	Startup		null: Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022
+2022-02-24 16:41:51.183	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022]
+2022-02-24 16:41:51.185	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.185	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2022-02-24 16:41:51.185	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.185	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2022-02-24 16:41:51.185	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2022-02-24 16:41:51.185	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2022-02-24 16:41:51.185	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2022-02-24 16:41:51.185	[dbg_m]	Startup		  ==> flushDetectingMode
+2022-02-24 16:41:51.185	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.185	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.185	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2022-02-24 16:41:51.185	[dbg_m]	Startup		  ==> Computing recordCounter
+2022-02-24 16:41:51.186	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.186	[dbg  ]	Startup		retrieved [8]  (source)
+		  Record: Embedded Fields
+		    fileName=022422_VAS_ISS_INC_MFC789055.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=2
+		    recordCounter=1
+		    fileRegistryFlag=true
+		    fileIdentifier=022422_VAS_ISS_INC_MFC789055.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704400300306121425
+		    F3=[F3]
+		    ProcessingCode=300000
+		    SvcDef=[SVC]
+		    NapasSvcCode=null
+		    TccDef=[TCC]
+		    TransactionChannelCode=null
+		    F4=[F4]
+		    TransactionAmount=000000000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000000000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000000000000
+		    F50=[F50]
+		    SettlementCurrencyCode=000
+		    F9=[F9]
+		    FxRate=00000001
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000001
+		    F11=[F11]
+		    SystemTraceNumber=110707
+		    F12=[F12]
+		    LocalTransactionTime=230000
+		    F13=[F13]
+		    LocalTransactionDate=1231
+		    F15=[F15]
+		    SettlementDate=1231
+		    F18=[F18]
+		    TerminalType=6011
+		    F22=[F22]
+		    ServiceCode=021
+		    F25=[F25]
+		    ServiceConditionCode=22
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=00990142
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=970488
+		    Iss=[ISS]
+		    IssuerMemberId=970468
+		    Mid=[MID]
+		    MerchantIdentificationCode=191 BA TRIEU
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=03000013843219
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000027500
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000027500
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=811108110707
+		    F38=[F38]
+		    AuthorizationNumber=425187
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAAywEmWlcltwAE
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=null
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=fbe1919f4eb6404421cb16e60a91d0dd
+2022-02-24 16:41:51.186	[uncon]	Startup		null: Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022
+2022-02-24 16:41:51.186	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022]
+2022-02-24 16:41:51.187	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.187	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2022-02-24 16:41:51.187	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.187	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2022-02-24 16:41:51.187	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2022-02-24 16:41:51.187	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2022-02-24 16:41:51.187	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2022-02-24 16:41:51.188	[dbg_m]	Startup		  ==> flushDetectingMode
+2022-02-24 16:41:51.188	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.188	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.188	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2022-02-24 16:41:51.188	[dbg_m]	Startup		  ==> Computing recordCounter
+2022-02-24 16:41:51.188	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.188	[dbg  ]	Startup		retrieved [9]  (source)
+		  Record: Embedded Fields
+		    fileName=022422_VAS_ISS_INC_MFC789055.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=3
+		    recordCounter=2
+		    fileRegistryFlag=true
+		    fileIdentifier=022422_VAS_ISS_INC_MFC789055.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704400300407199056
+		    F3=[F3]
+		    ProcessingCode=010000
+		    SvcDef=[SVC]
+		    NapasSvcCode=null
+		    TccDef=[TCC]
+		    TransactionChannelCode=null
+		    F4=[F4]
+		    TransactionAmount=000200000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000200000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000200000000
+		    F50=[F50]
+		    SettlementCurrencyCode=704
+		    F9=[F9]
+		    FxRate=00000001
+		    F6=[F6]
+		    CardholderAmount=000200000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000200000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000001
+		    F11=[F11]
+		    SystemTraceNumber=835305
+		    F12=[F12]
+		    LocalTransactionTime=191709
+		    F13=[F13]
+		    LocalTransactionDate=1231
+		    F15=[F15]
+		    SettlementDate=0101
+		    F18=[F18]
+		    TerminalType=6011
+		    F22=[F22]
+		    ServiceCode=901
+		    F25=[F25]
+		    ServiceConditionCode=22
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=24600008
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=970489
+		    Iss=[ISS]
+		    IssuerMemberId=970468
+		    Mid=[MID]
+		    MerchantIdentificationCode=000000024600008
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=0400014267008
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000110000
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000220000
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=811112835305
+		    F38=[F38]
+		    AuthorizationNumber=438960
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAA2QHGWldVxQAD
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=null
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=261d81010f319ceef7cc526aa7e55225
+2022-02-24 16:41:51.188	[uncon]	Startup		null: Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022
+2022-02-24 16:41:51.188	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022]
+2022-02-24 16:41:51.189	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.189	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2022-02-24 16:41:51.189	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.189	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2022-02-24 16:41:51.189	[dbg  ]	Startup		[Record type detecting] FileDataRecord is being tested ...
+2022-02-24 16:41:51.189	[dbg  ]	Startup		[Record type detecting] FileDataRecord doesn't contain keys
+2022-02-24 16:41:51.189	[dbg  ]	Startup		[Record type detecting] FileDataRecord selected
+2022-02-24 16:41:51.189	[dbg_m]	Startup		  ==> flushDetectingMode
+2022-02-24 16:41:51.189	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.189	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.190	[dbg_m]	Startup		Computing functions: PARSING_END,FileDataRecord ...
+2022-02-24 16:41:51.190	[dbg_m]	Startup		  ==> Computing recordCounter
+2022-02-24 16:41:51.190	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.190	[dbg  ]	Startup		retrieved [10]  (source)
+		  Record: Embedded Fields
+		    fileName=022422_VAS_ISS_INC_MFC789055.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=4
+		    recordCounter=3
+		    fileRegistryFlag=true
+		    fileIdentifier=022422_VAS_ISS_INC_MFC789055.dat
+		    fileIdentifierQualifier=null
+		  Record: FileDataRecord
+		    DataRecord=DR
+		    MtiDef=[MTI]
+		    MessageTypeIdentifierCode=0210
+		    F2=[F2]
+		    CardNumber=9704400300407481181
+		    F3=[F3]
+		    ProcessingCode=300000
+		    SvcDef=[SVC]
+		    NapasSvcCode=null
+		    TccDef=[TCC]
+		    TransactionChannelCode=null
+		    F4=[F4]
+		    TransactionAmount=000000000000
+		    Rta=[RTA]
+		    RealTransactionAmount=000000000000
+		    F49=[F49]
+		    TransactionCurrencyCode=704
+		    F5=[F5]
+		    SettlementAmount=000000000000
+		    F50=[F50]
+		    SettlementCurrencyCode=000
+		    F9=[F9]
+		    FxRate=00000001
+		    F6=[F6]
+		    CardholderAmount=000000000000
+		    Rca=[RCA]
+		    RealCardholerAmount=000000000000
+		    F51=[F51]
+		    CardholerCurrencyCode=704
+		    F10=[F10]
+		    CardholderFxRate=00000001
+		    F11=[F11]
+		    SystemTraceNumber=744516
+		    F12=[F12]
+		    LocalTransactionTime=175126
+		    F13=[F13]
+		    LocalTransactionDate=0101
+		    F15=[F15]
+		    SettlementDate=0101
+		    F18=[F18]
+		    TerminalType=6011
+		    F22=[F22]
+		    ServiceCode=901
+		    F25=[F25]
+		    ServiceConditionCode=22
+		    F41=[F41]
+		    CardAcceptorTerminalIdentification=2807A002
+		    Acq=[ACQ]
+		    AcquiringInstitutionCode=970499
+		    Iss=[ISS]
+		    IssuerMemberId=970468
+		    Mid=[MID]
+		    MerchantIdentificationCode=BARD
+		    Bnb=[BNB]
+		    BeneficiaryIdentify=null
+		    F102=[F102]
+		    FromAccount=04000014545128
+		    F103=[F103]
+		    ToAccount=null
+		    Svfissnp=[SVFISSNP]
+		    SvFeeIssNapas=000000027500
+		    Irfissacq=[IRFISSACQ]
+		    IrFeeIssAcq=000000027500
+		    Irfissbnb=[IRFISSBNB]
+		    IrFeeIssBnb=000000000000
+		    Svfacqnp=[SVFACQNP]
+		    SvFeeAcqNapas=000000000000
+		    Irfacqiss=[IRFACQISS]
+		    IrFeeAcqIss=000000000000
+		    Irfacqbnb=[IRFACQBNB]
+		    IrFeeAcqBnb=000000000000
+		    Svfbnbnp=[SVFBNBNP]
+		    SvFeeBnbNapas=000000000000
+		    Irfbnbiss=[IRFBNBISS]
+		    IrFeeBnbIss=000000000000
+		    Irfbnbacq=[IRFBNBACQ]
+		    IrFeeBnbAcq=000000000000
+		    F37=[F37]
+		    Rrn=811110744516
+		    F38=[F38]
+		    AuthorizationNumber=432972
+		    Trn=[TRN]
+		    TransactionReferenceNumber=AAAAugDyWldCVQAI
+		    Rrc=[RRC]
+		    ResponseCode=0000
+		    Rsv1Def=[RSV1]
+		    Rsv1=null
+		    Rsv2Def=[RSV2]
+		    Rsv2=null
+		    Rsv3Def=[RSV3]
+		    Rsv3=null
+		    Csr=[CSR]
+		    ChecksumRecordValue=0ca7d1afc3c42f80decde6cc67d79640
+2022-02-24 16:41:51.190	[uncon]	Startup		null: Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022
+2022-02-24 16:41:51.190	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022]
+2022-02-24 16:41:51.191	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.191	[dbg_m]	Startup		  ==> Set Detecting Mode (true) 
+2022-02-24 16:41:51.191	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.191	[dbg_m]	Startup		  ==> Computing (RECORD_START) rowCounter
+2022-02-24 16:41:51.191	[dbg  ]	Startup		[Record type detecting] It is the last line
+2022-02-24 16:41:51.191	[dbg  ]	Startup		[Record type detecting] FileTrailerRecord selected
+2022-02-24 16:41:51.191	[dbg_m]	Startup		  ==> flushDetectingMode
+2022-02-24 16:41:51.191	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.191	[dbg_m]	Startup		    ==> Field:rowCounter
+2022-02-24 16:41:51.191	[dbg_m]	Startup		Computing functions: PARSING_END,FileTrailerRecord ...
+2022-02-24 16:41:51.191	[dbg_m]	Startup		  ==> Computing recordCounter
+2022-02-24 16:41:51.192	[dbg_m]	Startup		  ==> Set Detecting Mode (false) 
+2022-02-24 16:41:51.192	[dbg  ]	Startup		retrieved [11]  (source)
+		  Record: Embedded Fields
+		    fileName=022422_VAS_ISS_INC_MFC789055.dat
+		    errorFieldName=null
+		    errInvalidFieldValue=null
+		    errorRecordName=null
+		    rowCounter=5
+		    recordCounter=3
+		    fileRegistryFlag=true
+		    fileIdentifier=022422_VAS_ISS_INC_MFC789055.dat
+		    fileIdentifierQualifier=null
+		  Record: FileTrailerRecord
+		    TrailerRecord=TR
+		    Not=[NOT]
+		    NumberofRecordsinTheFile=000000003
+		    Cre=[CRE]
+		    Generator=trungnv
+		    Time=[TIME]
+		    FileGenerationTime=093605
+		    Date=[DATE]
+		    FileGenerationDate=12012018
+		    Csf=[CSF]
+		    ChecksumFileValue=ea7ae1e6dde9b068df6028bd94d0fb36
+2022-02-24 16:41:51.192	[uncon]	Startup		null: Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022
+2022-02-24 16:41:51.192	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:41:51 ICT 2022]
+2022-02-24 16:41:51.193	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.193	[uncon]	Startup		Information: Finish file C:\OPW\workspace\napastest\in\022422_VAS_ISS_INC_MFC789055.dat
+2022-02-24 16:41:51.193	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56250]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Finish file C:\OPW\workspace\napastest\in\022422_VAS_ISS_INC_MFC789055.dat]
+2022-02-24 16:41:51.194	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:41:51.194	[info ]	Startup		Committing after 12 rows
+2022-02-24 16:41:51.196	[dbg  ]	Startup		Executing sy_process.ADD_CURRENT_NUMBER1
+		processid=[56250]
+		n=[3]
+2022-02-24 16:41:51.197	[dbg  ]	Startup		Executed sy_process.ADD_CURRENT_NUMBER1
+		return value=[0]
+2022-02-24 16:41:51.197	[dbg  ]	Startup		Executing sy_process.LOCK_PROCESS_STATUS1
+		processid=[56250]
+2022-02-24 16:41:51.198	[dbg  ]	Startup		Executed sy_process.LOCK_PROCESS_STATUS1
+		return value=[A]
+2022-02-24 16:41:51.198	[dbg  ]	Startup		Committed
+2022-02-24 16:41:51.198	[dbg_m]	Startup		Closing mapper
+2022-02-24 16:41:51.198	[dbg_m]	Startup		Closing source
+2022-02-24 16:41:51.199	[dbg  ]	Startup		Executing stnd.GET_DB_VERSION
+2022-02-24 16:41:51.199	[dbg  ]	Startup		Executed stnd.GET_DB_VERSION
+		versname=[03_52_30]
+2022-02-24 16:41:51.199	[dbg  ]	Startup		Executing sy_process.GET_PROCESS_ERROR_LEVEL
+2022-02-24 16:41:51.201	[dbg  ]	Startup		Executed sy_process.GET_PROCESS_ERROR_LEVEL
+		return value=[null]
+2022-02-24 16:41:51.201	[dbg  ]	Startup		Executing sy_process.FINISH_CURRENT
+		isok=[Y]
+2022-02-24 16:41:51.203	[dbg  ]	Startup		Executed sy_process.FINISH_CURRENT
+2022-02-24 16:41:51.204	[uncon]	Startup		Shutting down com.openwaygroup.pipe.napastest
+2022-02-24 16:41:51.206	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source
+2022-02-24 16:41:51.206	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source
+2022-02-24 16:41:51.206	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:41:51.206	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:41:51.207	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:41:51.207	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:41:51.207	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source
+2022-02-24 16:41:51.207	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source
+2022-02-24 16:41:51.207	[dbg  ]	Components_Shutdowner		Entering close: [0]/source
+2022-02-24 16:41:51.207	[dbg  ]	Components_Shutdowner		Exited close: [0]/source
+2022-02-24 16:41:51.207	[dbg  ]	Components_Shutdowner		Entering close: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:41:51.207	[dbg  ]	Components_Shutdowner		Exited close: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:41:51.207	[dbg  ]	Components_Shutdowner		Entering close: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:41:51.207	[dbg  ]	Components_Shutdowner		Exited close: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:41:51.207	[dbg  ]	Components_Shutdowner		Entering close: [0]/source
+2022-02-24 16:41:51.207	[dbg  ]	Components_Shutdowner		Exited close: [0]/source
+2022-02-24 16:41:51.207	[uncon]	Components_Shutdowner		com.openwaygroup.pipe.napastest Shutdown complete
+2022-02-24 16:41:51.207	[uncon]	Startup		Shutting down launch
+2022-02-24 16:41:51.208	[dbg  ]	Components_Shutdowner		Entering stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:41:51.208	[dbg  ]	Components_Shutdowner		Exited stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:41:51.208	[dbg  ]	Components_Shutdowner		Entering stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:41:51.208	[dbg  ]	Components_Shutdowner		Exited stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:41:51.208	[dbg  ]	Components_Shutdowner		Entering stop: [0]/JdbcConnectionPool
+2022-02-24 16:41:51.208	[dbg  ]	Components_Shutdowner		Exited stop: [0]/JdbcConnectionPool
+2022-02-24 16:41:51.208	[dbg  ]	Components_Shutdowner		Entering stop: [0]/JdbcConnectionPool
+2022-02-24 16:41:51.208	[dbg  ]	Components_Shutdowner		Exited stop: [0]/JdbcConnectionPool
+2022-02-24 16:41:51.208	[dbg  ]	Components_Shutdowner		Entering close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:41:51.208	[dbg  ]	Components_Shutdowner		Exited close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:41:51.208	[dbg  ]	Components_Shutdowner		Entering close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:41:51.208	[dbg  ]	Components_Shutdowner		Exited close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:41:51.208	[dbg  ]	Components_Shutdowner		Entering close: [0]/JdbcConnectionPool
+2022-02-24 16:41:51.214	[dbg  ]	Components_Shutdowner		Exited close: [0]/JdbcConnectionPool
+2022-02-24 16:41:51.214	[dbg  ]	Components_Shutdowner		Entering close: [0]/JdbcConnectionPool
+2022-02-24 16:41:51.214	[dbg  ]	Components_Shutdowner		Exited close: [0]/JdbcConnectionPool
+2022-02-24 16:41:51.214	[uncon]	Components_Shutdowner		launch Shutdown complete

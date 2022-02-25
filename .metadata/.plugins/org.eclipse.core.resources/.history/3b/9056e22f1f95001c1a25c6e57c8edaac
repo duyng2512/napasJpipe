@@ -1,0 +1,25 @@
+package com.openwaygroup.pipe.napastopup;
+
+public class Mapper extends com.openwaygroup.pipe.napastopup.autogen.Mapper {
+
+  /**
+   * This method will be called at the beginning of the pipe's execution, 
+   * before any data is retrieved by source. Add your opening code here.
+   */
+  protected void open() throws Exception {
+  }
+
+  /**
+   * This method will be called for each record (table row, record in flat file, xml element) retrieved 
+   * by the pipe's source. Add your code to handle incoming data here.
+   */
+  protected void execute() throws Exception {
+  }
+
+  /**
+   * This method will be called at the end of the pipe's execution.
+   * Add your closing code here.
+   */
+  protected void close() throws Exception {
+  }
+}

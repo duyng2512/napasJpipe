@@ -1,0 +1,75 @@
+package com.openwaygroup.pipe.napastest;
+
+import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+
+import com.openwaygroup.application.process.registry.PRLogRecord;
+import com.openwaygroup.context.Context;
+
+public class Mapper extends com.openwaygroup.pipe.napastest.autogen.Mapper {
+
+	protected SimpleDateFormat dateFormat;
+	protected DecimalFormat decimalFormat;
+	protected double totalSum, tempAmount;
+	protected Calendar tempCalendar;
+	protected int tempYear;
+	protected boolean validMessageCode;
+	protected String OUR_MEMBER_ID, NAPAS_CHANNEL_CODE, DIRECTION,
+			unEncryptedWord, CHECK_CHECKSUM, BankPassword;
+	protected ArrayList<String[]> MessageCodeMapping;
+	protected String sProcessDate = "";
+	protected String sFileDate = "";
+	protected String sFileType = ""; // TC,SL,XL
+	protected String sFileService = "";
+	protected String sFileTarget = "";
+	protected String sFileName = "";
+	protected String RRN = "";
+
+	/**
+	 * This method will be called at the beginning of the pipe's execution,
+	 * before any data is retrieved by source. Add your opening code here.
+	 */
+	protected void open() throws Exception {
+		PRLogRecord record = new PRLogRecord("I",
+				"Starting com.openwaygroup.pipe.napastest "
+						+ (new Date().toString()));
+		pipe.log(record);
+
+		/*
+		 * Getting Pipe Parameters Initializing variables
+		 */
+		dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		decimalFormat = new DecimalFormat("#.##");
+		validMessageCode = false;
+		MessageCodeMapping = new ArrayList<String[]>();
+		OUR_MEMBER_ID = Context.getMandatoryProperty(pipe.getContext(),
+				"OUR_MEMBER_ID");
+		NAPAS_CHANNEL_CODE = Context.getMandatoryProperty(pipe.getContext(),
+				"NAPAS_CHANNEL_CODE");
+		DIRECTION = Context
+				.getMandatoryProperty(pipe.getContext(), "DIRECTION");
+		CHECK_CHECKSUM = Context.getMandatoryProperty(pipe.getContext(),
+				"CHECK_CHECKSUM");
+		BankPassword = Context.getMandatoryProperty(pipe.getContext(),
+				"BANK_PASSWORD");
+
+	}
+
+	/**
+	 * This method will be called for each record (table row, record in flat
+	 * file, xml element) retrieved by the pipe's source. Add your code to
+	 * handle incoming data here.
+	 */
+	protected void execute() throws Exception {
+	}
+
+	/**
+	 * This method will be called at the end of the pipe's execution. Add your
+	 * closing code here.
+	 */
+	protected void close() throws Exception {
+	}
+}

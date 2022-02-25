@@ -1,0 +1,63 @@
+launch
+Startup time: 2022-02-24 15:20:11.655
+Host: DESKTOP-HLTRTU1 (192.168.1.23)
+Java: 1.6.0_45 (Java HotSpot(TM) Client VM) in C:\java\jdk-6\jre
+OS: Windows 8(x86) 6.2
+User: duyng
+Current Dir: C:\_Work\Bank\Mirra\_Napas\pipe\source\napastopuprec
+User Home Dir: C:\Users\duyng\OneDrive
+Max Heap Size: 259522560 bytes
+Processors: 8
+Telnet Console Port: 23789
+Java System Properties: java.endorsed.dirs=C:/_Work/Bank/Mirra/_Napas/pipe/03.35.30.26_HOME/client/shared/javalib/endorsed; java.io.tmpdir=C:\Users\duyng\AppData\Local\Temp\; user.country=US; user.language=en; user.timezone=Asia/Bangkok; 
+----------------------------------------------------------
+2022-02-24 15:20:16.169	[uncon]	Startup		Starting up launch
+2022-02-24 15:20:16.490	[uncon]	Startup		launch Startup complete
+2022-02-24 15:20:16.505	[uncon]	Startup		Starting up com.openwaygroup.pipe.napastopup
+2022-02-24 15:20:16.509	[error]	Startup		Could not start application
+		com.openwaygroup.pipe.napastopup
+		The following parameters are undefined: [ERROR_DIR], [FILE_MASK], [PROCESSED_DIR], [SOURCE_DIR]
+	Stack trace:
+		java.lang.Exception: The following parameters are undefined: [ERROR_DIR], [FILE_MASK], [PROCESSED_DIR], [SOURCE_DIR]
+			at com.openwaygroup.application.impl.ConfigProcessor.readContent(ConfigProcessor.java:252)
+			at com.openwaygroup.application.impl.Application.startup0(Application.java:251)
+			at com.openwaygroup.application.impl.Application.startUp(Application.java:73)
+			at com.openwaygroup.application.ApplicationStarter.startApplication(ApplicationStarter.java:163)
+			at com.openwaygroup.application.pipe.impl.PipeFactoryImpl.open(PipeFactoryImpl.java:227)
+			at com.openwaygroup.application.pipe.PipeLauncherComponent.execute(PipeLauncherComponent.java:34)
+			at com.openwaygroup.application.ApplicationProcessComponent.afterStartup(ApplicationProcessComponent.java:36)
+			at com.openwaygroup.application.impl.Application.fireStartupListeners(Application.java:328)
+			at com.openwaygroup.application.impl.Application.startUp(Application.java:82)
+			at com.openwaygroup.application.ApplicationStarter.startApplication(ApplicationStarter.java:163)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:98)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:145)
+
+2022-02-24 15:20:16.510	[uncon]	Startup		Shutting down com.openwaygroup.pipe.napastopup
+2022-02-24 15:20:16.511	[uncon]	Components_Shutdowner		com.openwaygroup.pipe.napastopup Shutdown complete
+2022-02-24 15:20:16.511	[error]	Startup		Exception for [com.openwaygroup.pipe.napastopup.jar]
+		Application exception: java.lang.Exception: The following parameters are undefined: [ERROR_DIR], [FILE_MASK], [PROCESSED_DIR], [SOURCE_DIR]
+		The following parameters are undefined: [ERROR_DIR], [FILE_MASK], [PROCESSED_DIR], [SOURCE_DIR]
+	Stack trace:
+		java.lang.Exception: Exception for [com.openwaygroup.pipe.napastopup.jar]
+			at com.openwaygroup.application.pipe.impl.PipeFactoryImpl.open(PipeFactoryImpl.java:253)
+			at com.openwaygroup.application.pipe.PipeLauncherComponent.execute(PipeLauncherComponent.java:34)
+			at com.openwaygroup.application.ApplicationProcessComponent.afterStartup(ApplicationProcessComponent.java:36)
+			at com.openwaygroup.application.impl.Application.fireStartupListeners(Application.java:328)
+			at com.openwaygroup.application.impl.Application.startUp(Application.java:82)
+			at com.openwaygroup.application.ApplicationStarter.startApplication(ApplicationStarter.java:163)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:98)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:145)
+		Caused by: com.openwaygroup.application.ApplicationException: java.lang.Exception: The following parameters are undefined: [ERROR_DIR], [FILE_MASK], [PROCESSED_DIR], [SOURCE_DIR]
+			at com.openwaygroup.application.impl.Application.throwApplicationException(Application.java:573)
+			at com.openwaygroup.application.impl.Application.startUp(Application.java:77)
+			at com.openwaygroup.application.ApplicationStarter.startApplication(ApplicationStarter.java:163)
+			at com.openwaygroup.application.pipe.impl.PipeFactoryImpl.open(PipeFactoryImpl.java:227)
+			... 7 more
+		Caused by: java.lang.Exception: The following parameters are undefined: [ERROR_DIR], [FILE_MASK], [PROCESSED_DIR], [SOURCE_DIR]
+			at com.openwaygroup.application.impl.ConfigProcessor.readContent(ConfigProcessor.java:252)
+			at com.openwaygroup.application.impl.Application.startup0(Application.java:251)
+			at com.openwaygroup.application.impl.Application.startUp(Application.java:73)
+			... 9 more
+
+2022-02-24 15:20:16.511	[uncon]	Startup		Shutting down launch
+2022-02-24 15:20:16.519	[uncon]	Components_Shutdowner		launch Shutdown complete

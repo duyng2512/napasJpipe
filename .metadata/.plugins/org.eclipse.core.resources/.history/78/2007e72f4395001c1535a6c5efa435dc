@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pipe commit_interval="0" name="napastopup" version="00.00.01">
+	<parameters>
+		<parameter name="SOURCE_DIR"/>
+		<parameter name="PROCESSED_DIR"/>
+		<parameter name="ERROR_DIR"/>
+		<parameter name="OUTPUT_DIR"/>
+		<parameter name="OUR_MEMBER_ID"/>
+		<parameter name="NAPAS_CHANNEL_CODE"/>
+		<parameter name="FILE_MASK"/>
+		<parameter name="DIRECTION"/>
+		<parameter name="CHECK_CHECKSUM"/>
+		<parameter name="BANK_PASSWORD"/>
+	</parameters>
+	<db_grants>
+		<set name="default"/>
+	</db_grants>
+	<main_source class="pipe.source.filer">
+		<processing_settings break_duplicate_files="yes" break_on_format_error="no" check_uniqueness="no" file_code_page="cp1251" process_code="ACB IMPORT" read_file_twice="yes" register_file="no" send_eof_message="no"/>
+		<format_description line_extract_method="EOL" line_length="0" line_terminator="0D0A">
+			
+		</format_description>
+	</main_source>
+	<service class="pipe.target.xml.writer" commit_on_file_finish="yes" indent="yes" name="newService" validate="yes">
+		<component class="pipe.writer.stream" encoding="UTF-8">
+			<component class="pipe.output_stream.file_stream" create_empty_files="yes" file_directory="C:\OUT_DIR" file_mode="confirm" file_name="xml_file.xml"/>
+		</component>
+	</service>
+</pipe>

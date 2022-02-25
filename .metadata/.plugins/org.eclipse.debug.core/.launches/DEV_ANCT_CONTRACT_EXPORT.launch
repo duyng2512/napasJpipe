@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+<listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.openwaygroup.application.ApplicationStarter"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="resource:com/openwaygroup/owsysdb/pipe/launch/console_pipe.xml ows.application.show_exception_trace=yes ows.application.console_logger=yes pipe=com.openwaygroup.pipe.dev_anct_contract_export.jar instance=C:/OPW/workspace/DEV_ANCT_CONTRACT_EXPORT/pipe.properties dbuser=OWS dbpassword=OWS1234a dbowner=OWS dburl=jdbc:oracle:thin:@192.168.172.129:1521:orcl OWS_HOME=U:\ OWS_WORK=V:\"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="DEV_ANCT_CONTRACT_EXPORT"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.endorsed.dirs=U:/client/shared/javalib/endorsed"/>
+</launchConfiguration>

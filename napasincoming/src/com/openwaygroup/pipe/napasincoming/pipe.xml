@@ -14,7 +14,7 @@
    <db_grants>
       <set name="default"/>
    </db_grants>
-   <main_source class="pipe.source.filer">
+  <main_source class="pipe.source.filer">
       <processing_settings break_duplicate_files="yes" break_on_format_error="no" check_uniqueness="no" file_code_page="cp1251" process_code="ACB {$DIRECTION} IMPORT" read_file_twice="yes" register_file="no" send_eof_message="no"/>
       <format_description line_extract_method="EOL" line_length="0" line_terminator="0D0A">
          <record disabled="no" field_delimiter="5F" is_mandatory="no" kind="FILE_NAME" line_length="0" name="FileNameRecord" send_to_mapper="yes" terminate_last_field="no">
@@ -24,7 +24,9 @@
             <field field_offset="0" kind="VARIABLE" name="MemberBankCode" value_type="STRING"/>
             <field field_offset="0" kind="VARIABLE" name="OrderNumber" value_type="STRING"/>
             <field field_offset="0" kind="VARIABLE" name="FileType" value_type="STRING"/>
-            <field check_rule="getFileService() != null &amp;&amp; (getFileNameRecord().getFileService().split(&quot;\\.&quot;)[0].equals(&quot;SWC&quot;) || getFileNameRecord().getFileService().split(&quot;\\.&quot;)[0].equals(&quot;PC&quot;) || getFileNameRecord().getFileService().split(&quot;\\.&quot;)[0].equals(&quot;UPI&quot;) || getFileNameRecord().getFileService().split(&quot;\\.&quot;)[0].equals(&quot;ECOM&quot;))" field_offset="0" kind="VARIABLE" name="FileService" value_type="STRING"/>
+            <field check_rule="getFileService() != null &amp;&amp; (getFileNameRecord().getFileService().split(&quot;\\.&quot;)[0].equals(&quot;SWC&quot;) 
+            || getFileNameRecord().getFileService().split(&quot;\\.&quot;)[0].equals(&quot;PC&quot;) || getFileNameRecord().getFileService().split(&quot;\\.&quot;)[0].equals(&quot;UPI&quot;) 
+            || getFileNameRecord().getFileService().split(&quot;\\.&quot;)[0].equals(&quot;ECOM&quot;))" field_offset="0" kind="VARIABLE" name="FileService" value_type="STRING"/>
          </record>
          <record enabling_condition="" field_delimiter="" is_mandatory="no" kind="FILE_HEADER" line_length="0" name="FileHeaderRecord" send_to_mapper="yes" terminate_last_field=""><!--<field field_offset="" kind="VARIABLE" length_in_file="6" name="Date" value_type="STRING"/>-->
             <field check_rule="getHeaderRecord().equals(&quot;HR&quot;)" field_offset="0" is_key="no" kind="VARIABLE" length_in_file="2" name="HeaderRecord" value_type="STRING"/>
@@ -149,7 +151,7 @@
       <parameter name="PROCESSED_DIR"/>
       <parameter name="ERROR_DIR"/>
       <parameter name="OUTPUT_DIR"/>
-   </parameters>
+   </parameters> 
    <service class="pipe.target.sql_select" name="checkOPTSMLDOC" throw_exception_on_data_not_found="yes">
       <sql_statement>SELECT NVL(MAX(ID),0) "ID" FROM OPT_SMLDOC WHERE PROCESS_DATE=  
          

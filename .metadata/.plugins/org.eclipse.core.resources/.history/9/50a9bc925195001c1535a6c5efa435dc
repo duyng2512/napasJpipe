@@ -1,0 +1,15 @@
+# This file contains pipe parameters description. Consult the Java Pipe SDK documentation for details. 
+# Syntax:
+# PARAMETER_NAME = PARAMETER_VALUE
+
+log_level = 60
+ERROR_DIR = C:/OPW/workspace/napastest/err
+PROCESSED_DIR = C:/OPW/workspace/napastest/arch
+SOURCE_DIR = C:/OPW/workspace/napastest/in
+OUTPUT_DIR = C:/OPW/workspace/napastest/out
+DIRECTION = ISS
+FILE_MASK = *ISS_ACB_*XL_SWC.dat
+OUR_MEMBER_ID = 970416
+NAPAS_CHANNEL_CODE = b
+BANK_PASSWORD = 970416
+CHECK_CHECKSUM = N

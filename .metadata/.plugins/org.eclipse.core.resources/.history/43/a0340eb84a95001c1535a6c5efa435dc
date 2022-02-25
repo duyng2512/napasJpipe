@@ -1,0 +1,16 @@
+# This file contains pipe parameters description. Consult the Java Pipe SDK documentation for details. 
+# Syntax:
+# PARAMETER_NAME = PARAMETER_VALUE
+
+log_level = 60
+ERROR_DIR = C:/_Work/Bank/Mirra/_Napas/pipe/source/napastopuprec/err
+PROCESSED_DIR = C:/_Work/Bank/Mirra/_Napas/pipe/source/napastopuprec/arch
+SOURCE_DIR = C:/_Work/Bank/Mirra/_Napas/pipe/source/napastopuprec/in
+OUTPUT_DIR = C:/_Work/Bank/Mirra/_Napas/pipe/source/napastopuprec/out
+DIRECTION = ISS
+FILE_MASK = *.dat
+OUR_MEMBER_ID = 970416
+NAPAS_CHANNEL_CODE = b
+BANK_PASSWORD = 970416
+CHECK_CHECKSUM = N
+SERVICE = SWC

@@ -1,0 +1,268 @@
+launch
+Startup time: 2022-02-24 16:10:32.503
+Host: DESKTOP-HLTRTU1 (192.168.1.23)
+Java: 1.6.0_45 (Java HotSpot(TM) Client VM) in C:\java\jdk-6\jre
+OS: Windows 8(x86) 6.2
+User: duyng
+Current Dir: C:\OPW\workspace\napastest
+User Home Dir: C:\Users\duyng\OneDrive
+Max Heap Size: 259522560 bytes
+Processors: 8
+Telnet Console Port: 23789
+Java System Properties: java.endorsed.dirs=C:/_Work/Bank/Mirra/_Napas/pipe/03.35.30.26_HOME/client/shared/javalib/endorsed; java.io.tmpdir=C:\Users\duyng\AppData\Local\Temp\; user.country=US; user.language=en; user.timezone=Asia/Bangkok; 
+----------------------------------------------------------
+2022-02-24 16:10:37.014	[uncon]	Startup		Starting up launch
+2022-02-24 16:10:37.079	[dbg  ]	Startup		Entering open: [0]/JdbcConnectionPool
+2022-02-24 16:10:37.083	[info ]	Startup		Connecting to [jdbc:oracle:thin:@192.168.238.128:1521:orcl (OWS)]...
+2022-02-24 16:10:37.271	[dbg  ]	Startup		Executing sql statement [alter session set current_schema=OWS]
+2022-02-24 16:10:37.274	[dbg  ]	Startup		Executing sql statement [{call soft.start_simple('','Console Pipe',null)}]
+2022-02-24 16:10:37.290	[log  ]	Startup		Successfully connected to [jdbc:oracle:thin:@192.168.238.128:1521:orcl (OWS)]
+2022-02-24 16:10:37.290	[dbg  ]	Startup		Exited open: [0]/JdbcConnectionPool
+2022-02-24 16:10:37.290	[dbg  ]	Startup		Entering open container: [0]/JdbcConnectionPool
+2022-02-24 16:10:37.290	[dbg  ]	Startup		Exited open container: [0]/JdbcConnectionPool
+2022-02-24 16:10:37.290	[dbg  ]	Startup		Entering open: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:10:37.290	[dbg  ]	Startup		Exited open: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:10:37.290	[dbg  ]	Startup		Entering open container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:10:37.290	[dbg  ]	Startup		Exited open container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:10:37.291	[dbg  ]	Startup		Entering start: [0]/JdbcConnectionPool
+2022-02-24 16:10:37.291	[dbg  ]	Startup		Exited start: [0]/JdbcConnectionPool
+2022-02-24 16:10:37.291	[dbg  ]	Startup		Entering start container: [0]/JdbcConnectionPool
+2022-02-24 16:10:37.291	[dbg  ]	Startup		Exited start container: [0]/JdbcConnectionPool
+2022-02-24 16:10:37.291	[dbg  ]	Startup		Entering start: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:10:37.291	[dbg_m]	Startup		Waiting for connection context
+2022-02-24 16:10:37.292	[dbg  ]	Startup		Executing stnd.GET_DB_VERSION
+2022-02-24 16:10:37.335	[dbg  ]	Startup		Executed stnd.GET_DB_VERSION
+		versname=[03_52_30]
+2022-02-24 16:10:37.335	[dbg  ]	Startup		Exited start: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:10:37.335	[dbg  ]	Startup		Entering start container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:10:37.335	[dbg  ]	Startup		Exited start container: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:10:37.336	[uncon]	Startup		launch Startup complete
+2022-02-24 16:10:37.350	[uncon]	Startup		Starting up com.openwaygroup.pipe.napastest
+2022-02-24 16:10:37.388	[dbg  ]	Startup		Entering open: [0]/source
+2022-02-24 16:10:37.388	[dbg  ]	Startup		Exited open: [0]/source
+2022-02-24 16:10:37.388	[dbg  ]	Startup		Entering open: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:10:37.388	[dbg  ]	Startup		Exited open: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:10:37.388	[dbg  ]	Startup		Entering open container: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:10:37.389	[dbg  ]	Startup		Exited open container: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:10:37.389	[dbg  ]	Startup		Entering open container: [0]/source
+2022-02-24 16:10:37.389	[dbg  ]	Startup		Exited open container: [0]/source
+2022-02-24 16:10:37.389	[dbg  ]	Startup		Entering start: [0]/source
+2022-02-24 16:10:37.389	[dbg  ]	Startup		Exited start: [0]/source
+2022-02-24 16:10:37.389	[dbg  ]	Startup		Entering start: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:10:37.389	[dbg  ]	Startup		Exited start: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:10:37.389	[dbg  ]	Startup		Entering start container: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:10:37.389	[dbg  ]	Startup		Exited start container: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:10:37.390	[dbg  ]	Startup		Entering start container: [0]/source
+2022-02-24 16:10:37.390	[dbg  ]	Startup		Exited start container: [0]/source
+2022-02-24 16:10:37.390	[uncon]	Startup		com.openwaygroup.pipe.napastest Startup complete
+2022-02-24 16:10:37.412	[dbg_m]	Startup		Waiting for connection context
+2022-02-24 16:10:37.413	[dbg  ]	Startup		Executing stnd.SET_GL_CONSTANTS
+2022-02-24 16:10:37.415	[dbg  ]	Startup		Executed stnd.SET_GL_CONSTANTS
+2022-02-24 16:10:37.416	[dbg  ]	Startup		Executing sy_process.START_CURRENT_V3
+		processname=[napastest]
+		processparms=[null]
+		isunique=[N]
+		tostartsub=[Y]
+		objecttype=[null]
+		objectid=[null]
+2022-02-24 16:10:37.428	[dbg  ]	Startup		Executed sy_process.START_CURRENT_V3
+		isactive=[Y]
+2022-02-24 16:10:37.428	[dbg  ]	Startup		Executing sy_process.GET_CURRENT_PROCESS
+2022-02-24 16:10:37.432	[dbg  ]	Startup		Executed sy_process.GET_CURRENT_PROCESS
+		return value=[56220]
+2022-02-24 16:10:37.432	[dbg  ]	Startup		Executing stnd.GET_PARMS
+2022-02-24 16:10:37.433	[dbg  ]	Startup		Executed stnd.GET_PARMS
+		newconnectionid=[35500]
+		newofficerid=[null]
+2022-02-24 16:10:37.436	[dbg  ]	Startup		Executing soft.Get_Officer_Id
+2022-02-24 16:10:37.436	[dbg  ]	Startup		Executed soft.Get_Officer_Id
+		return value=[null]
+2022-02-24 16:10:37.437	[dbg  ]	Startup		Executing soft.Get_Officer_Name
+2022-02-24 16:10:37.437	[dbg  ]	Startup		Executed soft.Get_Officer_Name
+		return value=[null]
+2022-02-24 16:10:37.437	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56220]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[DB Version: 03_52_30]
+2022-02-24 16:10:37.439	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:10:37.439	[uncon]	Startup		Information: Pipe Version: 00.00.01
+2022-02-24 16:10:37.439	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56220]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Pipe Version: 00.00.01]
+2022-02-24 16:10:37.440	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:10:37.440	[info ]	Startup		DB version: 03_52_30
+2022-02-24 16:10:37.440	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56220]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Pipe:com.openwaygroup.pipe.napastest.jar]
+2022-02-24 16:10:37.441	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:10:37.441	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56220]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: SOURCE_DIR=C:/OPW/workspace/napastest/in]
+2022-02-24 16:10:37.442	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:10:37.442	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56220]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: PROCESSED_DIR=C:/OPW/workspace/napastest/arch]
+2022-02-24 16:10:37.442	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:10:37.442	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56220]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: ERROR_DIR=C:/OPW/workspace/napastest/err]
+2022-02-24 16:10:37.443	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:10:37.443	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56220]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Parm: OUTPUT_DIR=C:/OPW/workspace/napastest/out]
+2022-02-24 16:10:37.444	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:10:37.445	[dbg_m]	Startup		Opening source
+2022-02-24 16:10:37.448	[log+ ]	Startup		The file number limiter is 0
+2022-02-24 16:10:37.449	[dbg_m]	Startup		Opening mapper
+2022-02-24 16:10:37.449	[uncon]	Startup		null: Starting [OPEN] com.openwaygroup.pipe.napastest Thu Feb 24 16:10:37 ICT 2022
+2022-02-24 16:10:37.449	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56220]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[Starting [OPEN] com.openwaygroup.pipe.napastest Thu Feb 24 16:10:37 ICT 2022]
+2022-02-24 16:10:37.450	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:10:37.451	[uncon]	Startup		null: OUR_MEMBER_ID [970416]
+2022-02-24 16:10:37.451	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56220]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[OUR_MEMBER_ID [970416]]
+2022-02-24 16:10:37.451	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:10:37.451	[info ]	Startup		Committing after 0 rows
+2022-02-24 16:10:37.452	[dbg  ]	Startup		Executing sy_process.SET_TOTAL_NUMBER1
+		processid=[56220]
+		n=[0]
+2022-02-24 16:10:37.454	[dbg  ]	Startup		Executed sy_process.SET_TOTAL_NUMBER1
+2022-02-24 16:10:37.454	[dbg  ]	Startup		Executing sy_process.LOCK_PROCESS_STATUS1
+		processid=[56220]
+2022-02-24 16:10:37.455	[dbg  ]	Startup		Executed sy_process.LOCK_PROCESS_STATUS1
+		return value=[A]
+2022-02-24 16:10:37.455	[dbg  ]	Startup		Committed
+2022-02-24 16:10:37.458	[uncon]	Startup		Information: Start file C:\OPW\workspace\napastest\in\022422_VAS_ISS_INC_MFC789055.dat
+2022-02-24 16:10:37.458	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56220]
+		docid=[null]
+		messagetype=[I]
+		messagetext=[Start file C:\OPW\workspace\napastest\in\022422_VAS_ISS_INC_MFC789055.dat]
+2022-02-24 16:10:37.459	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:10:37.459	[dbg_m]	Startup		  ==> Computing (FILE_START) rowCounter
+2022-02-24 16:10:37.459	[dbg_m]	Startup		  ==> Computing (FILE_START) recordCounter
+2022-02-24 16:10:37.459	[dbg_m]	Startup		  ==> Computing (FILE_START) fileRegistryFlag
+2022-02-24 16:10:37.459	[dbg_m]	Startup		  ==> Computing (FILE_START) fileIdentifier
+2022-02-24 16:10:37.459	[dbg_m]	Startup		  ==> Computing (FILE_START) fileIdentifierQualifier
+2022-02-24 16:10:37.461	[dbg  ]	Startup		retrieved [0]  (source)
+		  Record: Embedded Fields
+		    fileName=022422_VAS_ISS_INC_MFC789055.dat
+		    errorFieldName=OrderNumber
+		    errInvalidFieldValue=null
+		    errorRecordName=FileNameRecord
+		    rowCounter=0
+		    recordCounter=0
+		    fileRegistryFlag=true
+		    fileIdentifier=022422_VAS_ISS_INC_MFC789055.dat
+		    fileIdentifierQualifier=null
+		  Record: FileNameRecord
+		    FileGeneratingDate=2022-02-24 00:00:00.0
+		    FileTarget=VAS
+		    BankName=ISS
+		    MemberBankCode=INC
+		    OrderNumber=null
+		    FileType=null
+2022-02-24 16:10:37.461	[uncon]	Startup		null: Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:10:37 ICT 2022
+2022-02-24 16:10:37.461	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56220]
+		docid=[null]
+		messagetype=[null]
+		messagetext=[Starting [EXECUTE] com.openwaygroup.pipe.napastest Thu Feb 24 16:10:37 ICT 2022]
+2022-02-24 16:10:37.462	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:10:37.465	[error]	Startup		Null pointer exception
+	Stack trace:
+		java.lang.NullPointerException
+			at com.openwaygroup.pipe.napastest.Mapper.execute(Mapper.java:84)
+			at com.openwaygroup.application.pipe.impl.java_mapper.JavaMapperImpl.executeDefaultMapping(JavaMapperImpl.java:29)
+			at com.openwaygroup.application.pipe.impl.Pipe.processRow(Pipe.java:304)
+			at com.openwaygroup.application.pipe.impl.Pipe.next(Pipe.java:427)
+			at com.openwaygroup.application.pipe.impl.filer.source.FlatFileSource.sendMessage(FlatFileSource.java:56)
+			at com.openwaygroup.application.pipe.impl.filer.source.FlatFileSource.parseFile(FlatFileSource.java:139)
+			at com.openwaygroup.application.pipe.impl.filer.source.FlatFileSource.select(FlatFileSource.java:108)
+			at com.openwaygroup.application.pipe.impl.ServiceForBuffer.select2(ServiceForBuffer.java:139)
+			at com.openwaygroup.application.pipe.impl.Pipe.select(Pipe.java:288)
+			at com.openwaygroup.application.pipe.impl.Pipe.executeModel(Pipe.java:213)
+			at com.openwaygroup.application.process.impl.AbstractProcess.execute(AbstractProcess.java:69)
+			at com.openwaygroup.application.pipe.impl.Pipe.execute(Pipe.java:150)
+			at com.openwaygroup.application.pipe.PipeLauncherComponent.execute(PipeLauncherComponent.java:38)
+			at com.openwaygroup.application.ApplicationProcessComponent.afterStartup(ApplicationProcessComponent.java:36)
+			at com.openwaygroup.application.impl.Application.fireStartupListeners(Application.java:328)
+			at com.openwaygroup.application.impl.Application.startUp(Application.java:82)
+			at com.openwaygroup.application.ApplicationStarter.startApplication(ApplicationStarter.java:163)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:98)
+			at com.openwaygroup.application.ApplicationStarter.main(ApplicationStarter.java:145)
+
+2022-02-24 16:10:37.467	[dbg_m]	Startup		Closing mapper
+2022-02-24 16:10:37.467	[dbg_m]	Startup		Closing source
+2022-02-24 16:10:37.467	[error]	Startup		Result message: Null pointer exception
+2022-02-24 16:10:37.467	[uncon]	Startup		Error: Null pointer exception
+2022-02-24 16:10:37.467	[dbg  ]	Startup		Executing sy_process.PROCESS_DOC_MESSAGE1
+		processid=[56220]
+		docid=[null]
+		messagetype=[E]
+		messagetext=[Null pointer exception]
+2022-02-24 16:10:37.468	[dbg  ]	Startup		Executed sy_process.PROCESS_DOC_MESSAGE1
+2022-02-24 16:10:37.469	[dbg  ]	Startup		Executing stnd.GET_DB_VERSION
+2022-02-24 16:10:37.470	[dbg  ]	Startup		Executed stnd.GET_DB_VERSION
+		versname=[03_52_30]
+2022-02-24 16:10:37.470	[dbg  ]	Startup		Executing sy_process.GET_PROCESS_ERROR_LEVEL
+2022-02-24 16:10:37.470	[dbg  ]	Startup		Executed sy_process.GET_PROCESS_ERROR_LEVEL
+		return value=[null]
+2022-02-24 16:10:37.470	[dbg  ]	Startup		Executing sy_process.FINISH_CURRENT
+		isok=[N]
+2022-02-24 16:10:37.473	[dbg  ]	Startup		Executed sy_process.FINISH_CURRENT
+2022-02-24 16:10:37.474	[uncon]	Startup		Shutting down com.openwaygroup.pipe.napastest
+2022-02-24 16:10:37.476	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source
+2022-02-24 16:10:37.476	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source
+2022-02-24 16:10:37.476	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:10:37.476	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:10:37.476	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:10:37.476	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:10:37.476	[dbg  ]	Components_Shutdowner		Entering stop: [0]/source
+2022-02-24 16:10:37.476	[dbg  ]	Components_Shutdowner		Exited stop: [0]/source
+2022-02-24 16:10:37.477	[dbg  ]	Components_Shutdowner		Entering close: [0]/source
+2022-02-24 16:10:37.477	[dbg  ]	Components_Shutdowner		Exited close: [0]/source
+2022-02-24 16:10:37.477	[dbg  ]	Components_Shutdowner		Entering close: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:10:37.477	[dbg  ]	Components_Shutdowner		Exited close: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:10:37.477	[dbg  ]	Components_Shutdowner		Entering close: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:10:37.477	[dbg  ]	Components_Shutdowner		Exited close: [0]/source/[0] com.openwaygroup.owsysdb.pipe.file.FileInfoFileSourceComponent
+2022-02-24 16:10:37.477	[dbg  ]	Components_Shutdowner		Entering close: [0]/source
+2022-02-24 16:10:37.477	[dbg  ]	Components_Shutdowner		Exited close: [0]/source
+2022-02-24 16:10:37.477	[uncon]	Components_Shutdowner		com.openwaygroup.pipe.napastest Shutdown complete
+2022-02-24 16:10:37.477	[uncon]	Startup		Shutting down launch
+2022-02-24 16:10:37.477	[dbg  ]	Components_Shutdowner		Entering stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:10:37.477	[dbg  ]	Components_Shutdowner		Exited stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:10:37.477	[dbg  ]	Components_Shutdowner		Entering stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:10:37.478	[dbg  ]	Components_Shutdowner		Exited stop: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:10:37.478	[dbg  ]	Components_Shutdowner		Entering stop: [0]/JdbcConnectionPool
+2022-02-24 16:10:37.478	[dbg  ]	Components_Shutdowner		Exited stop: [0]/JdbcConnectionPool
+2022-02-24 16:10:37.478	[dbg  ]	Components_Shutdowner		Entering stop: [0]/JdbcConnectionPool
+2022-02-24 16:10:37.478	[dbg  ]	Components_Shutdowner		Exited stop: [0]/JdbcConnectionPool
+2022-02-24 16:10:37.478	[dbg  ]	Components_Shutdowner		Entering close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:10:37.478	[dbg  ]	Components_Shutdowner		Exited close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:10:37.478	[dbg  ]	Components_Shutdowner		Entering close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:10:37.478	[dbg  ]	Components_Shutdowner		Exited close: [0]/[1] com.openwaygroup.owsysdb.pipe.launch.StandalonePipeLauncherComponent
+2022-02-24 16:10:37.478	[dbg  ]	Components_Shutdowner		Entering close: [0]/JdbcConnectionPool
+2022-02-24 16:10:37.483	[dbg  ]	Components_Shutdowner		Exited close: [0]/JdbcConnectionPool
+2022-02-24 16:10:37.483	[dbg  ]	Components_Shutdowner		Entering close: [0]/JdbcConnectionPool
+2022-02-24 16:10:37.483	[dbg  ]	Components_Shutdowner		Exited close: [0]/JdbcConnectionPool
+2022-02-24 16:10:37.483	[uncon]	Components_Shutdowner		launch Shutdown complete

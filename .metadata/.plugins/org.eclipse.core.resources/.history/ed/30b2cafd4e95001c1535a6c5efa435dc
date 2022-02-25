@@ -1,0 +1,86 @@
+package com.openwaygroup.pipe.napastest;
+
+import com.openwaygroup.application.pipe.impl.stream.FileSkipException;
+import com.openwaygroup.application.pipe.impl.stream.IWrappedInputStream;
+import com.openwaygroup.application.process.registry.PRLogRecord;
+import com.openwaygroup.application.server.ui.ShowDialogParameters;
+import com.openwaygroup.owsysdb.process.registry.processlog.ProcessLogRecord;
+import com.openwaygroup.application.pipe.impl.java_mapper.AbstractJavaMapper.pipe;
+
+public class Util {
+
+	 pipe;
+	
+	public Util(Mapper pipe) {
+		this.pipe = pipe;
+	}
+	
+	
+	/**
+	 * Log to Trace
+	 * 
+	 * @param msg
+	 * @throws Exception
+	 */
+	protected void processMessage(String msg) {
+		processMessage(PRLogRecord.TRACE, msg);
+	}
+
+	/**
+	 * Logger w/o MsgBox
+	 * 
+	 * @param type
+	 * @param msg
+	 * @throws Exception
+	 */
+	protected void processMessage(String type, String msg) {
+		processMessage(type, msg, false, 0, null);
+	}
+
+	/**
+	 * Logger
+	 * 
+	 * @param type
+	 * @param msg
+	 * @param isMsgBox
+	 * @param boxType
+	 * @param docId
+	 * @throws Exception
+	 */
+	protected void processMessage(String type, String msg, boolean isMsgBox,
+			int boxType, Long docId) {
+		msg = "[NapasImport]:" + msg;
+		ProcessLogRecord logRecord = new ProcessLogRecord(type, msg, docId);
+
+		try {
+			pipe.log(logRecord);
+		} catch (Exception e) {
+			pipe.cancel();
+		}
+
+		if (isMsgBox) {
+			pipe.showMessageDialog(new ShowDialogParameters("NapasImport", msg,
+					boxType));
+		}
+	}
+
+	protected void skipFile(String errText) throws FileSkipException {
+		processMessage(PRLogRecord.ERROR, errText, true,
+				ShowDialogParameters.ERROR_MESSAGE, null);
+		throw new FileSkipException(IWrappedInputStream.CLOSE_ACTION_REJECT);
+	}
+
+	public String padLeftZeros(String inputString, int length) {
+		if (inputString.length() >= length) {
+			return inputString;
+		}
+		StringBuilder sb = new StringBuilder();
+		while (sb.length() < length - inputString.length()) {
+			sb.append('0');
+		}
+		sb.append(inputString);
+
+		return sb.toString();
+	}
+
+}

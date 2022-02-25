@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pipe commit_interval="0" name="napastest" version="00.00.01">
+	<db_grants>
+		<set name="default"/>
+	</db_grants>
+    <main_source class="pipe.source.sql_select">
+    	<sql_statement>select * from dual</sql_statement><sql_select_count_statement/>
+    </main_source>
+    <service class="pipe.target.xml.writer" commit_on_file_finish="yes" indent="yes" name="newService" validate="yes">
+    	<component class="pipe.writer.stream" encoding="UTF-8">
+    		<component class="pipe.output_stream.file_stream" create_empty_files="yes" file_directory="C:\OUT_DIR" file_mode="confirm" file_name="xml_file.xml"/>
+   		</component>
+    </service>
+ </pipe>

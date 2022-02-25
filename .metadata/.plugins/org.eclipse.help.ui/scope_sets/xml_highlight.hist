@@ -1,0 +1,4 @@
+#Thu Feb 24 14:29:23 ICT 2022
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=xml highlight

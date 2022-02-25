@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.openwaygroup.common.sql.scripter.FileException"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="com.openwaygroup.pipe.dev_anct_contract_export.Util"/>
+<fullyQualifiedTypeName name="java.sql.Array"/>
+<fullyQualifiedTypeName name="com.openwaygroup.pipe.napastopup.Mapper"/>
+<fullyQualifiedTypeName name="com.openwaygroup.xmlmanager.metadata.EntitiesRegistry_Sy.Calendar"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.text.DecimalFormat"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.openwaygroup.context.Context"/>
+<fullyQualifiedTypeName name="com.openwaygroup.application.pipe.impl.java_mapper.AbstractJavaMapper"/>
+<fullyQualifiedTypeName name="com.openwaygroup.application.process.registry.PRLogRecord"/>
+<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+</qualifiedTypeNameHistroy>

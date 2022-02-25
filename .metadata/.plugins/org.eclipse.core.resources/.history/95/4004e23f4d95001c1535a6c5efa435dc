@@ -1,0 +1,30 @@
+package com.openwaygroup.pipe.napastest;
+
+import com.openwaygroup.application.process.registry.PRLogRecord;
+
+public class Mapper extends com.openwaygroup.pipe.napastest.autogen.Mapper {
+
+  /**
+   * This method will be called at the beginning of the pipe's execution, 
+   * before any data is retrieved by source. Add your opening code here.
+   */
+  protected void open() throws Exception {
+	  System.out.println("Fucking Suck");
+	  PRLogRecord record = new PRLogRecord("I", "Hello friend");
+	  pipe.log(record);
+  }
+
+  /**
+   * This method will be called for each record (table row, record in flat file, xml element) retrieved 
+   * by the pipe's source. Add your code to handle incoming data here.
+   */
+  protected void execute() throws Exception {
+  }
+
+  /**
+   * This method will be called at the end of the pipe's execution.
+   * Add your closing code here.
+   */
+  protected void close() throws Exception {
+  }
+}

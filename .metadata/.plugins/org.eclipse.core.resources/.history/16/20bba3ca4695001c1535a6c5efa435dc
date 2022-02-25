@@ -1,0 +1,122 @@
+package com.openwaygroup.pipe.napastopup;
+
+import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+
+import com.openwaygroup.application.pipe.impl.stream.FileSkipException;
+import com.openwaygroup.application.pipe.impl.stream.IWrappedInputStream;
+import com.openwaygroup.application.process.registry.PRLogRecord;
+import com.openwaygroup.application.server.ui.ShowDialogParameters;
+import com.openwaygroup.owsysdb.process.registry.processlog.ProcessLogRecord;
+import com.openwaygroup.xmlmanager.metadata.EntitiesRegistry_Sy.Calendar;
+
+public class Mapper extends com.openwaygroup.pipe.napastopup.autogen.Mapper {
+
+	protected SimpleDateFormat dateFormat;
+	protected DecimalFormat decimalFormat;
+	protected double totalSum, tempAmount;
+	protected Calendar tempCalendar;
+	protected int tempYear;
+	protected boolean validMessageCode;
+	protected String OUR_MEMBER_ID, NAPAS_CHANNEL_CODE, DIRECTION,
+			unEncryptedWord, CHECK_CHECKSUM, BankPassword;
+	protected ArrayList<String[]> MessageCodeMapping;
+	protected String sProcessDate = "";
+	protected String sFileDate = "";
+	protected String sFileType = ""; // TC,SL,XL
+	protected String sFileService = "";
+	protected String sFileTarget = "";
+	protected String sFileName = "";
+
+	/**
+	 * This method will be called at the beginning of the pipe's execution,
+	 * before any data is retrieved by source. Add your opening code here.
+	 */
+	protected void open() throws Exception {
+		dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		decimalFormat = new DecimalFormat("#.##");
+		validMessageCode = false;
+		MessageCodeMapping = new ArrayList<String[]>();
+		OUR_MEMBER_ID = Context.getMandatoryProperty(pipe.getContext(),
+				"OUR_MEMBER_ID");
+		NAPAS_CHANNEL_CODE = Context.getMandatoryProperty(pipe.getContext(),
+				"NAPAS_CHANNEL_CODE");
+		DIRECTION = Context
+				.getMandatoryProperty(pipe.getContext(), "DIRECTION");
+		CHECK_CHECKSUM = Context.getMandatoryProperty(pipe.getContext(),
+				"CHECK_CHECKSUM");
+		BankPassword = Context.getMandatoryProperty(pipe.getContext(),
+				"BANK_PASSWORD");
+
+	}
+
+	/**
+	 * This method will be called for each record (table row, record in flat
+	 * file, xml element) retrieved by the pipe's source. Add your code to
+	 * handle incoming data here.
+	 */
+	protected void execute() throws Exception {
+	}
+
+	/**
+	 * This method will be called at the end of the pipe's execution. Add your
+	 * closing code here.
+	 */
+	protected void close() throws Exception {
+	}
+
+	/**
+	 * Log to Trace
+	 * 
+	 * @param msg
+	 * @throws Exception
+	 */
+	protected void processMessage(String msg) {
+		processMessage(PRLogRecord.TRACE, msg);
+	}
+
+	/**
+	 * Logger w/o MsgBox
+	 * 
+	 * @param type
+	 * @param msg
+	 * @throws Exception
+	 */
+	protected void processMessage(String type, String msg) {
+		processMessage(type, msg, false, 0, null);
+	}
+
+	/**
+	 * Logger
+	 * 
+	 * @param type
+	 * @param msg
+	 * @param isMsgBox
+	 * @param boxType
+	 * @param docId
+	 * @throws Exception
+	 */
+	protected void processMessage(String type, String msg, boolean isMsgBox,
+			int boxType, Long docId) {
+		msg = "[NapasImport]:" + msg;
+		ProcessLogRecord logRecord = new ProcessLogRecord(type, msg, docId);
+
+		try {
+			pipe.log(logRecord);
+		} catch (Exception e) {
+			pipe.cancel();
+		}
+
+		if (isMsgBox) {
+			pipe.showMessageDialog(new ShowDialogParameters("NapasImport", msg,
+					boxType));
+		}
+	}
+
+	protected void skipFile(String errText) throws FileSkipException {
+		processMessage(PRLogRecord.ERROR, errText, true,
+				ShowDialogParameters.ERROR_MESSAGE, null);
+		throw new FileSkipException(IWrappedInputStream.CLOSE_ACTION_REJECT);
+	}
+}

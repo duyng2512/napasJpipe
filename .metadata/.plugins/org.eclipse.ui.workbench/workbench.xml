@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="11" version="2.0">
+<workbenchAdvisor/>
+<window height="768" maximized="true" width="1024" x="152" y="152">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="132" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.openwaygroup.ide.way4u.actionSet" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="com.openwaygroup.way4u.testframework.design.ui.actionSet" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="159" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="86" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="230" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1624084205695" focus="true" label="Workspace - Resource">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Mapper.java" partName="Mapper.java" path="C:/OPW/workspace/napastest/src/com/openwaygroup/pipe/napastest/Mapper.java" title="Mapper.java" tooltip="napastest/src/com/openwaygroup/pipe/napastest/Mapper.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/napastest/src/com/openwaygroup/pipe/napastest/Mapper.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3551" selectionTopPixel="1539"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.PropertiesFileEditor" name="pipe.properties" partName="pipe.properties" path="C:/OPW/workspace/napastest/pipe.properties" title="pipe.properties" tooltip="napastest/pipe.properties" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/napastest/pipe.properties"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="398" selectionTopPixel="0"/>
+</editor>
+<editor id="com.openwaygroup.way4m.editor" name="pipe.xml" partName="napastest - pipe.xml" path="C:/OPW/workspace/napastest/src/com/openwaygroup/pipe/napastest/pipe.xml" title="napastest - pipe.xml" tooltip="napastest/src/com/openwaygroup/pipe/napastest/pipe.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/napastest/src/com/openwaygroup/pipe/napastest/pipe.xml"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="1" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Type Hierarchy">
+<viewState hidefields="false" hidelocaltypes="false" hidenonpublic="false" hidestatic="false" input="=napastest/src&lt;com.openwaygroup.pipe.napastest{Mapper.java[Mapper" link_editors="0" mv_vertical_scroll="0" orientation="3" qualified_names="0" ratio="350" selection="=napastest/C:\/_Work\/Bank\/Mirra\/_Napas\/pipe\/03.35.30.26_HOME\/client\/shared\/javalib\/syspipe.jar&lt;com.openwaygroup.application.pipe.impl.java_mapper(AbstractJavaMapper.class[AbstractJavaMapper" showinherited="false" sortbydefiningtype="false" vertical_scroll="0" view="2" workingSetName=""/>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.callhierarchy.view" partName="Call Hierarchy">
+<viewState search_scope_type="1"/>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
+<columnWidths org.eclipse.ui.ide.completionField="50" org.eclipse.ui.ide.descriptionField="504" org.eclipse.ui.ide.locationField="104" org.eclipse.ui.ide.markerType="154" org.eclipse.ui.ide.pathField="204" org.eclipse.ui.ide.priorityField="20" org.eclipse.ui.ide.resourceField="154"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.help.ui.HelpView" partName="Help">
+<viewState pageId="context-help-page"/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.ui.resourcePerspective">
+<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
+<alwaysOnActionSet id="com.openwaygroup.ide.way4u.actionSet"/>
+<alwaysOnActionSet id="com.openwaygroup.way4u.testframework.design.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.ui.views.BookmarkView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.ProgressView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_in_time id="org.eclipse.ui.navigator.ProjectExplorer" time="1645692552185"/>
+<show_in_time id="org.eclipse.team.ui.GenericHistoryView" time="1645675160173"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="16384" id="bottomLeft" orientation="256" selectedTabId="org.eclipse.ui.views.ContentOutline" style="1">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="1024" id="bottomRight" orientation="256" selectedTabId="org.eclipse.ui.views.PropertySheet" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.TaskList" ratio="0.3"/>
+<view id="org.eclipse.ui.views.PropertySheet" ratio="0.29977375"/>
+<view id="org.eclipse.jdt.ui.TypeHierarchy" ratio="0.46266967"/>
+<view id="org.eclipse.jdt.callhierarchy.view" ratio="0.29977375"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="stickyFolderRight" orientation="512" selectedTabId="org.eclipse.help.ui.HelpView" style="1">
+<fastViews>
+<view id="org.eclipse.help.ui.HelpView" ratio="0.29978472"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@758983" orientation="512" selectedTabId="org.eclipse.ui.navigator.ProjectExplorer" style="0">
+<fastViews>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" ratio="0.23573735"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@758983">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="topLeft" ratio="0.18490566" ratioLeft="343" ratioRight="1512" relationship="2" relative="org.eclipse.ui.internal.ViewStack@758983">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.6207439" ratioLeft="1185" ratioRight="724" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.21634364" ratioLeft="413" ratioRight="1496" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottomRight" ratio="0.68671966" ratioLeft="605" ratioRight="276" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.team.ui.GenericHistoryView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.callhierarchy.view" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@cf16d9" ratio="0.9293114" ratioLeft="1525" ratioRight="116" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="0">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1cfcdf1" ratio="0.47978437" ratioLeft="890" ratioRight="965" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="bottomLeft" ratio="0.6333712" ratioLeft="558" ratioRight="323" relationship="4" relative="topLeft">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/napastest/src/com/openwaygroup/pipe/napastest/Mapper.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/napastest/src/com/openwaygroup/pipe/napastest/pipe.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/napastest/src/com/openwaygroup/pipe/napastest/Util.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/napastest/src/com/openwaygroup/pipe/napastest/autogen/Mapper.java"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=napastest/C:\/_Work\/Bank\/Mirra\/_Napas\/pipe\/03.35.30.26_HOME\/client\/shared\/javalib\/syspipe.jar&lt;com.openwaygroup.application.pipe.impl.java_mapper(AbstractJavaMapper.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=napastest/C:\/_Work\/Bank\/Mirra\/_Napas\/pipe\/03.35.30.26_HOME\/client\/shared\/javalib\/syspipe.jar&lt;com.openwaygroup.application.pipe(IPipe.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" path="/napastest/pipe.properties"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.openwaygroup.way4m.editor" path="/napastest/src/com/openwaygroup/pipe/napastest/pipe.xml"/>
+</editors>
+<item historyLabel="Mapper.java" index="0">
+<position/>
+</item>
+<item historyLabel="AbstractJavaMapper.class" index="4">
+<position/>
+</item>
+<item historyLabel="Mapper.java" index="0">
+<position info="not_deleted" x="756" y="0"/>
+</item>
+<item historyLabel="Mapper.java" index="3">
+<position info="not_deleted" x="155" y="6"/>
+</item>
+<item historyLabel="Mapper.java" index="0">
+<position info="not_deleted" x="756" y="0"/>
+</item>
+<item historyLabel="Mapper.java" index="3">
+<position info="not_deleted" x="179" y="0"/>
+</item>
+<item historyLabel="AbstractJavaMapper.class" index="4">
+<position/>
+</item>
+<item historyLabel="Mapper.java" index="3">
+<position info="not_deleted" x="179" y="0"/>
+</item>
+<item historyLabel="Mapper.java" index="0">
+<position info="not_deleted" x="947" y="0"/>
+</item>
+<item historyLabel="Util.java" index="2">
+<position/>
+</item>
+<item historyLabel="Mapper.java" index="0">
+<position/>
+</item>
+<item historyLabel="Mapper.java" index="3">
+<position info="not_deleted" x="155" y="6"/>
+</item>
+<item historyLabel="Mapper.java" index="0">
+<position/>
+</item>
+<item historyLabel="AbstractJavaMapper.class" index="4">
+<position/>
+</item>
+<item historyLabel="Mapper.java" index="0">
+<position/>
+</item>
+<item historyLabel="Mapper.java" index="0">
+<position info="not_deleted" x="756" y="0"/>
+</item>
+<item historyLabel="Mapper.java" index="3">
+<position info="not_deleted" x="179" y="0"/>
+</item>
+<item historyLabel="AbstractJavaMapper.class" index="4">
+<position/>
+</item>
+<item historyLabel="Mapper.java" index="3">
+<position info="not_deleted" x="179" y="0"/>
+</item>
+<item historyLabel="AbstractJavaMapper.class" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Mapper.java" index="3">
+<position info="not_deleted" x="179" y="0"/>
+</item>
+<item historyLabel="Util.java" index="2">
+<position/>
+</item>
+<item historyLabel="pipe.xml" index="1">
+<position/>
+</item>
+<item historyLabel="Mapper.java" index="0">
+<position info="not_deleted" x="1870" y="0"/>
+</item>
+<item historyLabel="Util.java" index="2">
+<position/>
+</item>
+<item historyLabel="Mapper.java" index="0">
+<position info="not_deleted" x="426" y="0"/>
+</item>
+<item historyLabel="Mapper.java" index="3">
+<position info="not_deleted" x="179" y="0"/>
+</item>
+<item historyLabel="Util.java" index="2">
+<position info="not_deleted" x="196" y="0"/>
+</item>
+<item historyLabel="Mapper.java" index="0">
+<position info="not_deleted" x="761" y="5"/>
+</item>
+<item historyLabel="Util.java" index="2">
+<position info="not_deleted" x="128" y="0"/>
+</item>
+<item historyLabel="Mapper.java" index="0">
+<position/>
+</item>
+<item historyLabel="IPipe.class" index="5">
+<position/>
+</item>
+<item historyLabel="Mapper.java" index="0">
+<position/>
+</item>
+<item historyLabel="Util.java" index="2">
+<position info="not_deleted" x="87" y="0"/>
+</item>
+<item historyLabel="IPipe.class" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Util.java" index="2">
+<position info="not_deleted" x="87" y="0"/>
+</item>
+<item historyLabel="Mapper.java" index="0">
+<position info="not_deleted" x="2233" y="0"/>
+</item>
+<item historyLabel="pipe.xml" index="1">
+<position/>
+</item>
+<item historyLabel="Mapper.java" index="0">
+<position info="not_deleted" x="2863" y="18"/>
+</item>
+<item historyLabel="pipe.xml" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pipe.properties" index="6">
+<position info="not_deleted" x="398" y="0"/>
+</item>
+<item historyLabel="pipe.xml" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Mapper.java" index="0">
+<position info="not_deleted" x="3551" y="0"/>
+</item>
+<item historyLabel="pipe.xml" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="napastest - pipe.xml" index="7">
+<position info="not_deleted" x="1043" y="1"/>
+</item>
+<item historyLabel="napastest - pipe.xml" index="7">
+<position info="not_deleted" x="1043" y="1"/>
+</item>
+<item historyLabel="napastest - pipe.xml" index="7">
+<position info="not_deleted" x="1043" y="1"/>
+</item>
+<item historyLabel="napastest - pipe.xml" index="7"/>
+<item historyLabel="pipe.properties" index="6">
+<position info="not_deleted" x="398" y="0"/>
+</item>
+<item active="true" historyLabel="Mapper.java" index="0">
+<position info="not_deleted" x="3551" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topLeft"/>
+<trimItem IMemento.internal.id="bottomLeft"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@758983"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@cf16d9"/>
+<trimItem IMemento.internal.id="stickyFolderRight"/>
+</trimArea>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottomRight"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.openwaygroup.way4m.editor" name="pipe.xml" tooltip="napastest/src/com/openwaygroup/pipe/napastest/pipe.xml">
+<persistable path="/napastest/src/com/openwaygroup/pipe/napastest/pipe.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" name="pipe.properties" tooltip="napastest/pipe.properties">
+<persistable path="/napastest/pipe.properties"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="IPipe.class" tooltip="com.openwaygroup.application.pipe.IPipe">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=napastest/C:\/_Work\/Bank\/Mirra\/_Napas\/pipe\/03.35.30.26_HOME\/client\/shared\/javalib\/syspipe.jar&lt;com.openwaygroup.application.pipe(IPipe.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Util.java" tooltip="napastest/src/com/openwaygroup/pipe/napastest/Util.java">
+<persistable path="/napastest/src/com/openwaygroup/pipe/napastest/Util.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="AbstractJavaMapper.class" tooltip="com.openwaygroup.application.pipe.impl.java_mapper.AbstractJavaMapper">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=napastest/C:\/_Work\/Bank\/Mirra\/_Napas\/pipe\/03.35.30.26_HOME\/client\/shared\/javalib\/syspipe.jar&lt;com.openwaygroup.application.pipe.impl.java_mapper(AbstractJavaMapper.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Mapper.java" tooltip="napastest/src/com/openwaygroup/pipe/napastest/autogen/Mapper.java">
+<persistable path="/napastest/src/com/openwaygroup/pipe/napastest/autogen/Mapper.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Mapper.java" tooltip="napastest/src/com/openwaygroup/pipe/napastest/Mapper.java">
+<persistable path="/napastest/src/com/openwaygroup/pipe/napastest/Mapper.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="pipe.xml" tooltip="napastopup/src/com/openwaygroup/pipe/napastopup/pipe.xml">
+<persistable path="/napastopup/src/com/openwaygroup/pipe/napastopup/pipe.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" name="pipe.properties" tooltip="napastopup/pipe.properties">
+<persistable path="/napastopup/pipe.properties"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Mapper.java" tooltip="napastopup/src/com/openwaygroup/pipe/napastopup/Mapper.java">
+<persistable path="/napastopup/src/com/openwaygroup/pipe/napastopup/Mapper.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Util.java" tooltip="DEV_ANCT_CONTRACT_EXPORT/src/com/openwaygroup/pipe/dev_anct_contract_export/Util.java">
+<persistable path="/DEV_ANCT_CONTRACT_EXPORT/src/com/openwaygroup/pipe/dev_anct_contract_export/Util.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="pipe.xml" tooltip="DEV_ANCT_CONTRACT_EXPORT/src/com/openwaygroup/pipe/dev_anct_contract_export/pipe.xml">
+<persistable path="/DEV_ANCT_CONTRACT_EXPORT/src/com/openwaygroup/pipe/dev_anct_contract_export/pipe.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Mapper.java" tooltip="DEV_ANCT_CONTRACT_EXPORT/src/com/openwaygroup/pipe/dev_anct_contract_export/Mapper.java">
+<persistable path="/DEV_ANCT_CONTRACT_EXPORT/src/com/openwaygroup/pipe/dev_anct_contract_export/Mapper.java"/>
+</file>
+</mruList>
+</workbench>
